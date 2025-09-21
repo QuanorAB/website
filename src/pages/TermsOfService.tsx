@@ -1,9 +1,9 @@
-import { ArrowLeft } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Link } from "react-router-dom";
-import SEOHead from "@/components/SEOHead";
+import { ArrowLeft } from "lucide-react";
 import { useTranslation } from 'react-i18next';
+import { Link } from "react-router-dom";
 
 const TermsOfService = () => {
   const { t, i18n } = useTranslation();
@@ -12,15 +12,15 @@ const TermsOfService = () => {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": `${t('legal.terms.title')} - Quanor AB`,
-    "description": "Quanor AB terms of service for AI-powered financial intelligence platform and Swedish stock analysis services.",
+    "description": "Quanor AB terms of service for AI-powered financial insights platform and Swedish stock analysis services.",
     "url": "https://quanor.com/terms"
   };
 
   return (
     <>
       <SEOHead
-        title={`${t('legal.terms.title')} - Quanor AB | AI Financial Intelligence Terms`}
-        description="Quanor AB terms of service for AI-powered financial intelligence platform and Swedish stock analysis services."
+        title={`${t('legal.terms.title')} - Quanor AB | AI financial insights terms`}
+        description="Quanor AB terms of service for AI-powered financial insights platform and Swedish stock analysis services."
         keywords="Quanor terms, service agreement, AI financial terms, Swedish fintech terms"
         canonical="https://quanor.com/terms"
         structuredData={structuredData}

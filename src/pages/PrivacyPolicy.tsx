@@ -1,27 +1,26 @@
-import { ArrowLeft } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Link } from "react-router-dom";
-import SEOHead from "@/components/SEOHead";
+import { ArrowLeft } from "lucide-react";
 import { useTranslation } from 'react-i18next';
+import { Link } from "react-router-dom";
 
 const PrivacyPolicy = () => {
-  const { t, i18n } = useTranslation();
-  const isSwedish = i18n.language === 'sv';
+  const { t } = useTranslation();
   
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": `${t('legal.privacy.title')} - Quanor AB`,
-    "description": "Quanor AB privacy policy detailing how we collect, use, and protect your personal information in our AI-powered financial intelligence services.",
+    "description": "Quanor AB privacy policy detailing how we collect, use, and protect your personal information in our AI-powered financial insights services.",
     "url": "https://quanor.com/privacy"
   };
 
   return (
     <>
       <SEOHead
-        title={`${t('legal.privacy.title')} - Quanor AB | Data Protection & Financial Intelligence`}
-        description="Quanor AB privacy policy detailing how we collect, use, and protect your personal information in our AI-powered financial intelligence services for Swedish stock analysis."
+        title={`${t('legal.privacy.title')} - Quanor AB | data protection & financial insights`}
+        description="Quanor AB privacy policy detailing how we collect, use, and protect your personal information in our AI-powered financial insights services for Swedish stock analysis."
         keywords="Quanor privacy policy, data protection, GDPR compliance, financial data security, Swedish fintech privacy"
         canonical="https://quanor.com/privacy"
         structuredData={structuredData}

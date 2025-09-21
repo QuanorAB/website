@@ -1,35 +1,16 @@
 {
-  "name": "Quanor - AI-Powered Financial Intelligence",
+  "name": "Quanor - AI-powered financial insights",
   "short_name": "Quanor",
-  "description": "AI-powered financial intelligence platform for Swedish stock analysis and investment research",
+  "description": "AI-powered financial insights platform for Swedish stock analysis and investment research",
   "icons": [
     {
-      "src": "/favicon-16x16.png",
-      "sizes": "16x16",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/favicon-32x32.png", 
-      "sizes": "32x32",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
       "src": "/favicon.png",
-      "sizes": "512x512", 
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ],
   "theme_color": "#2B9B8A",
-  "background_color": "#ffffff", 
+  "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait-primary",
   "start_url": "/",
@@ -38,11 +19,11 @@
   "categories": ["finance", "business", "productivity"],
   "screenshots": [
     {
-      "src": "/og-image.jpg",
+      "src": "/og-image.png",
       "sizes": "1200x630",
-      "type": "image/jpeg",
-      "platform": "wide",
-      "label": "Quanor Dashboard"
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Quanor dashboard"
     }
   ],
   "shortcuts": [
@@ -51,7 +32,9 @@
       "short_name": "Dashboard",
       "description": "Go to your investment dashboard",
       "url": "/",
-      "icons": [{ "src": "/favicon.png", "sizes": "192x192" }]
+      "icons": [
+        { "src": "/favicon.png", "type": "image/png" }
+      ]
     }
   ],
   "related_applications": [],
