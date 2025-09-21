@@ -1,0 +1,461 @@
+{
+  "nav": {
+    "home": "Hem",
+    "products": "Produkter",
+    "about": "Om oss", 
+    "contact": "Kontakt",
+    "signUp": "Registrera dig",
+    "backToHome": "Tillbaka till Hem"
+  },
+  "hero": {
+    "title": "AI-drivna finansiella insikter",
+    "subtitle": "Vi revolutionerar aktiehandel och kapitalförvaltning med ny AI-teknik och smarta algoritmer. Vi levererar insikter snabbare, bättre och mer tillförlitligt än traditionella metoder.",
+    "getStarted": "Kom igång",
+    "learnMore": "Lär dig mer",
+    "builtIn": "Byggt i Sverige",
+    "liveAnalytics": "Realtidsanalys",
+    "aiInsights": "AI-insikter",
+    "stats": {
+      "free": "Gratis",
+      "freeTier": "tillgängligt",
+      "realtime": "Realtid",
+      "aiAnalysis": "AI-analys", 
+      "monitoring": "24/7",
+      "marketMonitoring": "bevakning"
+    }
+  },
+  "products": {
+    "title": "Quanor Insights",
+    "subtitle": "AI-drivna finansiella insikter som förändrar hur du analyserar marknader och fattar investeringsbeslut.",
+    "free": {
+      "name": "Gratis",
+      "price": "Gratis", 
+      "description": "Grundläggande AI-drivna finansiella insikter för att komma igång",
+      "features": [
+        "Grundläggande marknadsanalys",
+        "Följ begränsat antal företag",
+        "PR- och rapportanalyser", 
+        "E-postsupport"
+      ]
+    },
+    "essential": {
+      "name": "Essential",
+      "price": "189 kr/månad",
+      "description": "Avancerade AI-insikter för seriösa investerare och professionella",
+      "features": [
+        "Utökad marknadsanalys",
+        "Följ obegränsat antal företag",
+        "PR-, rapport- och pre-rapportanalys",
+        "Prioriterad support"
+      ]
+    },
+    "getStarted": "Registrera dig",
+    "mostPopular": "Mest populär",
+    "whyChoose": "Varför välja Quanor?",
+    "benefits": {
+      "ai": {
+        "title": "AI-driven intelligens",
+        "description": "Avancerade maskininlärningsmodeller tränade på omfattande finansiella dataset"
+      },
+      "realtime": {
+        "title": "Bearbetning i realtid",
+        "description": "Omedelbar analys och insikter levererade när marknadsförhållandena förändras"
+      },
+      "institutional": {
+        "title": "Institutionell standard",
+        "description": "Företagssäkerhet och tillförlitlighet som är betrodd av finansexperter"
+      }
+    },
+    "services": {
+      "title": "Omfattande analyspaket",
+      "description": "Vi erbjuder PR-analys, rapportanalys, pre-rapportanalys, peer-täckning, global och svensk makro kopplad till bevakningslista, morgonbriefings och mycket mer. Full flexibilitet att välja bort eller till notiser beroende på dina specifika behov."
+    }
+  },
+  "comparison": {
+    "title": "Hur vi skiljer oss åt",
+    "subtitle": "Se hur vi står oss mot online-mäklare och LLM-verktyg",
+    "columns": {
+      "feature": "Funktion",
+    "traditional": "Online-mäklare",
+    "aiTools": "LLM-verktyg",
+      "quanor": "Quanor"
+    },
+    "features": {
+      "onReport": "Rapportanalys",
+      "preReport": "Pre-rapportanalys",
+      "metricsExtraction": "Snabba nyckeltal",
+      "prAnalysis": "PR-analys",
+      "sentiment": "Avancerad sentimentanalys",
+      "frameworkAnalysis": "Eget analysramverk",
+      "swedishFocus": "Fokus på Sverige"
+    },
+    "legend": {
+      "full": "Fullt stöd",
+      "partial": "Grundläggande/delvis",
+      "none": "Ej tillgänglig"
+    }
+  },
+  "about": {
+    "title": "Leder framtiden för finansinsikter",
+    "subtitle": "Grundat i Stockholm, Sverige, representerar Quanor spetsteknologin inom AI-driven finansiell teknik.",
+    "description1": "Vi tror att sofistikerade investeringsinsikter inte ska begränsas till stora institutioner. Vår plattform demokratiserar avancerad marknadsintelligens genom ny AI-teknik och algoritmer.",
+    "description2": "Varje algoritm, varje insikt drivs av våra egenutvecklade AI-modeller som behandlar stora mängder marknadsdata i realtid och levererar värdefulla insikter som hjälper dig fatta bättre investeringsbeslut.",
+    "team": "Vårt lilla men dedikerade team består av doktorer inom matematisk statistik, AI/LLM-experter, datavetare och entreprenörer som brinner för att förvandla finansbranschen genom ny teknik.",
+    "stats": {
+      "companies": "900+",
+      "companiesLabel": "Svenska företag",
+      "prSpeed": "20s",
+      "prSpeedLabel": "PR-analyshastighet", 
+      "reportSpeed": "1.5min",
+      "reportSpeedLabel": "Rapportanalys",
+      "accuracy": "99%",
+      "accuracyLabel": "Träffsäkerhet i nyckeltal"
+    },
+    "values": {
+      "innovation": {
+        "title": "Innovation först",
+        "description": "Utvecklar nästa generation av AI-drivna finansiella insikter med avancerad forskning och utveckling."
+      },
+      "transparency": {
+        "title": "Full transparens",
+        "description": "Öppna om våra metoder, tydliga om våra begränsningar och ärliga om marknadens osäkerheter."
+      },
+      "excellence": {
+        "title": "Pålitliga lösningar",
+        "description": "Byggd med noggrannhet och fokus på att leverera konsekventa, pålitliga resultat."
+      }
+    }
+  },
+  "contact": {
+    "title": "Redo att förändra sättet du investerar?",
+    "subtitle": "Kontakta vårt team för att lära dig hur Quanor Insights kan förbättra din investeringsprocess.",
+    "getInTouch": {
+      "title": "Kom i kontakt",
+      "description": "Har du frågor om vår AI-drivna finansiella intelligensplattform? Vi är här för att hjälpa dig förstå hur Quanor kan revolutionera din investeringsprocess."
+    },
+    "form": {
+      "title": "Skicka meddelande",
+      "description": "Fyll i formuläret nedan så återkommer vi inom 24 timmar.",
+      "name": "Fullständigt namn",
+      "namePlaceholder": "Anna Andersson",
+      "email": "E-postadress",
+      "emailPlaceholder": "anna@exempel.se",
+      "company": "Företagsnamn (valfritt)",
+      "companyPlaceholder": "Ditt företagsnamn",
+      "message": "Hur kan vi hjälpa dig?",
+      "messagePlaceholder": "Berätta om dina investeringsbehov och hur vi kan hjälpa till...",
+      "send": "Skicka meddelande", 
+      "sending": "Skickar...",
+      "validation": {
+        "required": {
+          "title": "Information saknas",
+          "description": "Vänligen fyll i alla obligatoriska fält"
+        },
+        "email": {
+          "title": "Ogiltig e-post",
+          "description": "Vänligen ange en giltig e-postadress"
+        },
+        "error": {
+          "title": "Fel",
+          "description": "Kunde inte skicka meddelandet. Försök igen eller kontakta hello@quanor.com direkt."
+        }
+      }
+    },
+    "info": {
+      "email": {
+        "title": "Mejla oss",
+        "description": "Kontakta vårt team"
+      },
+      "location": {
+        "title": "Besök oss",
+        "description": "Klarabergsviadukten 63, 111 64 Stockholm"
+      }
+    },
+    "invitation": {
+      "title": "Gå med i revolutionen",
+      "description": "Var en del av nästa generation intelligenta investerare. Begär tidig åtkomst till våra avancerade funktioner och få prioriterad onboarding med vårt team av experter."
+    },
+    "success": "Tack! Ditt meddelande har skickats framgångsrikt.",
+    "successDescription": "Vi återkommer inom 24 timmar."
+  },
+  "legal": {
+    "privacy": {
+      "title": "Integritetspolicy",
+      "lastUpdated": "Senast uppdaterad: 13 september 2025",
+      "sections": {
+        "informationCollect": {
+          "title": "1. Information vi samlar in",
+          "personal": {
+            "title": "Personlig information",
+            "description": "Vi samlar in information du tillhandahåller direkt, inklusive namn, e-postadress, företagsinformation och finansiell data som är nödvändig för att tillhandahålla våra AI-drivna finansiella intelligenstjänster."
+          },
+          "usage": {
+            "title": "Användningsdata",
+            "description": "Vi samlar automatiskt information om din användning av våra tjänster, inklusive IP-adress, webbläsartyp, enhetsinformation och användningsmönster för att förbättra våra AI-algoritmer."
+          },
+          "financial": {
+            "title": "Finansiell data",
+            "description": "Vi behandlar finansiell marknadsdata, portföljinformation och investeringspreferenser för att tillhandahålla personaliserade AI-drivna insikter och analyser."
+          }
+        },
+        "howWeUse": {
+          "title": "2. Hur vi använder din information",
+          "items": [
+            "Tillhandahålla AI-drivna finansiella insikter och marknadsanalys endast i informationssyfte",
+            "Generera marknadsinsikter och sentimentanalys (inte investeringsrekommendationer)",
+            "Förbättra våra maskininlärningsmodeller och algoritmer",
+            "Skicka viktiga tjänsteuppdateringar och marknadsvarningar",
+            "Uppfylla finansiella regler och juridiska krav",
+            "Upptäcka och förhindra bedrägerier eller obehörig åtkomst"
+          ]
+        },
+        "informationSharing": {
+          "title": "3. Informationsdelning och offentliggörande",
+          "description": "Vi säljer, handlar eller överför på annat sätt inte din personliga information till tredje parter förutom under följande omständigheter:",
+          "items": [
+            "Tjänsteleverantörer: Vi kan dela information med betrodda tredjepartsleverantörer som hjälper till att driva vår plattform",
+            "Juridisk efterlevnad: När det krävs enligt lag, förordning eller juridisk process",
+            "Affärstransaktioner: I samband med sammanslagning, försäljning eller förvärv av tillgångar",
+            "Säkerhet och trygghet: För att skydda Quanors, våra kunders eller andras rättigheter, egendom eller säkerhet"
+          ]
+        },
+        "dataSecurity": {
+          "title": "4. Datasäkerhet",
+          "description": "Vi implementerar industristandardsäkerhetsåtgärder inklusive kryptering, säker dataöverföring, åtkomstkontroller och regelbundna säkerhetsrevisioner. Våra system följer finansbranschens säkerhetsstandarder och svenska dataskyddsregler."
+        },
+        "dataRetention": {
+          "title": "5. Datalagring",
+          "description": "Vi behåller din personliga information så länge som är nödvändigt för att tillhandahålla våra tjänster, uppfylla juridiska skyldigheter, lösa tvister och genomdriva våra avtal. Finansiell data kan behållas längre enligt gällande regler."
+        },
+        "yourRights": {
+          "title": "6. Dina rättigheter (GDPR)",
+          "description": "Under GDPR har du rätt att:",
+          "items": [
+            "Få tillgång till dina personuppgifter",
+            "Rätta felaktig information",
+            "Radera dina data (med förbehåll för juridiska krav)",
+            "Begränsa behandling av dina data",
+            "Dataportabilitet",
+            "Invända mot behandling",
+            "Återkalla samtycke när som helst"
+          ]
+        },
+        "contact": {
+          "title": "7. Kontaktinformation",
+          "description": "För frågor om denna integritetspolicy eller för att utöva dina rättigheter, kontakta oss på:",
+          "email": "E-post: privacy@quanor.com",
+          "address": "Adress: Klarabergsviadukten 63, 111 64 Stockholm, Sverige"
+        }
+      }
+    },
+    "terms": {
+      "title": "Användarvillkor",
+      "lastUpdated": "Senast uppdaterad: 13 september 2025",
+      "sections": {
+        "acceptance": {
+          "title": "1. Acceptans av villkor",
+          "description": "Genom att använda Quanors AI-drivna finansiella intelligensplattform accepterar och går du med på att vara bunden av dessa användarvillkor. Om du inte godkänner dessa villkor får du inte använda våra tjänster."
+        },
+        "description": {
+          "title": "2. Beskrivning av tjänst",
+          "description": "Quanor tillhandahåller AI-drivna finansiella intelligenstjänster inklusive:",
+          "items": [
+            "PR-analys och rapportanalys",
+            "Pre-rapportanalys och marknadsinsikter",
+            "Peer-täckning och marknadsflashes",
+            "Global och svensk makroanalys",
+            "Morgonbriefings och anpassningsbara varningar",
+            "Täckning av 900+ svenska företag"
+          ]
+        },
+        "userObligations": {
+          "title": "3. Användarförpliktelser",
+          "account": {
+            "title": "Kontoansvaret",
+            "description": "Du är ansvarig för att upprätthålla konfidentialiteten för dina kontoinloggningsuppgifter och för alla aktiviteter under ditt konto."
+          },
+          "acceptable": {
+            "title": "Acceptabel användning",
+            "description": "Du samtycker till att endast använda våra tjänster för lagliga ändamål och i enlighet med dessa villkor. Du får inte försöka reverse engineer, hacka eller missbruka våra AI-system."
+          },
+          "data": {
+            "title": "Datanoggrannhet",
+            "description": "Du är ansvarig för att tillhandahålla korrekt information och upprätthålla noggrannheten av dina kontodata."
+          }
+        },
+        "disclaimer": {
+          "title": "4. Investerings- och informationsfriskrivning",
+          "critical": "KRITISK FRISKRIVNING: Quanor tillhandahåller endast informationstjänster. Vi tillhandahåller INTE finansiell rådgivning, investeringsrådgivning eller juridisk rådgivning av något slag.",
+          "items": [
+            "Ingen investeringsrådgivning: Våra insikter och analyser utgör inte investeringsrekommendationer eller erbjudanden att köpa eller sälja värdepapper",
+            "Inga garantier: Vi ger inga garantier eller utfästelser angående noggrannhet, fullständighet eller tillförlitlighet av tillhandahållen information",
+            "Sentimentetiketter: Sentimentetiketter från Quanor ska inte betraktas som köp- eller säljförslag, utan snarare en allmän känsla av hur vår AI uppfattar informationen",
+            "Riskvarning: Alla investeringar medför risk för förlust. Tidigare resultat garanterar inte framtida resultat",
+            "Professionell rådgivning: Du bör konsultera kvalificerade finansiella rådgivare innan du fattar investeringsbeslut",
+            "Noggrannhetsmått: Vår 99% noggrannhet för metriker avser databehandlingskapacitet, inte investeringsresultat eller marknadsprognoser"
+          ]
+        },
+        "subscription": {
+          "title": "5. Prenumeration och betalning",
+          "billing": {
+            "title": "Fakturering",
+            "description": "Prenumerationsavgifter faktureras i svenska kronor (SEK). Essential-planen kostar 189 kr/månad, faktureras månadsvis i förväg."
+          },
+          "cancellation": {
+            "title": "Avbokning",
+            "description": "Du kan avbryta din prenumeration när som helst. Avbokning träder i kraft i slutet av den nuvarande faktureringsperioden."
+          },
+          "refunds": {
+            "title": "Återbetalningar",
+            "description": "Återbetalningar tillhandahålls efter vårt gottfinnande och vanligtvis endast för tekniska problem som förhindrar tjänsteanvändning."
+          }
+        },
+        "intellectual": {
+          "title": "6. Immateriella rättigheter och dataskydd",
+          "ownership": {
+            "title": "Äganderätt",
+            "description": "Allt innehåll, algoritmer, AI-modeller, data, insikter och immateriella rättigheter förknippade med Quanors tjänster förblir vår exklusiva egendom. Du får en begränsad, icke-exklusiv licens att använda våra tjänster under din prenumerationsperiod."
+          },
+          "prohibited": {
+            "title": "Förbjuden dataanvändning",
+            "warning": "STRIKT FÖRBJUDET: Dataskrapning, mining, extrahering eller automatiserad insamling av innehåll från vår plattform är förbjuden.",
+            "items": [
+              "Ingen dataskrapning, crawling eller automatiserad extrahering är tillåten",
+              "Omfördelning, återpublicering eller återförsäljning av våra data är förbjuden",
+              "Ingen tredje part får presentera, visa eller använda våra data utan skriftligt samtycke",
+              "Reverse engineering av våra algoritmer eller AI-modeller är strängt förbjuden",
+              "Systematisk nedladdning eller bulk-extrahering leder till omedelbar uppsägning"
+            ]
+          },
+          "consent": {
+            "title": "Skriftligt samtycke krävs",
+            "description": "All användning av Quanors data, insikter eller innehåll utanför vår plattform kräver uttryckligt skriftligt samtycke från Quanor. Obehörig användning kan resultera i rättsliga åtgärder och skadestånd."
+          }
+        },
+        "liability": {
+          "title": "7. Ansvarsbegränsning",
+          "description": "Quanors ansvar är begränsat till det belopp som betalats för tjänster under de 12 månader som föregick eventuella anspråk. Vi är inte ansvariga för investeringsförluster, marknadsvolatilitet eller beslut fattade baserat på våra AI-insikter. Våra tjänster tillhandahålls \"som de är\" utan garantier."
+        },
+        "governing": {
+          "title": "8. Tillämplig lag",
+          "description": "Dessa villkor regleras av svensk lag. Eventuella tvister kommer att lösas i Stockholms domstolar, Sverige."
+        },
+        "contact": {
+          "title": "9. Kontaktinformation",
+          "description": "För frågor om dessa användarvillkor, kontakta oss på:",
+          "email": "E-post: legal@quanor.com",
+          "address": "Adress: Klarabergsviadukten 63, 111 64 Stockholm, Sverige"
+        }
+      }
+    },
+    "cookies": {
+      "title": "Cookie-policy",
+      "lastUpdated": "Senast uppdaterad: 13 september 2025",
+      "sections": {
+        "what": {
+          "title": "Vad är cookies?",
+          "description": "Cookies är små textfiler som placeras på din enhet när du besöker vår webbplats. De hjälper oss att ge dig en bättre upplevelse genom att komma ihåg dina preferenser och förbättra vår AI-drivna finansiella intelligensplattform. Våra tjänster är endast informativa och ger inte investeringsrådgivning."
+        },
+        "howWeUse": {
+          "title": "Hur vi använder cookies",
+          "essential": {
+            "title": "Nödvändiga cookies",
+            "description": "Dessa cookies är nödvändiga för att vår webbplats ska fungera korrekt. De möjliggör kärnfunktionalitet som säkerhet, nätverkshantering och tillgänglighet."
+          },
+          "performance": {
+            "title": "Prestandacookies",
+            "description": "Vi använder dessa cookies för att analysera hur besökare använder vår webbplats, vilket hjälper oss förbättra prestanda och användarupplevelse av vår AI-plattform."
+          },
+          "functional": {
+            "title": "Funktionella cookies",
+            "description": "Dessa cookies möjliggör förbättrad funktionalitet och personalisering, som att komma ihåg dina språkpreferenser och inloggningsstatus."
+          },
+          "analytics": {
+            "title": "Analyticscookies",
+            "description": "Vi använder analyticscookies för att förstå hur användare interagerar med vår finansiella intelligensplattform, vilket hjälper oss förbättra våra AI-algoritmer och användargränssnitt."
+          }
+        },
+        "types": {
+          "title": "Typer av cookies vi använder",
+          "session": {
+            "title": "Sessionscookies",
+            "description": "Tillfälliga cookies som upphör när du stänger din webbläsare. Används för att upprätthålla din session medan du använder vår plattform."
+          },
+          "persistent": {
+            "title": "Beständiga cookies",
+            "description": "Kvarstår på din enhet under en bestämd period eller tills du tar bort dem. Används för att komma ihåg dina preferenser mellan besök."
+          },
+          "firstParty": {
+            "title": "Förstapartscookies",
+            "description": "Sätts direkt av Quanor för att förbättra din upplevelse med våra AI-drivna finansiella intelligenstjänster."
+          },
+          "thirdParty": {
+            "title": "Tredjepartscookies",
+            "description": "Sätts av våra betrodda partners för analytics och prestandaövervakning. Vi väljer noggrant våra partners för att säkerställa dataskydd."
+          }
+        },
+        "consent": {
+          "title": "Cookie-samtycke och kontroll",
+          "choices": {
+            "title": "Dina val",
+            "description": "När du först besöker vår webbplats ser du en cookie-samtyckesbanderoll. Du kan välja att acceptera alla cookies eller anpassa dina preferenser."
+          },
+          "browser": {
+            "title": "Webbläsarkontroller",
+            "description": "De flesta webbläsare låter dig kontrollera cookies genom deras inställningar. Du kan vanligtvis:",
+            "items": [
+              "Visa cookies som lagras på din enhet",
+              "Blockera alla eller specifika cookies",
+              "Radera befintliga cookies",
+              "Ställa in preferenser för framtida cookies"
+            ]
+          },
+          "impact": {
+            "title": "Påverkan av att inaktivera cookies",
+            "description": "Att inaktivera vissa cookies kan begränsa funktionaliteten hos vår AI-plattform, inklusive personaliserade insikter och användarpreferenser."
+          }
+        },
+        "thirdParty": {
+          "title": "Tredjepartstjänster",
+          "description": "Vi kan använda cookies från betrodda tredjepartstjänster för analytics, prestandaövervakning och förbättring av våra AI-algoritmer. Dessa partners måste följa dataskyddsstandarder och får endast använda data för specificerade syften."
+        },
+        "updates": {
+          "title": "Uppdateringar av denna policy",
+          "description": "Vi kan uppdatera denna cookie-policy från tid till annan för att återspegla förändringar i våra metoder eller av juridiska skäl. Vi kommer att meddela användare om betydande förändringar och uppdatera datumet för \"Senast uppdaterad\"."
+        },
+        "contact": {
+          "title": "Kontakta oss",
+          "description": "Om du har frågor om vår användning av cookies, kontakta oss på:",
+          "email": "E-post: privacy@quanor.com",
+          "address": "Adress: Klarabergsviadukten 63, 111 64 Stockholm, Sverige"
+        }
+      }
+    }
+  },
+  "notFound": {
+    "title": "404", 
+    "message": "Oops! Sidan kunde inte hittas"
+  },
+  "footer": {
+    "description": "AI-drivna finansiella insikter byggt i Sverige. Revolutionerar aktiehandel och kapitalförvaltning med ny teknik.",
+    "builtIn": "Utvecklat i Stockholm, Sverige",
+    "sections": {
+      "products": "Produkter",
+      "company": "Företag",
+      "resources": "Resurser"
+    },
+    "links": {
+      "insights": "Quanor Insights", 
+      "pricing": "Prissättning",
+      "about": "Om oss",
+      "contact": "Kontakt",
+      "support": "Support"
+    },
+    "legal": {
+      "privacy": "Integritetspolicy",
+      "terms": "Användarvillkor",
+      "cookies": "Cookie-policy"
+    },
+    "copyright": "© 2025 Quanor. Alla rättigheter förbehållna."
+  }
+}
