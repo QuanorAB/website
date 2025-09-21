@@ -1,6 +1,6 @@
 # Quanor Website
 
-Modern React + Vite + TypeScript site with Tailwind and shadcn/ui.
+React + Vite + TypeScript site with Tailwind and shadcn/ui.
 
 ## Tech
 - Vite • React • TypeScript
