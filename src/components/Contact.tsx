@@ -1,13 +1,14 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, MapPin, ArrowRight, Linkedin, Instagram, Twitter } from "lucide-react";
-import { useState, useMemo, useCallback } from "react";
+import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { useTranslation } from 'react-i18next';
 import { supabase } from "@/integrations/supabase/client";
+import { ArrowRight, Instagram, Linkedin, Mail, MapPin } from "lucide-react";
+import { useCallback, useMemo, useState } from "react";
+import { useTranslation } from 'react-i18next';
+import { FaXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -54,9 +55,9 @@ const Contact = () => {
     },
     {
       id: 'twitter',
-      icon: Twitter,
+      icon: FaXTwitter,
       href: "https://x.com/QuanorFinance", 
-      label: "Twitter"
+      label: "X"
     }
   ], []);
 

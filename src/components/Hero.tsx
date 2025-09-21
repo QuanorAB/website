@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
   const { t } = useTranslation();
-  const { theme, resolvedTheme } = useTheme();
+  const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   const titleWords = useMemo(() => 
@@ -63,11 +63,6 @@ const Hero = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,hsl(174_70%_50%/0.1)_0%,transparent_60%)]" />
         <div className="absolute inset-0 bg-[conic-gradient(from_0deg_at_50%_50%,transparent_0deg,hsl(174_50%_50%/0.03)_60deg,transparent_120deg)]" />
       </div>
-      
-      {/* Floating orbs */}
-      <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary/30 rounded-full animate-pulse" />
-      <div className="absolute top-3/4 right-1/3 w-1 h-1 bg-primary/20 rounded-full animate-pulse delay-1000" />
-      <div className="absolute top-1/2 right-1/4 w-1.5 h-1.5 bg-primary/25 rounded-full animate-pulse delay-500" />
       
       <div className="relative z-10 container mx-auto px-6 pt-32 pb-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
