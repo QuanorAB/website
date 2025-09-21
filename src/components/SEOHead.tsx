@@ -7,7 +7,7 @@ interface SEOHeadProps {
   canonical?: string;
   ogImage?: string;
   noindex?: boolean;
-  structuredData?: object;
+  structuredData?: Record<string, unknown>;
 }
 
 const SEOHead = ({
@@ -29,13 +29,16 @@ const SEOHead = ({
       {noindex && <meta name="robots" content="noindex, nofollow" />}
       {canonical && <link rel="canonical" href={canonical} />}
 
-      {/* Open Graph / Facebook */}
+      {/* Open Graph */}
+      <meta property="og:type" content="website" />
+      {canonical && <meta property="og:url" content={canonical} />}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:image:alt" content="Quanor AI-powered financial insights platform" />
 
       {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
