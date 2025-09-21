@@ -1,26 +1,26 @@
-import { ArrowLeft } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Link } from "react-router-dom";
-import SEOHead from "@/components/SEOHead";
+import { ArrowLeft } from "lucide-react";
 import { useTranslation } from 'react-i18next';
+import { Link } from "react-router-dom";
 
 const CookiePolicy = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": `${t('legal.cookies.title')} - Quanor AB`,
-    "description": "Quanor AB cookie policy explaining how we use cookies in our AI-powered financial intelligence platform.",
+    "description": "Quanor AB cookie policy explaining how we use cookies in our AI-powered financial insights platform.",
     "url": "https://quanor.com/cookies"
   };
 
   return (
     <>
       <SEOHead
-        title={`${t('legal.cookies.title')} - Quanor AB | Cookie Usage & Data Privacy`}
-        description="Quanor AB cookie policy explaining how we use cookies in our AI-powered financial intelligence platform."
+        title={`${t('legal.cookies.title')} - Quanor AB | cookie usage & data privacy`}
+        description="Quanor AB cookie policy explaining how we use cookies in our AI-powered financial insights platform."
         keywords="Quanor cookies, cookie policy, data privacy, website cookies, Swedish fintech"
         canonical="https://quanor.com/cookies"
         structuredData={structuredData}

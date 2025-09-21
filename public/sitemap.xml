@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:hreflang="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   
   <!-- Main Homepage -->
   <url>
@@ -8,8 +8,8 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://quanor.com/og-image.jpg</image:loc>
-      <image:title>Quanor AI Financial Intelligence Platform</image:title>
+      <image:loc>https://quanor.com/og-image.png</image:loc>
+      <image:title>Quanor AI financial insights platform</image:title>
       <image:caption>AI-powered Swedish stock analysis and aktieanalys tools</image:caption>
     </image:image>
   </url>

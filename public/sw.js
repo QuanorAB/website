@@ -7,10 +7,9 @@ const DYNAMIC_CACHE = 'quanor-dynamic-v2.0';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
-  '/src/assets/hero-dashboard.jpg',
   '/favicon.png',
-  '/apple-touch-icon.png',
-  '/og-image.jpg'
+  '/og-image.png',
+  '/site.webmanifest'
 ];
 
 // Cache strategies
@@ -36,8 +35,8 @@ self.addEventListener('activate', event => {
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cacheName => {
-          if (cacheName !== STATIC_CACHE && 
-              cacheName !== DYNAMIC_CACHE && 
+          if (cacheName !== STATIC_CACHE &&
+              cacheName !== DYNAMIC_CACHE &&
               cacheName !== CACHE_NAME) {
             console.log('Deleting old cache:', cacheName);
             return caches.delete(cacheName);
@@ -96,7 +95,7 @@ async function cacheFirst(request) {
   if (cachedResponse) {
     return cachedResponse;
   }
-  
+
   try {
     const networkResponse = await fetch(request);
     const cache = await caches.open(STATIC_CACHE);
@@ -110,7 +109,7 @@ async function cacheFirst(request) {
 async function staleWhileRevalidate(request) {
   const cache = await caches.open(DYNAMIC_CACHE);
   const cachedResponse = await cache.match(request);
-  
+
   const networkResponsePromise = fetch(request).then(networkResponse => {
     cache.put(request, networkResponse.clone());
     return networkResponse;

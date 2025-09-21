@@ -1,12 +1,12 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
 import quanorAppDark from "@/assets/quanor-app-dark.png";
 import quanorAppLight from "@/assets/quanor-app-light.png";
 import quanorMobileDark from "@/assets/quanor-mobile-dark.jpg";
 import quanorMobileLight from "@/assets/quanor-mobile-light.jpg";
-import { useTranslation } from 'react-i18next';
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { useTheme } from "next-themes";
-import { useState, useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -36,8 +36,8 @@ const Hero = () => {
   const currentDesktopImage = !mounted ? quanorAppDark : (resolvedTheme === 'light' ? quanorAppLight : quanorAppDark);
   const currentMobileImage = !mounted ? quanorMobileDark : (resolvedTheme === 'light' ? quanorMobileLight : quanorMobileDark);
   const desktopImageAlt = resolvedTheme === 'light' 
-    ? "Quanor AI financial intelligence platform desktop view in light mode showing Swedish stock analysis, aktieanalys tools, real-time market data, and investment insights"
-    : "Quanor AI financial intelligence platform desktop view in dark mode showing Swedish stock analysis, aktieanalys tools, real-time market data, and investment insights";
+    ? "Quanor AI financial insights platform desktop view in light mode showing Swedish stock analysis, aktieanalys tools, real-time market data, and investment insights"
+    : "Quanor AI financial insights platform desktop view in dark mode showing Swedish stock analysis, aktieanalys tools, real-time market data, and investment insights";
   const mobileImageAlt = resolvedTheme === 'light' 
     ? "Quanor AI mobile app in light mode showing Swedish stock analysis and market insights"
     : "Quanor AI mobile app in dark mode showing Swedish stock analysis and market insights";

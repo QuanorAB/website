@@ -11,11 +11,11 @@ interface SEOHeadProps {
 }
 
 const SEOHead = ({
-  title = "Quanor - AI-Powered Financial Intelligence | Swedish Stock Analysis & Investment Tools",
-  description = "Quanor AB leverages AI and LLM technology for advanced Swedish stock analysis, aktieanalys, and financial intelligence. Based in Stockholm, we provide real-time market insights, PR analysis, and investment tools for professionals.",
+  title = "Quanor - AI-powered financial insights | Swedish stock analysis & investment tools",
+  description = "Quanor AB leverages AI and LLM technology for advanced Swedish stock analysis, aktieanalys, and financial insights. Based in Stockholm, we provide real-time market insights, PR analysis, and investment tools for professionals.",
   keywords = "Quanor, Quanor AB, Quanor Finance, Quanor AI, Quanor Stockholm, Quanor Analysis, Quanor finans, Quanor aktier, Quanor aktieanalys, aktieanalys AI, aktieanalys LLM, svensk aktieanalys, AI finansanalys, Stockholm fintech, svenska aktier, marknadsanalys, investeringsverktyg, finansiell intelligens, real-time aktieanalys, PR analys, rapportanalys, makroanalys Sverige",
   canonical,
-  ogImage = "https://quanor.com/og-image.jpg",
+  ogImage = "https://quanor.com/og-image.png",
   noindex = false,
   structuredData
 }: SEOHeadProps) => {
@@ -33,7 +33,7 @@ const SEOHead = ({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
-      <meta property="og:image:alt" content="Quanor AI-powered financial intelligence platform" />
+      <meta property="og:image:alt" content="Quanor AI-powered financial insights platform" />
 
       {/* Twitter */}
       <meta name="twitter:title" content={title} />
