@@ -2,14 +2,14 @@
   "nav": {
     "home": "Hem",
     "products": "Produkter",
-    "about": "Om oss", 
+    "about": "Om oss",
     "contact": "Kontakt",
     "signUp": "Registrera dig",
     "backToHome": "Tillbaka till Hem"
   },
   "hero": {
     "title": "AI-drivna finansiella insikter",
-    "subtitle": "Vi revolutionerar aktiehandel och kapitalförvaltning med ny AI-teknik och smarta algoritmer. Vi levererar insikter snabbare, bättre och mer tillförlitligt än traditionella metoder.",
+    "subtitle": "Vi effektiviserar aktiehandel och kapitalförvaltning med AI-teknik och smarta algoritmer. Våra insikter levereras snabbare, mer träffsäkert och med högre tillförlitlighet än traditionella metoder.",
     "getStarted": "Kom igång",
     "learnMore": "Lär dig mer",
     "builtIn": "Byggt i Sverige",
@@ -19,7 +19,7 @@
       "free": "Gratis",
       "freeTier": "tillgängligt",
       "realtime": "Realtid",
-      "aiAnalysis": "AI-analys", 
+      "aiAnalysis": "AI-analys",
       "monitoring": "24/7",
       "marketMonitoring": "bevakning"
     }
@@ -29,12 +29,12 @@
     "subtitle": "AI-drivna finansiella insikter som förändrar hur du analyserar marknader och fattar investeringsbeslut.",
     "free": {
       "name": "Gratis",
-      "price": "Gratis", 
+      "price": "Gratis",
       "description": "Grundläggande AI-drivna finansiella insikter för att komma igång",
       "features": [
         "Grundläggande marknadsanalys",
         "Följ begränsat antal företag",
-        "PR- och rapportanalyser", 
+        "PR- och rapportanalyser",
         "E-postsupport"
       ]
     },
@@ -76,8 +76,8 @@
     "subtitle": "Se hur vi står oss mot online-mäklare och LLM-verktyg",
     "columns": {
       "feature": "Funktion",
-    "traditional": "Online-mäklare",
-    "aiTools": "LLM-verktyg",
+      "traditional": "Online-mäklare",
+      "aiTools": "LLM-verktyg",
       "quanor": "Quanor"
     },
     "features": {
@@ -105,7 +105,7 @@
       "companies": "900+",
       "companiesLabel": "Svenska företag",
       "prSpeed": "20s",
-      "prSpeedLabel": "PR-analyshastighet", 
+      "prSpeedLabel": "PR-analyshastighet",
       "reportSpeed": "1.5min",
       "reportSpeedLabel": "Rapportanalys",
       "accuracy": "99%",
@@ -131,7 +131,7 @@
     "subtitle": "Kontakta vårt team för att lära dig hur Quanor Insights kan förbättra din investeringsprocess.",
     "getInTouch": {
       "title": "Kom i kontakt",
-      "description": "Har du frågor om vår AI-drivna finansiella intelligensplattform? Vi är här för att hjälpa dig förstå hur Quanor kan revolutionera din investeringsprocess."
+      "description": "Har du frågor om vår AI-drivna finansiella analysplattform? Vi är här för att hjälpa dig förstå hur Quanor kan effektivisera din investeringsprocess."
     },
     "form": {
       "title": "Skicka meddelande",
@@ -144,7 +144,7 @@
       "companyPlaceholder": "Ditt företagsnamn",
       "message": "Hur kan vi hjälpa dig?",
       "messagePlaceholder": "Berätta om dina investeringsbehov och hur vi kan hjälpa till...",
-      "send": "Skicka meddelande", 
+      "send": "Skicka meddelande",
       "sending": "Skickar...",
       "validation": {
         "required": {
@@ -187,7 +187,7 @@
           "title": "1. Information vi samlar in",
           "personal": {
             "title": "Personlig information",
-            "description": "Vi samlar in information du tillhandahåller direkt, inklusive namn, e-postadress, företagsinformation och finansiell data som är nödvändig för att tillhandahålla våra AI-drivna finansiella intelligenstjänster."
+            "description": "Vi samlar in information du tillhandahåller direkt, inklusive namn, e-postadress, företagsinformation och finansiell data som är nödvändig för att tillhandahålla våra AI-drivna finansiella analystjänster."
           },
           "usage": {
             "title": "Användningsdata",
@@ -254,17 +254,17 @@
       "sections": {
         "acceptance": {
           "title": "1. Acceptans av villkor",
-          "description": "Genom att använda Quanors AI-drivna finansiella intelligensplattform accepterar och går du med på att vara bunden av dessa användarvillkor. Om du inte godkänner dessa villkor får du inte använda våra tjänster."
+          "description": "Genom att använda Quanors AI-drivna finansiella analysplattform accepterar och går du med på att vara bunden av dessa användarvillkor. Om du inte godkänner dessa villkor får du inte använda våra tjänster."
         },
         "description": {
           "title": "2. Beskrivning av tjänst",
-          "description": "Quanor tillhandahåller AI-drivna finansiella intelligenstjänster inklusive:",
+          "description": "Quanor tillhandahåller AI-drivna finansiella analystjänster inklusive:",
           "items": [
             "PR-analys och rapportanalys",
             "Pre-rapportanalys och marknadsinsikter",
             "Peer-täckning och marknadsflashes",
             "Global och svensk makroanalys",
-            "Morgonbriefings och anpassningsbara varningar",
+            "Morgonbriefings och anpassningsbara notiser",
             "Täckning av 900+ svenska företag"
           ]
         },
@@ -302,8 +302,8 @@
             "description": "Prenumerationsavgifter faktureras i svenska kronor (SEK). Essential-planen kostar 189 kr/månad, faktureras månadsvis i förväg."
           },
           "cancellation": {
-            "title": "Avbokning",
-            "description": "Du kan avbryta din prenumeration när som helst. Avbokning träder i kraft i slutet av den nuvarande faktureringsperioden."
+            "title": "Uppsägning",
+            "description": "Du kan avbryta din prenumeration när som helst. Uppsägningen träder i kraft i slutet av den nuvarande faktureringsperioden."
           },
           "refunds": {
             "title": "Återbetalningar",
@@ -354,55 +354,47 @@
       "sections": {
         "what": {
           "title": "Vad är cookies?",
-          "description": "Cookies är små textfiler som placeras på din enhet när du besöker vår webbplats. De hjälper oss att ge dig en bättre upplevelse genom att komma ihåg dina preferenser och förbättra vår AI-drivna finansiella intelligensplattform. Våra tjänster är endast informativa och ger inte investeringsrådgivning."
+          "description": "Cookies är små textfiler som placeras på din enhet när du besöker vår webbplats. Vi använder endast nödvändiga cookies för att sidan ska fungera, t.ex. säkerhet, inloggning och grundläggande driftsfunktioner. Våra tjänster är endast informativa och ger inte investeringsrådgivning."
         },
         "howWeUse": {
           "title": "Hur vi använder cookies",
           "essential": {
             "title": "Nödvändiga cookies",
-            "description": "Dessa cookies är nödvändiga för att vår webbplats ska fungera korrekt. De möjliggör kärnfunktionalitet som säkerhet, nätverkshantering och tillgänglighet."
-          },
-          "performance": {
-            "title": "Prestandacookies",
-            "description": "Vi använder dessa cookies för att analysera hur besökare använder vår webbplats, vilket hjälper oss förbättra prestanda och användarupplevelse av vår AI-plattform."
+            "description": "Dessa cookies krävs för att vår webbplats ska fungera korrekt. De möjliggör kärnfunktionalitet som säkerhet, sessionshantering, inloggning och tillgänglighet."
           },
           "functional": {
             "title": "Funktionella cookies",
-            "description": "Dessa cookies möjliggör förbättrad funktionalitet och personalisering, som att komma ihåg dina språkpreferenser och inloggningsstatus."
-          },
-          "analytics": {
-            "title": "Analyticscookies",
-            "description": "Vi använder analyticscookies för att förstå hur användare interagerar med vår finansiella intelligensplattform, vilket hjälper oss förbättra våra AI-algoritmer och användargränssnitt."
+            "description": "Vi använder inte funktionella cookies utöver de som är strikt nödvändiga för att tjänsten ska fungera."
           }
         },
         "types": {
           "title": "Typer av cookies vi använder",
           "session": {
             "title": "Sessionscookies",
-            "description": "Tillfälliga cookies som upphör när du stänger din webbläsare. Används för att upprätthålla din session medan du använder vår plattform."
+            "description": "Tillfälliga cookies som upphör när du stänger din webbläsare. Används för att upprätthålla din session och säkerställa grundläggande funktioner."
           },
           "persistent": {
             "title": "Beständiga cookies",
-            "description": "Kvarstår på din enhet under en bestämd period eller tills du tar bort dem. Används för att komma ihåg dina preferenser mellan besök."
+            "description": "Kvarstår på din enhet under en begränsad period eller tills du tar bort dem. Används bara om det är nödvändigt, t.ex. för att komma ihåg en säker inloggning."
           },
           "firstParty": {
             "title": "Förstapartscookies",
-            "description": "Sätts direkt av Quanor för att förbättra din upplevelse med våra AI-drivna finansiella intelligenstjänster."
+            "description": "Sätts direkt av Quanor enbart för nödvändiga ändamål. Vi använder inga analys- eller prestandacookies."
           },
           "thirdParty": {
             "title": "Tredjepartscookies",
-            "description": "Sätts av våra betrodda partners för analytics och prestandaövervakning. Vi väljer noggrant våra partners för att säkerställa dataskydd."
+            "description": "Vi använder inga tredjepartscookies. Om detta skulle ändras uppdaterar vi denna policy i förväg."
           }
         },
         "consent": {
           "title": "Cookie-samtycke och kontroll",
           "choices": {
             "title": "Dina val",
-            "description": "När du först besöker vår webbplats ser du en cookie-samtyckesbanderoll. Du kan välja att acceptera alla cookies eller anpassa dina preferenser."
+            "description": "Eftersom vi endast använder nödvändiga cookies visar vi ingen samtyckesbanner. Du kan när som helst hantera och radera cookies via din webbläsare."
           },
           "browser": {
             "title": "Webbläsarkontroller",
-            "description": "De flesta webbläsare låter dig kontrollera cookies genom deras inställningar. Du kan vanligtvis:",
+            "description": "De flesta webbläsare låter dig kontrollera cookies genom sina inställningar. Du kan vanligtvis:",
             "items": [
               "Visa cookies som lagras på din enhet",
               "Blockera alla eller specifika cookies",
@@ -412,16 +404,24 @@
           },
           "impact": {
             "title": "Påverkan av att inaktivera cookies",
-            "description": "Att inaktivera vissa cookies kan begränsa funktionaliteten hos vår AI-plattform, inklusive personaliserade insikter och användarpreferenser."
+            "description": "Om du blockerar nödvändiga cookies kan vissa delar av vår webbplats sluta fungera, till exempel inloggning och säker session."
           }
         },
         "thirdParty": {
           "title": "Tredjepartstjänster",
-          "description": "Vi kan använda cookies från betrodda tredjepartstjänster för analytics, prestandaövervakning och förbättring av våra AI-algoritmer. Dessa partners måste följa dataskyddsstandarder och får endast använda data för specificerade syften."
+          "description": "Vi använder inga tredjepartscookies eller tredjepartsspårning via cookies."
+        },
+        "necessaryList": {
+          "title": "Vilka nödvändiga cookies vi använder",
+          "description": "Nedan visas exempel på nödvändiga cookies som kan sättas av vår webbplats:",
+          "items": [
+            { "name": "session_id", "purpose": "Upprätthåller säker inloggad session", "duration": "Sessionsbaserad" },
+            { "name": "csrf_token", "purpose": "Skyddar formulär mot CSRF-attacker", "duration": "Sessionsbaserad" }
+          ]
         },
         "updates": {
           "title": "Uppdateringar av denna policy",
-          "description": "Vi kan uppdatera denna cookie-policy från tid till annan för att återspegla förändringar i våra metoder eller av juridiska skäl. Vi kommer att meddela användare om betydande förändringar och uppdatera datumet för \"Senast uppdaterad\"."
+          "description": "Vi kan uppdatera denna cookie-policy när våra tekniska lösningar ändras eller av juridiska skäl. Datumet \"Senast uppdaterad\" uppdateras vid varje väsentlig ändring."
         },
         "contact": {
           "title": "Kontakta oss",
@@ -433,11 +433,11 @@
     }
   },
   "notFound": {
-    "title": "404", 
+    "title": "404",
     "message": "Oops! Sidan kunde inte hittas"
   },
   "footer": {
-    "description": "AI-drivna finansiella insikter byggt i Sverige. Revolutionerar aktiehandel och kapitalförvaltning med ny teknik.",
+    "description": "AI-drivna finansiella insikter byggt i Sverige. Effektiviserar aktiehandel och kapitalförvaltning med ny teknik.",
     "builtIn": "Utvecklat i Stockholm, Sverige",
     "sections": {
       "products": "Produkter",
@@ -445,7 +445,7 @@
       "resources": "Resurser"
     },
     "links": {
-      "insights": "Quanor Insights", 
+      "insights": "Quanor Insights",
       "pricing": "Prissättning",
       "about": "Om oss",
       "contact": "Kontakt",
