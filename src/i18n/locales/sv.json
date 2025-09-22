@@ -362,9 +362,17 @@
             "title": "Nödvändiga cookies",
             "description": "Dessa cookies krävs för att vår webbplats ska fungera korrekt. De möjliggör kärnfunktionalitet som säkerhet, sessionshantering, inloggning och tillgänglighet."
           },
+          "performance": {
+            "title": "Prestandacookies",
+            "description": "Vi använder inte prestandacookies."
+          },
           "functional": {
             "title": "Funktionella cookies",
             "description": "Vi använder inte funktionella cookies utöver de som är strikt nödvändiga för att tjänsten ska fungera."
+          },
+          "analytics": {
+            "title": "Analyscookies",
+            "description": "Vi använder inte analyscookies."
           }
         },
         "types": {
@@ -437,7 +445,7 @@
     "message": "Oops! Sidan kunde inte hittas"
   },
   "footer": {
-    "description": "AI-drivna finansiella insikter byggt i Sverige. Effektiviserar aktiehandel och kapitalförvaltning med ny teknik.",
+    "description": "AI-drivna finansiella insikter. Byggt i Sverige. Effektiviserar aktiehandel och kapitalförvaltning med ny teknik.",
     "builtIn": "Utvecklat i Stockholm, Sverige",
     "sections": {
       "products": "Produkter",

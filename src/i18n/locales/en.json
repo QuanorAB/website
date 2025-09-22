@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "AI-powered financial insights",
-    "subtitle": "We streamline stock trading and capital management with AI technology and smart algorithms. Our insights are delivered faster, more accurately, and with greater reliability than traditional methods.",
+    "subtitle": "We streamline stock trading and asset management with AI technology and smart algorithms. Our insights are delivered faster, more accurately, and with greater reliability than traditional methods.",
     "getStarted": "Get started",
     "learnMore": "Learn more",
     "builtIn": "Built in Sweden",
@@ -362,9 +362,17 @@
             "title": "Essential cookies",
             "description": "These cookies are required for our website to function properly. They enable core functionality such as security, session management, login and accessibility."
           },
+          "performance": {
+            "title": "Performance cookies",
+            "description": "We do not use performance cookies."
+          },
           "functional": {
             "title": "Functional cookies",
             "description": "We do not use functional cookies beyond those strictly necessary for the service to work."
+          },
+          "analytics": {
+            "title": "Analytics cookies",
+            "description": "We do not use analytics cookies."
           }
         },
         "types": {
@@ -437,7 +445,7 @@
     "message": "Oops! Page not found"
   },
   "footer": {
-    "description": "AI-powered financial insights built in Sweden. Streamlining stock trading and capital management with new technology.",
+    "description": "AI-powered financial insights. Built in Sweden. Streamlining stock trading and asset management with new technology.",
     "builtIn": "Developed in Stockholm, Sweden",
     "sections": {
       "products": "Products",
