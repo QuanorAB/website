@@ -12,7 +12,7 @@ const TermsOfService = () => {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": `${t('legal.terms.title')} - Quanor AB`,
-    "description": "Quanor AB terms of service for AI-powered financial insights platform and Swedish stock analysis services.",
+    "description": "Quanor AB terms of service for AI-powered financial insights platform and Swedish equity analysis services.",
     "url": "https://quanor.com/terms"
   };
 
@@ -20,7 +20,7 @@ const TermsOfService = () => {
     <>
       <SEOHead
         title={`${t('legal.terms.title')} - Quanor AB | AI financial insights terms`}
-        description="Quanor AB terms of service for AI-powered financial insights platform and Swedish stock analysis services."
+        description="Quanor AB terms of service for AI-powered financial insights platform and Swedish equity analysis services."
         keywords="Quanor terms, service agreement, AI financial terms, Swedish fintech terms"
         canonical="https://quanor.com/terms"
         structuredData={structuredData}

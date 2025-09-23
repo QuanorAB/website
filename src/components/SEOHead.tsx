@@ -11,8 +11,8 @@ interface SEOHeadProps {
 }
 
 const SEOHead = ({
-  title = "Quanor - AI-powered financial insights | Swedish stock analysis & investment tools",
-  description = "Quanor AB leverages AI and LLM technology for Swedish stock analysis and financial insights. Based in Stockholm, we provide real-time market insights, PR analysis, and investment tools for professionals.",
+  title = "Quanor - AI-powered financial insights | Swedish equity analysis & investment tools",
+  description = "Quanor AB leverages AI and LLM technology for Swedish equity analysis and financial insights. Based in Stockholm, we provide real-time market insights, PR analysis, and investment tools for professionals.",
   keywords = "Quanor, Quanor AB, Quanor Finance, Quanor AI, Quanor Stockholm, Quanor Analysis, Quanor finans, Quanor aktier, Quanor aktieanalys, aktieanalys AI, aktieanalys LLM, svensk aktieanalys, AI finansanalys, Stockholm fintech, svenska aktier, marknadsanalys, investeringsverktyg, finansiell intelligens, real-time aktieanalys, PR analys, rapportanalys, makroanalys Sverige",
   canonical,
   ogImage = "https://quanor.com/og-image.png",
