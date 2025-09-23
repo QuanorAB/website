@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
     <>
       <SEOHead
         title={`${t('legal.privacy.title')} - Quanor AB | data protection & financial insights`}
-        description="Quanor AB privacy policy detailing how we collect, use, and protect your personal information in our AI-powered financial insights services for Swedish stock analysis."
+        description="Quanor AB privacy policy detailing how we collect, use, and protect your personal information in our AI-powered financial insights services for Swedish equity analysis."
         keywords="Quanor privacy policy, data protection, GDPR compliance, financial data security, Swedish fintech privacy"
         canonical="https://quanor.com/privacy"
         structuredData={structuredData}

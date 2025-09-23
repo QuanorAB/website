@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "AI-drivna finansiella insikter",
-    "subtitle": "Vi effektiviserar aktiehandel och kapitalförvaltning med AI-teknik och smarta algoritmer. Våra insikter levereras snabbare, mer träffsäkert och med högre tillförlitlighet än traditionella metoder.",
+    "subtitle": "Vi effektiviserar aktieanalys och kapitalförvaltning med AI-teknik och datadrivna algoritmer. Våra insikter levereras snabbare, mer träffsäkert och med högre tillförlitlighet än traditionella metoder.",
     "getStarted": "Kom igång",
     "learnMore": "Lär dig mer",
     "builtIn": "Byggt i Sverige",
@@ -445,7 +445,7 @@
     "message": "Oops! Sidan kunde inte hittas"
   },
   "footer": {
-    "description": "AI-drivna finansiella insikter. Byggt i Sverige. Effektiviserar aktiehandel och kapitalförvaltning med ny teknik.",
+    "description": "AI-drivna finansiella insikter. Effektiviserar aktieanalys och kapitalförvaltning med ny teknik.",
     "builtIn": "Utvecklat i Stockholm, Sverige",
     "sections": {
       "products": "Produkter",

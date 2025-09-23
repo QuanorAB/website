@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "AI-powered financial insights",
-    "subtitle": "We streamline stock trading and asset management with AI technology and smart algorithms. Our insights are delivered faster, more accurately, and with greater reliability than traditional methods.",
+    "subtitle": "We streamline equity analysis and asset management with AI technology and data-driven algorithms. Our insights are delivered faster, more accurately, and with greater reliability than traditional methods.",
     "getStarted": "Get started",
     "learnMore": "Learn more",
     "builtIn": "Built in Sweden",
@@ -445,7 +445,7 @@
     "message": "Oops! Page not found"
   },
   "footer": {
-    "description": "AI-powered financial insights. Built in Sweden. Streamlining stock trading and asset management with new technology.",
+    "description": "AI-powered financial insights. Streamlining equity analysis and asset management with new technology.",
     "builtIn": "Developed in Stockholm, Sweden",
     "sections": {
       "products": "Products",

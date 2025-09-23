@@ -36,11 +36,11 @@ const Hero = () => {
   const currentDesktopImage = !mounted ? quanorAppDark : (resolvedTheme === 'light' ? quanorAppLight : quanorAppDark);
   const currentMobileImage = !mounted ? quanorMobileDark : (resolvedTheme === 'light' ? quanorMobileLight : quanorMobileDark);
   const desktopImageAlt = resolvedTheme === 'light' 
-    ? "Quanor AI financial insights platform desktop view in light mode showing Swedish stock analysis tools, real-time market data, and investment insights"
-    : "Quanor AI financial insights platform desktop view in dark mode showing Swedish stock analysis tools, real-time market data, and investment insights";
+    ? "Quanor AI financial insights platform desktop view in light mode showing Swedish equity analysis tools, real-time market data, and investment insights"
+    : "Quanor AI financial insights platform desktop view in dark mode showing Swedish equity analysis tools, real-time market data, and investment insights";
   const mobileImageAlt = resolvedTheme === 'light' 
-    ? "Quanor AI mobile app in light mode showing Swedish stock analysis and market insights"
-    : "Quanor AI mobile app in dark mode showing Swedish stock analysis and market insights";
+    ? "Quanor AI mobile app in light mode showing Swedish equity analysis and market insights"
+    : "Quanor AI mobile app in dark mode showing Swedish equity analysis and market insights";
 
   const handleRegisterClick = (e: any) => {
     try {
