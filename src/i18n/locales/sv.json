@@ -209,6 +209,19 @@
             "Upptäcka och förhindra bedrägerier eller obehörig åtkomst"
           ]
         },
+        "legalBasis": {
+          "title": "Rättslig grund",
+          "items": [
+            "Avtal: För att tillhandahålla och administrera tjänsten",
+            "Berättigat intresse: För att förbättra modeller och förebygga missbruk",
+            "Rättslig förpliktelse: För att uppfylla finansiella och regulatoriska krav",
+            "Samtycke: När vi uttryckligen ber om det (t.ex. vissa kommunikationer)"
+          ]
+        },
+        "controller": {
+          "title": "Personuppgiftsansvarig",
+          "description": "Quanor AB (Org.nr 559497-1482) är personuppgiftsansvarig. Kontakt: privacy@quanor.com"
+        },
         "informationSharing": {
           "title": "3. Informationsdelning och offentliggörande",
           "description": "Vi säljer, handlar eller överför på annat sätt inte din personliga information till tredje parter förutom under följande omständigheter:",
@@ -285,14 +298,27 @@
         },
         "disclaimer": {
           "title": "4. Investerings- och informationsfriskrivning",
-          "critical": "KRITISK FRISKRIVNING: Quanor tillhandahåller endast informationstjänster. Vi tillhandahåller INTE finansiell rådgivning, investeringsrådgivning eller juridisk rådgivning av något slag.",
+          "critical": "KRITISK FRISKRIVNING: Quanor AB (Org.nr 559497-1482) tillhandahåller endast informationstjänster. Vi tillhandahåller INTE finansiell rådgivning, investeringsrådgivning eller juridisk rådgivning av något slag.",
           "items": [
             "Ingen investeringsrådgivning: Våra insikter och analyser utgör inte investeringsrekommendationer eller erbjudanden att köpa eller sälja värdepapper",
             "Inga garantier: Vi ger inga garantier eller utfästelser angående noggrannhet, fullständighet eller tillförlitlighet av tillhandahållen information",
-            "Sentimentetiketter: Sentimentetiketter från Quanor ska inte betraktas som köp- eller säljförslag, utan snarare en allmän känsla av hur vår AI uppfattar informationen",
+            "Sentimentetiketter: Sentimentetiketter från Quanor ska inte betraktas som köp- eller säljförslag. ”Positive”/”Negative”/”Neutral” avser hur vår AI bedömer att en nyhet eller information sannolikt påverkar bolagets aktiekurs på kort sikt (upp till cirka en vecka). Detta är inte en fullständig bedömning av bolaget, och andra aktörer kan göra en annan bedömning eller använda andra tidshorisonter.",
             "Riskvarning: Alla investeringar medför risk för förlust. Tidigare resultat garanterar inte framtida resultat",
             "Professionell rådgivning: Du bör konsultera kvalificerade finansiella rådgivare innan du fattar investeringsbeslut",
-            "Noggrannhetsmått: Vår 99% noggrannhet för metriker avser databehandlingskapacitet, inte investeringsresultat eller marknadsprognoser"
+            "Noggrannhetsmått: Vår 99% precision för metriker bygger på historisk utvärdering i våra interna tester mot andra validerade källor och innebär ingen garanti för framtida resultat, marknadsutveckling eller prognoser.",
+            "All information tillhandahålls i utbildnings- och informationssyfte och ska inte betraktas som personligt anpassad finansiell rådgivning",
+            "Eventuella analyser, signaler, sentimentetiketter eller marknadsinsikter är generella till sin natur och tar inte hänsyn till din personliga finansiella situation, mål eller riskprofil",
+            "Quanor AB är inte en licensierad värdepappersrörelse och står inte under Finansinspektionens tillståndsplikt för rådgivning",
+            "Om något innehåll skulle kunna tolkas som en investeringsrekommendation ska det betraktas som generellt och icke-personaliserat och omfattas av denna friskrivning",
+            "AI-genererade analyser kan innehålla fel, bias eller vara ofullständiga och bör inte ligga till grund för enskilda investeringsbeslut utan kompletterande professionell rådgivning",
+            "Tillgänglighet och tekniska avbrott: Tjänsten tillhandahålls utan garanti om oavbruten tillgänglighet. Driftstörningar, underhåll, tredjepartsfel eller andra tekniska problem kan medföra avbrott, fördröjningar eller datafel. Quanor AB ansvarar inte för skador eller förluster som uppstår till följd av sådana avbrott i den utsträckning tillåten enligt tillämplig lag.",
+            "Täckning och bevakning: Quanor AB garanterar inte PR-, rapport- eller pre-rapportanalyser för alla bolag som användaren följer. Detta är en målsättning och kan påverkas av bl.a. datatillgång, bolagskommunikation, marknadsläge, tekniska begränsningar och interna prioriteringar.",
+            "Ansvarig analytiker för publicerat material är, om inget annat uttryckts i anslutning till kommunikationen, Vilhelm Niklasson, operativt ansvarig (COO) på Quanor AB",
+            "Quanor AB redovisar alltid relevanta intressekonflikter innan eller i direkt anslutning till publicering. I nuläget gäller att Edvin Malmgård, kommersiellt ansvarig (CCO) på Quanor AB, är IR-ansvarig på Raketech och styrelseledamot i Adverty. Han äger mindre än 1 % av aktierna i båda bolagen. Detta påverkar inte Quanors analyser men redovisas öppet i enlighet med god marknadssed.",
+            "Om något innehåll skulle omfattas av artikel 20 i MAR eller Kommissionens delegerade förordning (EU) 2016/958 anger Quanor AB vid publicering publicerande enhet, ansvarig analytiker, datum/tid, berörda instrument/emittenter, tillämpad metod, källor, antaganden och relevanta intressekonflikter samt håller en uppdaterings- och återkallelsepolicy tillgänglig.",
+            "Allt innehåll från Quanor AB är allmän marknadsinformation och ska inte tolkas som personlig rekommendation enligt MiFID II.",
+            "Analysuppdateringar och giltighet: Quanor uppdaterar eller återkallar analyser när väsentlig ny information tillkommer. Tidsstämpeln anger när analysen senast uppdaterades.",
+            "Detta material är inte riktat till jurisdiktioner där distribution eller användning skulle strida mot lokal lag."
           ]
         },
         "subscription": {
@@ -390,8 +416,8 @@
             "description": "Sätts direkt av Quanor enbart för nödvändiga ändamål. Vi använder inga analys- eller prestandacookies."
           },
           "thirdParty": {
-            "title": "Tredjepartscookies",
-            "description": "Vi använder inga tredjepartscookies. Om detta skulle ändras uppdaterar vi denna policy i förväg."
+            "title": "Tredjepartstjänster",
+            "description": "Vi använder inga tredjepartscookies eller tredjepartsspårning via cookies."
           }
         },
         "consent": {
@@ -399,21 +425,29 @@
           "choices": {
             "title": "Dina val",
             "description": "Eftersom vi endast använder nödvändiga cookies visar vi ingen samtyckesbanner. Du kan när som helst hantera och radera cookies via din webbläsare."
-          },
-          "browser": {
-            "title": "Webbläsarkontroller",
-            "description": "De flesta webbläsare låter dig kontrollera cookies genom sina inställningar. Du kan vanligtvis:",
-            "items": [
-              "Visa cookies som lagras på din enhet",
-              "Blockera alla eller specifika cookies",
-              "Radera befintliga cookies",
-              "Ställa in preferenser för framtida cookies"
-            ]
-          },
-          "impact": {
-            "title": "Påverkan av att inaktivera cookies",
-            "description": "Om du blockerar nödvändiga cookies kan vissa delar av vår webbplats sluta fungera, till exempel inloggning och säker session."
           }
+        },
+        "browserControls": {
+          "title": "Webbläsarkontroller",
+          "description": "De flesta webbläsare låter dig kontrollera cookies genom sina inställningar. Du kan vanligtvis:",
+          "items": [
+            "Visa cookies som lagras på din enhet",
+            "Blockera alla eller specifika cookies",
+            "Radera befintliga cookies",
+            "Ställa in preferenser för framtida cookies"
+          ]
+        },
+        "typesList": {
+          "title": "Typer av cookies vi använder (översikt)",
+          "items": [
+            "Sessionscookies: Upphör när du stänger webbläsaren",
+            "Beständiga cookies: Kvarstår under begränsad tid eller tills du raderar dem",
+            "Förstapartscookies: Sätts av Quanor för nödvändiga ändamål"
+          ]
+        },
+        "impact": {
+          "title": "Påverkan av att inaktivera cookies",
+          "description": "Om du blockerar nödvändiga cookies kan vissa delar av vår webbplats sluta fungera, till exempel inloggning och säker session."
         },
         "thirdParty": {
           "title": "Tredjepartstjänster",
@@ -464,6 +498,6 @@
       "terms": "Användarvillkor",
       "cookies": "Cookie-policy"
     },
-    "copyright": "© 2025 Quanor. Alla rättigheter förbehållna."
+    "copyright": "© 2025 Quanor AB (Org.nr 559497-1482). Alla rättigheter förbehållna."
   }
 }
