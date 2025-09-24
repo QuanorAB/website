@@ -104,9 +104,9 @@
     "stats": {
       "companies": "900+",
       "companiesLabel": "Swedish companies",
-      "prSpeed": "20\u202Fs",
+      "prSpeed": "≈20\u202Fs",
       "prSpeedLabel": "PR analysis time",
-      "reportSpeed": "1.5\u202Fmin",
+      "reportSpeed": "≈1.5\u202Fmin",
       "reportSpeedLabel": "Report analysis time",
       "accuracy": "99\u202F%",
       "accuracyLabel": "Key metrics accuracy"

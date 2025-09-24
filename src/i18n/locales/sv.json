@@ -5,7 +5,7 @@
     "about": "Om oss",
     "contact": "Kontakt",
     "signUp": "Registrera dig",
-    "backToHome": "Tillbaka till Hem"
+    "backToHome": "Tillbaka till startsidan"
   },
   "hero": {
     "title": "AI-drivna finansiella insikter",
@@ -104,12 +104,12 @@
     "stats": {
       "companies": "900+",
       "companiesLabel": "Svenska företag",
-      "prSpeed": "20\u202Fs",
+      "prSpeed": "≈20\u202Fs",
       "prSpeedLabel": "PR-analystid",
-      "reportSpeed": "1,5\u202Fmin",
-      "reportSpeedLabel": "Rapportanalys",
+      "reportSpeed": "≈1,5\u202Fmin",
+      "reportSpeedLabel": "Rapportanalystid",
       "accuracy": "99\u202F%",
-      "accuracyLabel": "Mätprecison"
+      "accuracyLabel": "Mätprecision"
     },
     "values": {
       "innovation": {
@@ -295,83 +295,83 @@
             "title": "Datanoggrannhet",
             "description": "Du är ansvarig för att tillhandahålla korrekt information och upprätthålla noggrannheten av dina kontodata."
           }
-        }
-      },
-      "disclaimer": {
-        "title": "4. Investerings- och informationsfriskrivning",
-        "critical": "KRITISK FRISKRIVNING: Quanor AB (Org.nr 559497-1482) tillhandahåller endast informationstjänster. Vi tillhandahåller INTE finansiell rådgivning, investeringsrådgivning eller juridisk rådgivning av något slag.",
-        "items": [
-          "Ingen investeringsrådgivning: Våra insikter och analyser utgör inte investeringsrekommendationer eller erbjudanden att köpa eller sälja värdepapper",
-          "Inga garantier: Vi ger inga garantier eller utfästelser angående noggrannhet, fullständighet eller tillförlitlighet av tillhandahållen information",
-          "Sentimentetiketter: Sentimentetiketter från Quanor ska inte betraktas som köp- eller säljförslag. ”Positive”/”Negative”/”Neutral” avser hur vår AI bedömer att en nyhet eller information sannolikt påverkar bolagets aktiekurs på kort sikt (upp till cirka en vecka). Detta är inte en fullständig bedömning av bolaget, och andra aktörer kan göra en annan bedömning eller använda andra tidshorisonter.",
-          "Riskvarning: Alla investeringar medför risk för förlust. Tidigare resultat garanterar inte framtida resultat",
-          "Professionell rådgivning: Du bör konsultera kvalificerade finansiella rådgivare innan du fattar investeringsbeslut",
-          "Noggrannhetsmått: Vår 99% precision för metriker bygger på historisk utvärdering i våra interna tester mot andra validerade källor och innebär ingen garanti för framtida resultat, marknadsutveckling eller prognoser.",
-          "Endast information: All information tillhandahålls i utbildnings- och informationssyfte och ska inte betraktas som personligt anpassad finansiell rådgivning",
-          "Allmän karaktär: Eventuella analyser, signaler, sentimentetiketter eller marknadsinsikter är generella till sin natur och tar inte hänsyn till din personliga finansiella situation, mål eller riskprofil",
-          "Licensiering: Quanor AB är inte en licensierad värdepappersrörelse och står inte under Finansinspektionens tillståndsplikt för rådgivning",
-          "Tolkning: Om något innehåll skulle kunna tolkas som en investeringsrekommendation ska det betraktas som generellt och icke-personaliserat och omfattas av denna friskrivning",
-          "AI-begränsningar: AI-genererade analyser kan innehålla fel, bias eller vara ofullständiga och bör inte ligga till grund för enskilda investeringsbeslut utan kompletterande professionell rådgivning",
-          "Tillgänglighet och avbrott: Tjänsten tillhandahålls utan garanti om oavbruten tillgänglighet. Driftstörningar, underhåll, tredjepartsfel eller andra tekniska problem kan medföra avbrott, fördröjningar eller datafel. Quanor AB ansvarar inte för skador eller förluster som uppstår till följd av sådana avbrott i den utsträckning tillåten enligt tillämplig lag.",
-          "Täckning: Quanor AB garanterar inte PR-, rapport- eller pre-rapportanalyser för alla bolag som användaren följer. Detta är en målsättning och kan påverkas av bl.a. datatillgång, bolagskommunikation, marknadsläge, tekniska begränsningar och interna prioriteringar.",
-          "Ansvarig analytiker: Om inget annat uttrycks i anslutning till publicering är ansvarig analytiker för publicerat material Vilhelm Niklasson, operativt ansvarig (COO) på Quanor AB.",
-          "Intressekonflikter: Quanor AB redovisar alltid relevanta intressekonflikter innan eller i direkt anslutning till publicering. I nuläget gäller att Edvin Malmgård, kommersiellt ansvarig (CCO) på Quanor AB, är IR-ansvarig på Raketech och styrelseledamot i Adverty. Han äger mindre än 1 % av aktierna i båda bolagen. Detta påverkar inte Quanors analyser men redovisas öppet i enlighet med god marknadssed.",
-          "MAR/EU-efterlevnad: Om något innehåll skulle omfattas av artikel 20 i MAR eller Kommissionens delegerade förordning (EU) 2016/958 anger Quanor AB vid publicering publicerande enhet, ansvarig analytiker, datum/tid, berörda instrument/emittenter, metod, källor, antaganden och relevanta intressekonflikter samt håller en uppdaterings- och återkallelsepolicy tillgänglig.",
-          "MiFID II: Allt innehåll från Quanor AB är allmän marknadsinformation och ska inte tolkas som personlig rekommendation enligt MiFID II.",
-          "Uppdateringar och giltighet: Quanor uppdaterar eller återkallar analyser när väsentlig ny information tillkommer. Tidsstämpeln anger när analysen senast uppdaterades.",
-          "Jurisdiktioner: Detta material är inte riktat till jurisdiktioner där distribution eller användning skulle strida mot lokal lag."
-        ]
-      },
-      "subscription": {
-        "title": "5. Prenumeration och betalning",
-        "billing": {
-          "title": "Fakturering",
-          "description": "Prenumerationsavgifter faktureras i svenska kronor (SEK). Essential-planen kostar 189 kr/månad, faktureras månadsvis i förväg."
         },
-        "cancellation": {
-          "title": "Uppsägning",
-          "description": "Du kan avbryta din prenumeration när som helst. Uppsägningen träder i kraft i slutet av den nuvarande faktureringsperioden."
-        },
-        "refunds": {
-          "title": "Återbetalningar",
-          "description": "Återbetalningar tillhandahålls efter vårt gottfinnande och vanligtvis endast för tekniska problem som förhindrar tjänsteanvändning."
-        }
-      },
-      "intellectual": {
-        "title": "6. Immateriella rättigheter och dataskydd",
-        "ownership": {
-          "title": "Äganderätt",
-          "description": "Allt innehåll, algoritmer, AI-modeller, data, insikter och immateriella rättigheter förknippade med Quanors tjänster förblir vår exklusiva egendom. Du får en begränsad, icke-exklusiv licens att använda våra tjänster under din prenumerationsperiod."
-        },
-        "prohibited": {
-          "title": "Förbjuden dataanvändning",
-          "warning": "STRIKT FÖRBJUDET: Dataskrapning, mining, extrahering eller automatiserad insamling av innehåll från vår plattform är förbjuden.",
+        "disclaimer": {
+          "title": "4. Investerings- och informationsfriskrivning",
+          "critical": "KRITISK FRISKRIVNING: Quanor AB (Org.nr 559497-1482) tillhandahåller endast informationstjänster. Vi tillhandahåller INTE finansiell rådgivning, investeringsrådgivning eller juridisk rådgivning av något slag.",
           "items": [
-            "Ingen dataskrapning, crawling eller automatiserad extrahering är tillåten",
-            "Omfördelning, återpublicering eller återförsäljning av våra data är förbjuden",
-            "Ingen tredje part får presentera, visa eller använda våra data utan skriftligt samtycke",
-            "Reverse engineering av våra algoritmer eller AI-modeller är strängt förbjuden",
-            "Systematisk nedladdning eller bulk-extrahering leder till omedelbar uppsägning"
+            "Ingen investeringsrådgivning: Våra insikter och analyser utgör inte investeringsrekommendationer eller erbjudanden att köpa eller sälja värdepapper",
+            "Inga garantier: Vi ger inga garantier eller utfästelser angående noggrannhet, fullständighet eller tillförlitlighet av tillhandahållen information",
+            "Sentimentetiketter: Sentimentetiketter från Quanor ska inte betraktas som köp- eller säljförslag. ”Positive”/”Negative”/”Neutral” avser hur vår AI bedömer att en nyhet eller information sannolikt påverkar bolagets aktiekurs på kort sikt (upp till cirka en vecka). Detta är inte en fullständig bedömning av bolaget, och andra aktörer kan göra en annan bedömning eller använda andra tidshorisonter.",
+            "Riskvarning: Alla investeringar medför risk för förlust. Tidigare resultat garanterar inte framtida resultat",
+            "Professionell rådgivning: Du bör konsultera kvalificerade finansiella rådgivare innan du fattar investeringsbeslut",
+            "Noggrannhetsmått: Vår 99% precision för metriker bygger på historisk utvärdering i våra interna tester mot andra validerade källor och innebär ingen garanti för framtida resultat, marknadsutveckling eller prognoser.",
+            "Endast information: All information tillhandahålls i utbildnings- och informationssyfte och ska inte betraktas som personligt anpassad finansiell rådgivning",
+            "Allmän karaktär: Eventuella analyser, signaler, sentimentetiketter eller marknadsinsikter är generella till sin natur och tar inte hänsyn till din personliga finansiella situation, mål eller riskprofil",
+            "Licensiering: Quanor AB är inte en licensierad värdepappersrörelse och står inte under Finansinspektionens tillståndsplikt för rådgivning",
+            "Tolkning: Om något innehåll skulle kunna tolkas som en investeringsrekommendation ska det betraktas som generellt och icke-personaliserat och omfattas av denna friskrivning",
+            "AI-begränsningar: AI-genererade analyser kan innehålla fel, bias eller vara ofullständiga och bör inte ligga till grund för enskilda investeringsbeslut utan kompletterande professionell rådgivning",
+            "Tillgänglighet och avbrott: Tjänsten tillhandahålls utan garanti om oavbruten tillgänglighet. Driftstörningar, underhåll, tredjepartsfel eller andra tekniska problem kan medföra avbrott, fördröjningar eller datafel. Quanor AB ansvarar inte för skador eller förluster som uppstår till följd av sådana avbrott i den utsträckning tillåten enligt tillämplig lag.",
+            "Täckning: Quanor AB garanterar inte PR-, rapport- eller pre-rapportanalyser för alla bolag som användaren följer. Detta är en målsättning och kan påverkas av bl.a. datatillgång, bolagskommunikation, marknadsläge, tekniska begränsningar och interna prioriteringar.",
+            "Ansvarig analytiker: Om inget annat uttrycks i anslutning till publicering är ansvarig analytiker för publicerat material Vilhelm Niklasson, operativt ansvarig (COO) på Quanor AB.",
+            "Intressekonflikter: Quanor AB redovisar alltid relevanta intressekonflikter innan eller i direkt anslutning till publicering. I nuläget gäller att Edvin Malmgård, kommersiellt ansvarig (CCO) på Quanor AB, är IR-ansvarig på Raketech och styrelseledamot i Adverty. Han äger mindre än 1 % av aktierna i båda bolagen. Detta påverkar inte Quanors analyser men redovisas öppet i enlighet med god marknadssed.",
+            "MAR/EU-efterlevnad: Om något innehåll skulle omfattas av artikel 20 i MAR eller Kommissionens delegerade förordning (EU) 2016/958 anger Quanor AB vid publicering publicerande enhet, ansvarig analytiker, datum/tid, berörda instrument/emittenter, metod, källor, antaganden och relevanta intressekonflikter samt håller en uppdaterings- och återkallelsepolicy tillgänglig.",
+            "MiFID II: Allt innehåll från Quanor AB är allmän marknadsinformation och ska inte tolkas som personlig rekommendation enligt MiFID II.",
+            "Uppdateringar och giltighet: Quanor uppdaterar eller återkallar analyser när väsentlig ny information tillkommer. Tidsstämpeln anger när analysen senast uppdaterades.",
+            "Jurisdiktioner: Detta material är inte riktat till jurisdiktioner där distribution eller användning skulle strida mot lokal lag."
           ]
         },
-        "consent": {
-          "title": "Skriftligt samtycke krävs",
-          "description": "All användning av Quanors data, insikter eller innehåll utanför vår plattform kräver uttryckligt skriftligt samtycke från Quanor. Obehörig användning kan resultera i rättsliga åtgärder och skadestånd."
+        "subscription": {
+          "title": "5. Prenumeration och betalning",
+          "billing": {
+            "title": "Fakturering",
+            "description": "Prenumerationsavgifter faktureras i svenska kronor (SEK). Essential-planen kostar 189 kr/månad, faktureras månadsvis i förväg."
+          },
+          "cancellation": {
+            "title": "Uppsägning",
+            "description": "Du kan avbryta din prenumeration när som helst. Uppsägningen träder i kraft i slutet av den nuvarande faktureringsperioden."
+          },
+          "refunds": {
+            "title": "Återbetalningar",
+            "description": "Återbetalningar tillhandahålls efter vårt gottfinnande och vanligtvis endast för tekniska problem som förhindrar tjänsteanvändning."
+          }
+        },
+        "intellectual": {
+          "title": "6. Immateriella rättigheter och dataskydd",
+          "ownership": {
+            "title": "Äganderätt",
+            "description": "Allt innehåll, algoritmer, AI-modeller, data, insikter och immateriella rättigheter förknippade med Quanors tjänster förblir vår exklusiva egendom. Du får en begränsad, icke-exklusiv licens att använda våra tjänster under din prenumerationsperiod."
+          },
+          "prohibited": {
+            "title": "Förbjuden dataanvändning",
+            "warning": "STRIKT FÖRBJUDET: Dataskrapning, mining, extrahering eller automatiserad insamling av innehåll från vår plattform är förbjuden.",
+            "items": [
+              "Ingen dataskrapning, crawling eller automatiserad extrahering är tillåten",
+              "Omfördelning, återpublicering eller återförsäljning av våra data är förbjuden",
+              "Ingen tredje part får presentera, visa eller använda våra data utan skriftligt samtycke",
+              "Reverse engineering av våra algoritmer eller AI-modeller är strängt förbjuden",
+              "Systematisk nedladdning eller bulk-extrahering leder till omedelbar uppsägning"
+            ]
+          },
+          "consent": {
+            "title": "Skriftligt samtycke krävs",
+            "description": "All användning av Quanors data, insikter eller innehåll utanför vår plattform kräver uttryckligt skriftligt samtycke från Quanor. Obehörig användning kan resultera i rättsliga åtgärder och skadestånd."
+          }
+        },
+        "liability": {
+          "title": "7. Ansvarsbegränsning",
+          "description": "Quanors ansvar är begränsat till det belopp som betalats för tjänster under de 12 månader som föregick eventuella anspråk. Vi är inte ansvariga för investeringsförluster, marknadsvolatilitet eller beslut fattade baserat på våra AI-insikter. Våra tjänster tillhandahålls \"som de är\" utan garantier."
+        },
+        "governing": {
+          "title": "8. Tillämplig lag",
+          "description": "Dessa villkor regleras av svensk lag. Eventuella tvister kommer att lösas i Stockholms domstolar, Sverige."
+        },
+        "contact": {
+          "title": "9. Kontaktinformation",
+          "description": "För frågor om dessa användarvillkor, kontakta oss på:",
+          "email": "E-post: legal@quanor.com",
+          "address": "Adress: Klarabergsviadukten 63, 111 64 Stockholm, Sverige"
         }
-      },
-      "liability": {
-        "title": "7. Ansvarsbegränsning",
-        "description": "Quanors ansvar är begränsat till det belopp som betalats för tjänster under de 12 månader som föregick eventuella anspråk. Vi är inte ansvariga för investeringsförluster, marknadsvolatilitet eller beslut fattade baserat på våra AI-insikter. Våra tjänster tillhandahålls \"som de är\" utan garantier."
-      },
-      "governing": {
-        "title": "8. Tillämplig lag",
-        "description": "Dessa villkor regleras av svensk lag. Eventuella tvister kommer att lösas i Stockholms domstolar, Sverige."
-      },
-      "contact": {
-        "title": "9. Kontaktinformation",
-        "description": "För frågor om dessa användarvillkor, kontakta oss på:",
-        "email": "E-post: legal@quanor.com",
-        "address": "Adress: Klarabergsviadukten 63, 111 64 Stockholm, Sverige"
       }
     },
     "cookies": {
@@ -449,8 +449,16 @@
           "title": "Vilka nödvändiga cookies vi använder",
           "description": "Nedan visas exempel på nödvändiga cookies som kan sättas av vår webbplats:",
           "items": [
-            { "name": "session_id", "purpose": "Upprätthåller säker inloggad session", "duration": "Sessionsbaserad" },
-            { "name": "csrf_token", "purpose": "Skyddar formulär mot CSRF-attacker", "duration": "Sessionsbaserad" }
+            {
+              "name": "session_id",
+              "purpose": "Upprätthåller säker inloggad session",
+              "duration": "Sessionsbaserad"
+            },
+            {
+              "name": "csrf_token",
+              "purpose": "Skyddar formulär mot CSRF-attacker",
+              "duration": "Sessionsbaserad"
+            }
           ]
         },
         "updates": {
