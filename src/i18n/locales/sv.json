@@ -109,7 +109,7 @@
       "reportSpeed": "≈1,5\u202Fmin",
       "reportSpeedLabel": "Rapportanalystid",
       "accuracy": "99\u202F%",
-      "accuracyLabel": "Mätprecision"
+      "accuracyLabel": "Precision i nyckeltal"
     },
     "values": {
       "innovation": {
