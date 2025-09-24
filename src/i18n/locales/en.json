@@ -104,11 +104,11 @@
     "stats": {
       "companies": "900+",
       "companiesLabel": "Swedish companies",
-      "prSpeed": "20s",
-      "prSpeedLabel": "PR analysis speed",
-      "reportSpeed": "1.5min",
-      "reportSpeedLabel": "Report analysis",
-      "accuracy": "99%",
+      "prSpeed": "20\u202Fs",
+      "prSpeedLabel": "PR analysis time",
+      "reportSpeed": "1.5\u202Fmin",
+      "reportSpeedLabel": "Report analysis time",
+      "accuracy": "99\u202F%",
       "accuracyLabel": "Key metrics accuracy"
     },
     "values": {
@@ -413,11 +413,11 @@
           },
           "firstParty": {
             "title": "First-party cookies",
-            "description": "Set directly by Quanor for essential purposes only. We do not use analytics or performance cookies."
+            "description": "Set directly by Quanor for essential purposes only. We do not use analytic or performance cookies."
           },
           "thirdParty": {
             "title": "Third-party cookies",
-            "description": "We do not use third-party cookies. If this changes, we will update this policy in advance."
+            "description": "We do not use third-party cookies or third-party tracking via cookies."
           }
         },
         "consent": {
@@ -443,14 +443,22 @@
         },
         "thirdParty": {
           "title": "Third-party services",
-          "description": "We do not use third-party cookies or third-party tracking via cookies."
+          "description": "We do not use third-party cookies or tracking via cookies."
         },
         "necessaryList": {
           "title": "Which essential cookies we use",
           "description": "Below are examples of essential cookies that may be set by our website:",
           "items": [
-            { "name": "session_id", "purpose": "Maintains secure logged-in session", "duration": "Session-based" },
-            { "name": "csrf_token", "purpose": "Protects forms against CSRF attacks", "duration": "Session-based" }
+            {
+              "name": "session_id",
+              "purpose": "Maintains secure logged-in session",
+              "duration": "Session-based"
+            },
+            {
+              "name": "csrf_token",
+              "purpose": "Protects forms against CSRF attacks",
+              "duration": "Session-based"
+            }
           ]
         },
         "updates": {

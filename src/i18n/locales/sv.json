@@ -104,12 +104,12 @@
     "stats": {
       "companies": "900+",
       "companiesLabel": "Svenska företag",
-      "prSpeed": "20s",
-      "prSpeedLabel": "PR-analyshastighet",
-      "reportSpeed": "1.5min",
+      "prSpeed": "20\u202Fs",
+      "prSpeedLabel": "PR-analystid",
+      "reportSpeed": "1,5\u202Fmin",
       "reportSpeedLabel": "Rapportanalys",
-      "accuracy": "99%",
-      "accuracyLabel": "Träffsäkerhet i nyckeltal"
+      "accuracy": "99\u202F%",
+      "accuracyLabel": "Mätprecison"
     },
     "values": {
       "innovation": {
@@ -287,13 +287,14 @@
             "title": "Kontoansvaret",
             "description": "Du är ansvarig för att upprätthålla konfidentialiteten för dina kontoinloggningsuppgifter och för alla aktiviteter under ditt konto."
           },
-        "acceptable": {
-          "title": "Acceptabel användning",
-          "description": "Du samtycker till att endast använda våra tjänster för lagliga ändamål och i enlighet med dessa villkor. Du får inte försöka reverse engineer, hacka eller missbruka våra AI-system."
-        },
-        "data": {
-          "title": "Datanoggrannhet",
-          "description": "Du är ansvarig för att tillhandahålla korrekt information och upprätthålla noggrannheten av dina kontodata."
+          "acceptable": {
+            "title": "Acceptabel användning",
+            "description": "Du samtycker till att endast använda våra tjänster för lagliga ändamål och i enlighet med dessa villkor. Du får inte försöka reverse engineer, hacka eller missbruka våra AI-system."
+          },
+          "data": {
+            "title": "Datanoggrannhet",
+            "description": "Du är ansvarig för att tillhandahålla korrekt information och upprätthålla noggrannheten av dina kontodata."
+          }
         }
       },
       "disclaimer": {
@@ -372,100 +373,99 @@
         "email": "E-post: legal@quanor.com",
         "address": "Adress: Klarabergsviadukten 63, 111 64 Stockholm, Sverige"
       }
-    }
-  },
-  "cookies": {
-    "title": "Cookie-policy",
-    "lastUpdated": "Senast uppdaterad: 13 september 2025",
-    "sections": {
-      "what": {
-        "title": "Vad är cookies?",
-        "description": "Cookies är små textfiler som placeras på din enhet när du besöker vår webbplats. Vi använder endast nödvändiga cookies för att sidan ska fungera, t.ex. säkerhet, inloggning och grundläggande driftsfunktioner. Våra tjänster är endast informativa och ger inte investeringsrådgivning."
-      },
-      "howWeUse": {
-        "title": "Hur vi använder cookies",
-        "essential": {
-          "title": "Nödvändiga cookies",
-          "description": "Dessa cookies krävs för att vår webbplats ska fungera korrekt. De möjliggör kärnfunktionalitet som säkerhet, sessionshantering, inloggning och tillgänglighet."
+    },
+    "cookies": {
+      "title": "Cookie-policy",
+      "lastUpdated": "Senast uppdaterad: 13 september 2025",
+      "sections": {
+        "what": {
+          "title": "Vad är cookies?",
+          "description": "Cookies är små textfiler som placeras på din enhet när du besöker vår webbplats. Vi använder endast nödvändiga cookies för att sidan ska fungera, t.ex. säkerhet, inloggning och grundläggande driftsfunktioner. Våra tjänster är endast informativa och ger inte investeringsrådgivning."
         },
-        "performance": {
-          "title": "Prestandacookies",
-          "description": "Vi använder inte prestandacookies."
+        "howWeUse": {
+          "title": "Hur vi använder cookies",
+          "essential": {
+            "title": "Nödvändiga cookies",
+            "description": "Dessa cookies krävs för att vår webbplats ska fungera korrekt. De möjliggör kärnfunktionalitet som säkerhet, sessionshantering, inloggning och tillgänglighet."
+          },
+          "performance": {
+            "title": "Prestandacookies",
+            "description": "Vi använder inte prestandacookies."
+          },
+          "functional": {
+            "title": "Funktionella cookies",
+            "description": "Vi använder inte funktionella cookies utöver de som är strikt nödvändiga för att tjänsten ska fungera."
+          },
+          "analytics": {
+            "title": "Analyscookies",
+            "description": "Vi använder inte analyscookies."
+          }
         },
-        "functional": {
-          "title": "Funktionella cookies",
-          "description": "Vi använder inte funktionella cookies utöver de som är strikt nödvändiga för att tjänsten ska fungera."
+        "types": {
+          "title": "Typer av cookies vi använder",
+          "session": {
+            "title": "Sessionscookies",
+            "description": "Tillfälliga cookies som upphör när du stänger din webbläsare. Används för att upprätthålla din session och säkerställa grundläggande funktioner."
+          },
+          "persistent": {
+            "title": "Beständiga cookies",
+            "description": "Kvarstår på din enhet under en begränsad period eller tills du tar bort dem. Används bara om det är nödvändigt, t.ex. för att komma ihåg en säker inloggning."
+          },
+          "firstParty": {
+            "title": "Förstapartscookies",
+            "description": "Sätts direkt av Quanor enbart för nödvändiga ändamål. Vi använder inga analys- eller prestandacookies."
+          },
+          "thirdParty": {
+            "title": "Tredjepartscookies",
+            "description": "Vi använder inga tredjepartscookies. Om detta skulle ändras uppdaterar vi denna policy i förväg."
+          }
         },
-        "analytics": {
-          "title": "Analyscookies",
-          "description": "Vi använder inte analyscookies."
-        }
-      },
-      "types": {
-        "title": "Typer av cookies vi använder",
-        "session": {
-          "title": "Sessionscookies",
-          "description": "Tillfälliga cookies som upphör när du stänger din webbläsare. Används för att upprätthålla din session och säkerställa grundläggande funktioner."
-        },
-        "persistent": {
-          "title": "Beständiga cookies",
-          "description": "Kvarstår på din enhet under en begränsad period eller tills du tar bort dem. Används bara om det är nödvändigt, t.ex. för att komma ihåg en säker inloggning."
-        },
-        "firstParty": {
-          "title": "Förstapartscookies",
-          "description": "Sätts direkt av Quanor enbart för nödvändiga ändamål. Vi använder inga analys- eller prestandacookies."
+        "consent": {
+          "title": "Cookie-samtycke och kontroll",
+          "choices": {
+            "title": "Dina val",
+            "description": "Eftersom vi endast använder nödvändiga cookies visar vi ingen samtyckesbanner. Du kan när som helst hantera och radera cookies via din webbläsare."
+          },
+          "browser": {
+            "title": "Webbläsarkontroller",
+            "description": "De flesta webbläsare låter dig kontrollera cookies genom sina inställningar. Du kan vanligtvis:",
+            "items": [
+              "Visa cookies som lagras på din enhet",
+              "Blockera alla eller specifika cookies",
+              "Radera befintliga cookies",
+              "Ställa in preferenser för framtida cookies"
+            ]
+          },
+          "impact": {
+            "title": "Påverkan av att inaktivera cookies",
+            "description": "Om du blockerar nödvändiga cookies kan vissa delar av vår webbplats sluta fungera, till exempel inloggning och säker session."
+          }
         },
         "thirdParty": {
-          "title": "Tredjepartscookies",
-          "description": "Vi använder inga tredjepartscookies. Om detta skulle ändras uppdaterar vi denna policy i förväg."
-        }
-      },
-      "consent": {
-        "title": "Cookie-samtycke och kontroll",
-        "choices": {
-          "title": "Dina val",
-          "description": "Eftersom vi endast använder nödvändiga cookies visar vi ingen samtyckesbanner. Du kan när som helst hantera och radera cookies via din webbläsare."
+          "title": "Tredjepartstjänster",
+          "description": "Vi använder inga tredjepartscookies eller tredjepartsspårning via cookies."
         },
-        "browser": {
-          "title": "Webbläsarkontroller",
-          "description": "De flesta webbläsare låter dig kontrollera cookies genom sina inställningar. Du kan vanligtvis:",
+        "necessaryList": {
+          "title": "Vilka nödvändiga cookies vi använder",
+          "description": "Nedan visas exempel på nödvändiga cookies som kan sättas av vår webbplats:",
           "items": [
-            "Visa cookies som lagras på din enhet",
-            "Blockera alla eller specifika cookies",
-            "Radera befintliga cookies",
-            "Ställa in preferenser för framtida cookies"
+            { "name": "session_id", "purpose": "Upprätthåller säker inloggad session", "duration": "Sessionsbaserad" },
+            { "name": "csrf_token", "purpose": "Skyddar formulär mot CSRF-attacker", "duration": "Sessionsbaserad" }
           ]
         },
-        "impact": {
-          "title": "Påverkan av att inaktivera cookies",
-          "description": "Om du blockerar nödvändiga cookies kan vissa delar av vår webbplats sluta fungera, till exempel inloggning och säker session."
+        "updates": {
+          "title": "Uppdateringar av denna policy",
+          "description": "Vi kan uppdatera denna cookie-policy när våra tekniska lösningar ändras eller av juridiska skäl. Datumet \"Senast uppdaterad\" uppdateras vid varje väsentlig ändring."
+        },
+        "contact": {
+          "title": "Kontakta oss",
+          "description": "Om du har frågor om vår användning av cookies, kontakta oss på:",
+          "email": "E-post: privacy@quanor.com",
+          "address": "Adress: Klarabergsviadukten 63, 111 64 Stockholm, Sverige"
         }
-      },
-      "thirdParty": {
-        "title": "Tredjepartstjänster",
-        "description": "Vi använder inga tredjepartscookies eller tredjepartsspårning via cookies."
-      },
-      "necessaryList": {
-        "title": "Vilka nödvändiga cookies vi använder",
-        "description": "Nedan visas exempel på nödvändiga cookies som kan sättas av vår webbplats:",
-        "items": [
-          { "name": "session_id", "purpose": "Upprätthåller säker inloggad session", "duration": "Sessionsbaserad" },
-          { "name": "csrf_token", "purpose": "Skyddar formulär mot CSRF-attacker", "duration": "Sessionsbaserad" }
-        ]
-      },
-      "updates": {
-        "title": "Uppdateringar av denna policy",
-        "description": "Vi kan uppdatera denna cookie-policy när våra tekniska lösningar ändras eller av juridiska skäl. Datumet \"Senast uppdaterad\" uppdateras vid varje väsentlig ändring."
-      },
-      "contact": {
-        "title": "Kontakta oss",
-        "description": "Om du har frågor om vår användning av cookies, kontakta oss på:",
-        "email": "E-post: privacy@quanor.com",
-        "address": "Adress: Klarabergsviadukten 63, 111 64 Stockholm, Sverige"
       }
     }
-  }
-},
+  },
   "notFound": {
     "title": "404",
     "message": "Oops! Sidan kunde inte hittas"
