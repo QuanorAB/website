@@ -416,8 +416,8 @@
             "description": "Sätts direkt av Quanor enbart för nödvändiga ändamål. Vi använder inga analys- eller prestandacookies."
           },
           "thirdParty": {
-            "title": "Tredjepartstjänster",
-            "description": "Vi använder inga tredjepartscookies eller tredjepartsspårning via cookies."
+            "title": "Tredjepartscookies",
+            "description": "Vi använder inga tredjepartscookies. Om detta skulle ändras uppdaterar vi denna policy i förväg."
           }
         },
         "consent": {
