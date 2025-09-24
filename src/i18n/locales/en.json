@@ -209,6 +209,19 @@
             "Detect and prevent fraud or unauthorized access"
           ]
         },
+        "legalBasis": {
+          "title": "Legal basis",
+          "items": [
+            "Contract: To provide and administer the service",
+            "Legitimate interest: To improve models and prevent abuse",
+            "Legal obligation: To comply with financial and regulatory requirements",
+            "Consent: When we explicitly request it (e.g., certain communications)"
+          ]
+        },
+        "controller": {
+          "title": "Data controller",
+          "description": "Quanor AB (Reg. No. 559497-1482) is the data controller. Contact: privacy@quanor.com"
+        },
         "informationSharing": {
           "title": "3. Information sharing and disclosure",
           "description": "We do not sell, trade or otherwise transfer your personal information to third parties except in the following circumstances:",
@@ -285,14 +298,27 @@
         },
         "disclaimer": {
           "title": "4. Investment and information disclaimer",
-          "critical": "CRITICAL DISCLAIMER: Quanor provides informational services only. We do NOT provide financial, investment or legal advice.",
+          "critical": "CRITICAL DISCLAIMER: Quanor AB (Reg. No. 559497-1482) provides informational services only. We do NOT provide financial, investment or legal advice.",
           "items": [
             "No investment advice: Our insights and analysis do not constitute investment recommendations or offers to buy or sell securities",
             "No warranties: We make no warranties or representations regarding the accuracy, completeness or reliability of the information provided",
-            "Sentiment labels: Sentiment labels from Quanor must not be considered buy or sell suggestions, but rather a general view of how our AI perceives the information",
+            "Sentiment labels: Sentiment labels from Quanor are not buy/sell suggestions. “Positive”/“Negative”/“Neutral” reflect how our AI perceives that a news item or information is likely to affect the company’s stock price in the short term (up to about one week). This is not a full assessment of the company, and other market participants may reach different conclusions or use different time horizons.",
             "Risk warning: All investments carry risk of loss. Past performance does not guarantee future results",
             "Professional advice: You should consult qualified financial advisors before making investment decisions",
-            "Accuracy metric: Our 99% metric accuracy refers to data processing capability, not investment outcomes or market forecasts"
+            "Accuracy metric: Our 99% metric precision is based on historical evaluation in our internal testing against other validated sources and does not guarantee future results, market developments or forecasts.",
+            "Informational only: All information is provided for educational and informational purposes and should not be considered personalized financial advice",
+            "General nature: Any analyses, signals, sentiment labels or market insights are general in nature and do not take into account your personal financial situation, objectives or risk profile",
+            "Licensing: Quanor AB is not a licensed investment firm and is not subject to the Swedish Financial Supervisory Authority’s (Finansinspektionen) authorization requirement for advisory services",
+            "Interpretation: If any content could be interpreted as an investment recommendation, it shall be deemed general and non-personalized and is subject to this disclaimer",
+            "AI limitations: AI-generated analyses may contain errors, bias or be incomplete and should not be the sole basis for investment decisions without additional professional advice",
+            "Availability and outages: The service is provided without a guarantee of uninterrupted availability. Disruptions, maintenance, third-party failures or other technical issues may cause interruptions, delays or data errors. To the extent permitted by applicable law, Quanor AB is not liable for damages or losses arising from such outages.",
+            "Coverage: Quanor AB does not guarantee PR, report or pre-report analysis for every company a user follows. This is an ambition and may be affected by, among other things, data availability, issuer communications, market conditions, technical constraints and internal priorities.",
+            "Responsible analyst: Unless otherwise stated in connection with a publication, the responsible analyst for published material is Vilhelm Niklasson, Chief Operating Officer (COO) at Quanor AB.",
+            "Conflicts of interest: Quanor AB always discloses relevant conflicts of interest before or in direct connection with publication. Currently, Edvin Malmgård, Chief Commercial Officer (CCO) at Quanor AB, is Head of IR at Raketech and a board member of Adverty. He holds less than 1% of the shares in both companies. This does not affect Quanor’s analysis but is disclosed in accordance with good market practice.",
+            "MAR/EU compliance: If any content falls under Article 20 of MAR or Commission Delegated Regulation (EU) 2016/958, Quanor AB will, at publication, state the publishing entity, responsible analyst, date/time, instruments/issuers concerned, applied methodology, sources, assumptions and relevant conflicts of interest, and will maintain an update and withdrawal policy.",
+            "MiFID II: All Quanor AB content is general market information and should not be interpreted as a personal recommendation under MiFID II.",
+            "Updates and validity: Quanor updates or withdraws analyses when material new information arises. The timestamp indicates when the analysis was last updated.",
+            "Jurisdictions: This material is not directed at jurisdictions where distribution or use would be contrary to local law."
           ]
         },
         "subscription": {
@@ -334,7 +360,7 @@
         },
         "liability": {
           "title": "7. Limitation of liability",
-          "description": "Quanor's liability is limited to the amount paid for services in the 12 months preceding any claim. We are not liable for investment losses, market volatility or decisions made based on our AI insights. Our services are provided \"as is\" without warranties."
+          "description": "Quanor’s liability is limited to the amount paid for services in the 12 months preceding any claim. We are not liable for investment losses, market volatility or decisions made based on our AI insights. Our services are provided \"as is\" without warranties."
         },
         "governing": {
           "title": "8. Governing law",
@@ -399,21 +425,29 @@
           "choices": {
             "title": "Your choices",
             "description": "Since we only use essential cookies, we do not display a consent banner. You can manage and delete cookies at any time through your browser."
-          },
-          "browser": {
-            "title": "Browser controls",
-            "description": "Most browsers allow you to control cookies through their settings. You can usually:",
-            "items": [
-              "View cookies stored on your device",
-              "Block all or specific cookies",
-              "Delete existing cookies",
-              "Set preferences for future cookies"
-            ]
-          },
-          "impact": {
-            "title": "Impact of disabling cookies",
-            "description": "If you block essential cookies, parts of our website may stop working, such as login and secure sessions."
           }
+        },
+        "browserControls": {
+          "title": "Browser controls",
+          "description": "Most browsers allow you to control cookies through their settings. You can usually:",
+          "items": [
+            "View cookies stored on your device",
+            "Block all or specific cookies",
+            "Delete existing cookies",
+            "Set preferences for future cookies"
+          ]
+        },
+        "typesList": {
+          "title": "Cookie types overview",
+          "items": [
+            "Session cookies: Expire when you close the browser",
+            "Persistent cookies: Remain for a limited period or until deleted",
+            "First-party cookies: Set by Quanor for essential purposes"
+          ]
+        },
+        "impact": {
+          "title": "Impact of disabling cookies",
+          "description": "If you block essential cookies, parts of our website may stop working, such as login and secure sessions."
         },
         "thirdParty": {
           "title": "Third-party services",
@@ -464,6 +498,6 @@
       "terms": "Terms of service",
       "cookies": "Cookie policy"
     },
-    "copyright": "© 2025 Quanor. All rights reserved."
+    "copyright": "© 2025 Quanor AB (Reg. No. 559497-1482). All rights reserved."
   }
 }
