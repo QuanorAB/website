@@ -414,10 +414,6 @@
           "firstParty": {
             "title": "First-party cookies",
             "description": "Set directly by Quanor for essential purposes only. We do not use analytics or performance cookies."
-          },
-          "thirdParty": {
-            "title": "Third-party cookies",
-            "description": "We do not use third-party cookies. If this changes, we will update this policy in advance."
           }
         },
         "consent": {
