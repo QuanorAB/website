@@ -414,6 +414,10 @@
           "firstParty": {
             "title": "First-party cookies",
             "description": "Set directly by Quanor for essential purposes only. We do not use analytics or performance cookies."
+          },
+          "thirdParty": {
+            "title": "Third-party cookies",
+            "description": "We do not use third-party cookies. If this changes, we will update this policy in advance."
           }
         },
         "consent": {
@@ -421,29 +425,21 @@
           "choices": {
             "title": "Your choices",
             "description": "Since we only use essential cookies, we do not display a consent banner. You can manage and delete cookies at any time through your browser."
+          },
+          "browser": {
+            "title": "Browser controls",
+            "description": "Most browsers allow you to control cookies through their settings. You can usually:",
+            "items": [
+              "View cookies stored on your device",
+              "Block all or specific cookies",
+              "Delete existing cookies",
+              "Set preferences for future cookies"
+            ]
+          },
+          "impact": {
+            "title": "Impact of disabling cookies",
+            "description": "If you block essential cookies, parts of our website may stop working, such as login and secure sessions."
           }
-        },
-        "browserControls": {
-          "title": "Browser controls",
-          "description": "Most browsers allow you to control cookies through their settings. You can usually:",
-          "items": [
-            "View cookies stored on your device",
-            "Block all or specific cookies",
-            "Delete existing cookies",
-            "Set preferences for future cookies"
-          ]
-        },
-        "typesList": {
-          "title": "Cookie types overview",
-          "items": [
-            "Session cookies: Expire when you close the browser",
-            "Persistent cookies: Remain for a limited period or until deleted",
-            "First-party cookies: Set by Quanor for essential purposes"
-          ]
-        },
-        "impact": {
-          "title": "Impact of disabling cookies",
-          "description": "If you block essential cookies, parts of our website may stop working, such as login and secure sessions."
         },
         "thirdParty": {
           "title": "Third-party services",
