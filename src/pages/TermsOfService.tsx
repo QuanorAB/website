@@ -6,14 +6,14 @@ import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
 
 const TermsOfService = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": `${t('legal.terms.title')} - Quanor AB`,
     "description": "Quanor AB terms of service for AI-powered financial insights platform and Swedish equity analysis services.",
-    "url": "https://quanor.com/terms"
+    "url": "https://www.quanor.com/terms"
   };
 
   return (
@@ -22,7 +22,7 @@ const TermsOfService = () => {
         title={`${t('legal.terms.title')} - Quanor AB | AI financial insights terms`}
         description="Quanor AB terms of service for AI-powered financial insights platform and Swedish equity analysis services."
         keywords="Quanor terms, service agreement, AI financial terms, Swedish fintech terms"
-        canonical="https://quanor.com/terms"
+        canonical="https://www.quanor.com/terms"
         structuredData={structuredData}
       />
       <div className="min-h-screen bg-background">

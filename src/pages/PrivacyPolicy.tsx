@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
     "@type": "WebPage",
     "name": `${t('legal.privacy.title')} - Quanor AB`,
     "description": "Quanor AB privacy policy detailing how we collect, use, and protect your personal information in our AI-powered financial insights services.",
-    "url": "https://quanor.com/privacy"
+    "url": "https://www.quanor.com/privacy"
   };
 
   return (
@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
         title={`${t('legal.privacy.title')} - Quanor AB | data protection & financial insights`}
         description="Quanor AB privacy policy detailing how we collect, use, and protect your personal information in our AI-powered financial insights services for Swedish equity analysis."
         keywords="Quanor privacy policy, data protection, GDPR compliance, financial data security, Swedish fintech privacy"
-        canonical="https://quanor.com/privacy"
+        canonical="https://www.quanor.com/privacy"
         structuredData={structuredData}
       />
       <div className="min-h-screen bg-background">
