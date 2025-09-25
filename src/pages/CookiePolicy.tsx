@@ -13,7 +13,7 @@ const CookiePolicy = () => {
     "@type": "WebPage",
     "name": `${t('legal.cookies.title')} - Quanor AB`,
     "description": "Quanor AB cookie policy explaining how we use cookies in our AI-powered financial insights platform.",
-    "url": "https://quanor.com/cookies"
+    "url": "https://www.quanor.com/cookies"
   };
 
   return (
@@ -22,7 +22,7 @@ const CookiePolicy = () => {
         title={`${t('legal.cookies.title')} - Quanor AB | cookie usage & data privacy`}
         description="Quanor AB cookie policy explaining how we use cookies in our AI-powered financial insights platform."
         keywords="Quanor cookies, cookie policy, data privacy, website cookies, Swedish fintech"
-        canonical="https://quanor.com/cookies"
+        canonical="https://www.quanor.com/cookies"
         structuredData={structuredData}
       />
       <div className="min-h-screen bg-background">

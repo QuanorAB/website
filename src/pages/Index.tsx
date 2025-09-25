@@ -16,7 +16,7 @@ const Index = () => {
     "@type": "WebPage",
     "name": "Quanor - AI-powered financial insights | Swedish equity analysis",
     "description": "Quanor AB leverages AI and LLM technology for Swedish equity analysis and financial insights. Real-time market insights, PR analysis, and investment tools.",
-    "url": "https://quanor.com",
+    "url": "https://www.quanor.com/",
     "mainEntity": {
       "@type": "Organization",
       "name": "Quanor AB",
@@ -44,7 +44,7 @@ const Index = () => {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://quanor.com"
+          "item": "https://www.quanor.com/"
         }
       ]
     }
@@ -56,7 +56,7 @@ const Index = () => {
         title="Quanor - AI-powered financial insights | Swedish equity analysis & investment tools"
         description="Quanor AB leverages AI and LLM technology for Swedish equity analysis and financial insights. Based in Stockholm, we provide real-time market insights, PR analysis, and investment tools for professionals."
         keywords="Quanor, Quanor AB, Quanor Finance, Quanor AI, Quanor Stockholm, Quanor Analysis, Quanor finans, Quanor aktier, Quanor aktieanalys, aktieanalys AI, aktieanalys LLM, svensk aktieanalys, AI finansanalys, Stockholm fintech, svenska aktier, marknadsanalys, investeringsverktyg, finansiell intelligens, real-time aktieanalys, PR analys, rapportanalys, makroanalys Sverige"
-        canonical="https://quanor.com/"
+        canonical="https://www.quanor.com/"
         structuredData={structuredData}
       />
       <SkipLink />

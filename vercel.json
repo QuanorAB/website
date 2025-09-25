@@ -1,5 +1,32 @@
 {
+  "redirects": [
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "quanor.com" }],
+      "destination": "https://www.quanor.com/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "quanor.com" }],
+      "destination": "https://www.quanor.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/((?!api|.*\\.|$).+)/",
+      "destination": "/$1",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/((?!api|.*\\.).*)", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" }
+      ]
+    }
   ]
 }
