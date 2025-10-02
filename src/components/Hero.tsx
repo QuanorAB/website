@@ -46,12 +46,12 @@ const Hero = () => {
     try {
       if (window.top !== window.self) {
         e.preventDefault();
-        window.location.href = "https://app.quanor.com/register";
+        window.location.href = "https://app.quanor.com/register?stripePriceId=price_1SAy2rRfrQoXouvpBTrgh9ZW&trialPeriod=true&paymentMethod=stripe&packageType=trial&packageName=Insights+Essential+-+Free+Trial&packageDescription=0+kr+for+first+14+days,+then+99+kr/month";
       }
     } catch (err) {
       // Fallback
       e.preventDefault();
-      window.location.href = "https://app.quanor.com/register";
+      window.location.href = "https://app.quanor.com/register?stripePriceId=price_1SAy2rRfrQoXouvpBTrgh9ZW&trialPeriod=true&paymentMethod=stripe&packageType=trial&packageName=Insights+Essential+-+Free+Trial&packageDescription=0+kr+for+first+14+days,+then+99+kr/month";
     }
   };
 
@@ -99,7 +99,7 @@ const Hero = () => {
                 asChild
               >
                 <a 
-                  href="https://app.quanor.com/register" 
+                  href="https://app.quanor.com/register?stripePriceId=price_1SAy2rRfrQoXouvpBTrgh9ZW&trialPeriod=true&paymentMethod=stripe&packageType=trial&packageName=Insights+Essential+-+Free+Trial&packageDescription=0+kr+for+first+14+days,+then+99+kr/month" 
                   className="flex items-center justify-center relative z-10"
                   onClick={handleRegisterClick}
                 >

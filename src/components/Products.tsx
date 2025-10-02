@@ -108,31 +108,52 @@ const Products = () => {
                   ))}
                 </ul>
                 
-                <Button 
-                  variant={tier.buttonVariant}
-                  className="w-full group mobile-optimized"
-                  asChild
-                >
-                  <a 
-                    href="https://app.quanor.com/register" 
-                    className="flex items-center justify-center"
-                    aria-label={`${t('products.getStarted')} - ${tier.name} plan`}
-                    onClick={(e) => {
-                      try {
-                        if (window.top !== window.self) {
-                          e.preventDefault();
-                          window.location.href = "https://app.quanor.com/register";
-                        }
-                      } catch {
-                        e.preventDefault();
-                        window.location.href = "https://app.quanor.com/register";
-                      }
-                    }}
+                <div className="space-y-3">
+                  <Button 
+                    variant={tier.buttonVariant}
+                    className="w-full group mobile-optimized"
+                    disabled={tier.id === 'free'}
+                    asChild={tier.id !== 'free'}
                   >
-                    {t('products.getStarted')}
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </a>
-                </Button>
+                    {tier.id === 'free' ? (
+                      <span className="flex items-center justify-center opacity-50 cursor-not-allowed">
+                        {t('products.getStarted')}
+                        <ArrowRight className="ml-2 w-4 h-4" />
+                      </span>
+                    ) : (
+                      <a 
+                        href="https://app.quanor.com/register?stripePriceId=price_1SAy2rRfrQoXouvpBTrgh9ZW&trialPeriod=true&paymentMethod=stripe&packageType=trial&packageName=Insights+Essential+-+Free+Trial&packageDescription=0+kr+for+first+14+days,+then+99+kr/month" 
+                        className="flex items-center justify-center"
+                        aria-label={`${t('products.getStarted')} - ${tier.name} plan`}
+                        onClick={(e) => {
+                          try {
+                            if (window.top !== window.self) {
+                              e.preventDefault();
+                              window.location.href = "https://app.quanor.com/register?stripePriceId=price_1SAy2rRfrQoXouvpBTrgh9ZW&trialPeriod=true&paymentMethod=stripe&packageType=trial&packageName=Insights+Essential+-+Free+Trial&packageDescription=0+kr+for+first+14+days,+then+99+kr/month";
+                            }
+                          } catch {
+                            e.preventDefault();
+                            window.location.href = "https://app.quanor.com/register?stripePriceId=price_1SAy2rRfrQoXouvpBTrgh9ZW&trialPeriod=true&paymentMethod=stripe&packageType=trial&packageName=Insights+Essential+-+Free+Trial&packageDescription=0+kr+for+first+14+days,+then+99+kr/month";
+                          }
+                        }}
+                      >
+                        {t('products.getStarted')}
+                        <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </a>
+                    )}
+                  </Button>
+                  
+                  {tier.id === 'essential' && (
+                    <div className="text-center">
+                      <a 
+                        href="https://app.quanor.com/register?stripePriceId=price_1SAy2rRfrQoXouvpBTrgh9ZW&allowPromotionCodes=true&paymentMethod=stripe&packageType=promo&packageName=Insights+Essential+-+Promo+Code&packageDescription=Apply+your+promo+code+in+the+Stripe+Checkout+in+the+next+step" 
+                        className="text-sm text-muted-foreground hover:text-primary transition-colors underline"
+                      >
+                        {t('products.promoCode')}
+                      </a>
+                    </div>
+                  )}
+                </div>
               </CardContent>
             </Card>
           ))}

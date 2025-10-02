@@ -40,7 +40,7 @@
     },
     "essential": {
       "name": "Essential",
-      "price": "189 kr/month",
+      "price": "99 kr/month",
       "description": "Advanced AI insights for serious investors and professionals",
       "features": [
         "Expanded market analysis",
@@ -51,6 +51,7 @@
     },
     "getStarted": "Sign up",
     "mostPopular": "Most popular",
+    "promoCode": "Have a promo code? Click here to get started",
     "whyChoose": "Why choose Quanor?",
     "benefits": {
       "ai": {
@@ -325,7 +326,7 @@
           "title": "5. Subscription and payment",
           "billing": {
             "title": "Billing",
-            "description": "Subscription fees are billed in Swedish kronor (SEK). The Essential plan is 189 kr/month, billed monthly in advance."
+            "description": "Subscription fees are billed in Swedish kronor (SEK). The Essential plan is 99 kr/month, billed monthly in advance."
           },
           "cancellation": {
             "title": "Cancellation",

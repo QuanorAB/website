@@ -40,7 +40,7 @@
     },
     "essential": {
       "name": "Essential",
-      "price": "189 kr/månad",
+      "price": "99 kr/månad",
       "description": "Avancerade AI-insikter för seriösa investerare och professionella",
       "features": [
         "Utökad marknadsanalys",
@@ -51,6 +51,7 @@
     },
     "getStarted": "Registrera dig",
     "mostPopular": "Mest populär",
+    "promoCode": "Har du en kampanjkod? Klicka här för att komma igång",
     "whyChoose": "Varför välja Quanor?",
     "benefits": {
       "ai": {
@@ -325,7 +326,7 @@
           "title": "5. Prenumeration och betalning",
           "billing": {
             "title": "Fakturering",
-            "description": "Prenumerationsavgifter faktureras i svenska kronor (SEK). Essential-planen kostar 189 kr/månad, faktureras månadsvis i förväg."
+            "description": "Prenumerationsavgifter faktureras i svenska kronor (SEK). Essential-planen kostar 99 kr/månad, faktureras månadsvis i förväg."
           },
           "cancellation": {
             "title": "Uppsägning",

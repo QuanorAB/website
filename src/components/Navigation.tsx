@@ -80,7 +80,7 @@ const Navigation = () => {
                 className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary ml-2"
                 asChild
               >
-                <a href="https://app.quanor.com/register">
+                <a href="https://app.quanor.com/register?stripePriceId=price_1SAy2rRfrQoXouvpBTrgh9ZW&trialPeriod=true&paymentMethod=stripe&packageType=trial&packageName=Insights+Essential+-+Free+Trial&packageDescription=0+kr+for+first+14+days,+then+99+kr/month">
                   {t('nav.signUp')}
                 </a>
               </Button>
@@ -150,7 +150,7 @@ const Navigation = () => {
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary"
                   asChild
                 >
-                  <a href="https://app.quanor.com/register">
+                  <a href="https://app.quanor.com/register?stripePriceId=price_1SAy2rRfrQoXouvpBTrgh9ZW&trialPeriod=true&paymentMethod=stripe&packageType=trial&packageName=Insights+Essential+-+Free+Trial&packageDescription=0+kr+for+first+14+days,+then+99+kr/month">
                     {t('nav.signUp')}
                   </a>
                 </Button>
