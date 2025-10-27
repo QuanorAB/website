@@ -25,12 +25,14 @@
     { "source": "/strategies", "destination": "/api/gone" },
     { "source": "/category/uncategorized", "destination": "/api/gone" },
 
+    { "source": "/sv", "destination": "/api/gone" },
     { "source": "/sv/about", "destination": "/api/gone" },
     { "source": "/sv/contact", "destination": "/api/gone" },
     { "source": "/sv/philosophy", "destination": "/api/gone" },
     { "source": "/sv/strategies", "destination": "/api/gone" },
     { "source": "/sv/category/uncategorized", "destination": "/api/gone" },
 
+    { "source": "/en", "destination": "/api/gone" },
     { "source": "/en/about", "destination": "/api/gone" },
     { "source": "/en/contact", "destination": "/api/gone" },
     { "source": "/en/philosophy", "destination": "/api/gone" },
