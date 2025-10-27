@@ -13,11 +13,11 @@
       "permanent": true
     },
 
-    { "source": "/sv/contact", "destination": "/sv", "permanent": true },
-    { "source": "/en/contact", "destination": "/en", "permanent": true },
+    { "source": "/sv/contact", "destination": "/", "permanent": true },
+    { "source": "/en/contact", "destination": "/", "permanent": true },
     { "source": "/contact",    "destination": "/",   "permanent": true },
-    { "source": "/sv/philosophy", "destination": "/sv", "permanent": true },
-    { "source": "/en/philosophy", "destination": "/en", "permanent": true },
+    { "source": "/sv/philosophy", "destination": "/", "permanent": true },
+    { "source": "/en/philosophy", "destination": "/", "permanent": true },
     { "source": "/philosophy", "destination": "/",   "permanent": true },
 
     {
