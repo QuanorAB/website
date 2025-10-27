@@ -1,4 +1,9 @@
 {
+    "routes": [
+    { "src": "^/(about|contact|philosophy|strategies)/?$", "status": 410 },
+    { "src": "^/(sv|en)/(about|contact|philosophy|strategies)/?$", "status": 410 }
+  ],
+  
   "redirects": [
     {
       "source": "/",
@@ -12,23 +17,6 @@
       "destination": "https://www.quanor.com/:path*",
       "permanent": true
     },
-
-    { "source": "/sv/contact", "destination": "/", "permanent": true },
-    { "source": "/en/contact", "destination": "/", "permanent": true },
-    { "source": "/contact",    "destination": "/",   "permanent": true },
-
-    { "source": "/sv/philosophy", "destination": "/", "permanent": true },
-    { "source": "/en/philosophy", "destination": "/", "permanent": true },
-    { "source": "/philosophy", "destination": "/",   "permanent": true },
-    
-    { "source": "/sv/strategies", "destination": "/", "permanent": true },
-    { "source": "/en/strategies", "destination": "/", "permanent": true },
-    { "source": "/strategies",    "destination": "/", "permanent": true },
-
-    { "source": "/sv/about", "destination": "/", "permanent": true },
-    { "source": "/en/about", "destination": "/", "permanent": true },
-    { "source": "/about",    "destination": "/", "permanent": true },
-
     {
       "source": "/((?!api|.*\\.|$).+)/",
       "destination": "/$1",
