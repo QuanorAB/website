@@ -1,9 +1,4 @@
 {
-    "routes": [
-    { "src": "^/(about|contact|philosophy|strategies)/?$", "status": 410 },
-    { "src": "^/(sv|en)/(about|contact|philosophy|strategies)/?$", "status": 410 }
-  ],
-  
   "redirects": [
     {
       "source": "/",
