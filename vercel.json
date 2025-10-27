@@ -19,6 +19,21 @@
     }
   ],
   "rewrites": [
+    { "source": "/about", "destination": "/api/gone" },
+    { "source": "/contact", "destination": "/api/gone" },
+    { "source": "/philosophy", "destination": "/api/gone" },
+    { "source": "/strategies", "destination": "/api/gone" },
+
+    { "source": "/sv/about", "destination": "/api/gone" },
+    { "source": "/sv/contact", "destination": "/api/gone" },
+    { "source": "/sv/philosophy", "destination": "/api/gone" },
+    { "source": "/sv/strategies", "destination": "/api/gone" },
+
+    { "source": "/en/about", "destination": "/api/gone" },
+    { "source": "/en/contact", "destination": "/api/gone" },
+    { "source": "/en/philosophy", "destination": "/api/gone" },
+    { "source": "/en/strategies", "destination": "/api/gone" },
+
     { "source": "/((?!api|.*\\.).*)", "destination": "/index.html" }
   ],
   "headers": [
