@@ -1,0 +1,545 @@
+@import "tailwindcss";
+@import "./design-tokens.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+/* ---------- Theme Tokens (Tailwind v4 @theme) ---------- */
+
+/* Hide Safari/Chrome password reveal icon */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-password-toggle-button {
+  display: none !important;
+}
+
+@layer theme {
+  :root, :host {
+    /* fonts */
+    --font-sans: var(--font-geist-sans, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji");
+    --font-mono: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+
+    /* radii */
+    --radius: 16px;
+    --radius-sm: calc(var(--radius) - 6px);
+    --radius-md: calc(var(--radius) - 4px);
+    --radius-lg: var(--radius);
+    --radius-xl: 1.25rem;
+    --radius-2xl: 1.75rem;
+
+    /* spacing + effects */
+    --blur-xs: 4px;
+    --blur-sm: 8px;
+    --blur-lg: 16px;
+    --shadow-soft: 0 8px 30px rgb(0 0 0 / 0.35);
+    --shadow-ring: 0 0 0 1px var(--border);
+
+    /* brand accent ramp (oklch) */
+    --color-brand-50:  oklch(97% .015 260);
+    --color-brand-100: oklch(92% .02  260);
+    --color-brand-200: oklch(86% .035 265);
+    --color-brand-300: oklch(78% .06  268);
+    --color-brand-400: oklch(60% .18 265);
+    --color-brand-500: #4e6df5; 
+    --color-brand-600: oklch(50% .22 265);
+    --color-brand-700: oklch(47% .12  270);
+    --color-brand-800: oklch(40% .10  270);
+    --color-brand-900: oklch(32% .08  270);
+
+    /* status colors (from your snippet) */
+    --color-amber-500:  oklch(76.9% .188 70.08);
+    --color-green-500:  oklch(72.3% .219 149.579);
+    --color-emerald-500:oklch(69.6% .17  162.48);
+    --color-rose-500:   oklch(64.5% .246 16.439);
+
+    --color-amber-600: oklch(72% .19 70);
+
+    /* ------ LIGHT (default) ------ */
+    --background:    var(--color-bg);
+    --foreground:    var(--color-text);
+    --muted:         var(--color-muted);
+    --muted-foreground: var(--color-muted);
+    --card:          var(--color-surface);
+    --card-foreground: var(--color-text);
+    --popover:       var(--color-surface);
+    --popover-foreground: var(--color-text);
+    --primary:       var(--color-primary);
+    --primary-foreground: var(--color-primary-contrast);
+    --secondary:     var(--color-accent);
+    --secondary-foreground: var(--color-accent-contrast);
+    --accent:        var(--color-accent);
+    --accent-foreground: var(--color-accent-contrast);
+    --border:        color-mix(in oklab, var(--color-text) 16%, transparent);
+    --input:         var(--color-muted);
+    --ring:          var(--color-primary);
+    --success:       var(--color-positive);
+    --warning:       var(--color-warning);
+    --error:         var(--color-negative);
+    
+    --highlight:     oklch(96% .03 250);
+
+    /* Tailwind v4 token mapping -> generates utilities like bg-brand, text-muted, etc. */
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+    --color-success: var(--success);
+    --color-warning: var(--warning);
+    --color-error: var(--error);
+    --color-brand: var(--color-brand-500);
+
+    /* text sizes — smaller sizes aligned with design-tokens.css */
+    --text-xs: 0.625rem;    /* 10px */
+    --text-sm: 0.75rem;     /* 12px */
+    --text-base: 0.875rem;  /* 14px */
+    --text-lg: 1rem;        /* 16px */
+    --text-xl: 1.125rem;    /* 18px */
+    --text-2xl: 1.25rem;    /* 20px */
+    --text-3xl: 1.5rem;     /* 24px */
+    --text-4xl: 1.875rem;   /* 30px */
+    --text-5xl: 2.25rem;    /* 36px */
+    --leading-tight: 1.25;
+    --leading-normal: 1.5;
+    --tracking-tight: -.025em;
+
+    /* scrollbar tokens (LIGHT) */
+    --scrollbar-size: 10px;
+    --scrollbar-track: var(--color-bg);
+    --scrollbar-thumb: var(--color-muted);
+    --scrollbar-thumb-hover: var(--color-primary);
+
+    /* TOC navigation header offset */
+    --header-offset: 6rem;
+
+  }
+
+  /* ------ DARK overrides (using design tokens) ------ */
+  .dark {
+    /* All colors now reference design-tokens.css dark mode values */
+    --background: var(--color-bg);
+    --foreground: var(--color-text);
+    --muted: var(--color-muted);
+    --muted-foreground: var(--color-muted);
+    --card: var(--color-surface);
+    --card-foreground: var(--color-text);
+    --popover: var(--color-surface);
+    --popover-foreground: var(--color-text);
+    --primary: var(--color-primary);
+    --primary-foreground: var(--color-primary-contrast);
+    --secondary: var(--color-accent);
+    --secondary-foreground: var(--color-accent-contrast);
+    --accent: var(--color-accent);
+    --accent-foreground: var(--color-accent-contrast);
+    --border: color-mix(in oklch, var(--color-text) 16%, transparent);
+    --input: var(--color-muted);
+    --ring: var(--color-primary);
+    --success: var(--color-positive);
+    --warning: var(--color-warning);
+    --error: var(--color-negative);
+    
+    --highlight: var(--color-muted);
+
+    /* Keep color-* aliases in sync */
+    --color-background: var(--background);
+    --color-card: var(--card);
+    --color-border: var(--border);
+
+    --scrollbar-track: var(--color-bg);
+    --scrollbar-thumb: var(--color-muted);
+    --scrollbar-thumb-hover: var(--color-primary);
+  }
+
+  /* Expose as Tailwind tokens: */
+  @theme {
+    --font-sans: var(--font-sans);
+    --font-mono: var(--font-mono);
+
+    --radius-sm: var(--radius-sm);
+    --radius: var(--radius-lg);
+    --radius-lg: var(--radius-xl);
+    --radius-xl: var(--radius-2xl);
+
+    --color-background: var(--color-background);
+    --color-foreground: var(--color-foreground);
+    --color-muted: var(--color-muted);
+    --color-muted-foreground: var(--color-muted-foreground);
+    --color-card: var(--color-card);
+    --color-card-foreground: var(--color-card-foreground);
+    --color-popover: var(--color-popover);
+    --color-popover-foreground: var(--color-popover-foreground);
+    --color-primary: var(--color-primary);
+    --color-primary-foreground: var(--color-primary-foreground);
+    --color-secondary: var(--color-secondary);
+    --color-secondary-foreground: var(--color-secondary-foreground);
+    --color-accent: var(--color-accent);
+    --color-accent-foreground: var(--color-accent-foreground);
+    --color-border: var(--color-border);
+    --color-input: var(--color-input);
+    --color-ring: var(--color-ring);
+    --color-success: var(--color-success);
+    --color-warning: var(--color-warning);
+    --color-error: var(--color-error);
+    --color-brand: var(--color-brand);
+    
+    /* Semantic colors from design-tokens.css */
+    --color-positive: var(--color-positive);
+    --color-very-positive: var(--color-very-positive);
+    --color-negative: var(--color-negative);
+    --color-very-negative: var(--color-very-negative);
+    --color-neutral: var(--color-neutral);
+    --color-warning: var(--color-warning);
+    --color-info: var(--color-info);
+    
+    /* Design tokens text sizes */
+    --text-h1: 24px;
+    --text-h2: 20px;
+    --text-h3: 18px;
+    --text-body: 14px;
+    --text-small: 12px;
+    --text-xs-design: 10px;
+  }
+}
+
+/* ---------- Mobile Text Size Adjustments ---------- */
+/* Scale up text sizes on mobile/tablet for better readability */
+@media (max-width: 768px) {
+  :root, :host {
+    /* Scale up text sizes by ~1.15-1.2x for mobile readability */
+    --text-xs: 0.75rem;     /* 12px (was 10px) */
+    --text-sm: 0.875rem;    /* 14px (was 12px) */
+    --text-base: 1rem;      /* 16px (was 14px) */
+    --text-lg: 1.125rem;    /* 18px (was 16px) */
+    --text-xl: 1.25rem;     /* 20px (was 18px) */
+    --text-2xl: 1.5rem;     /* 24px (was 20px) */
+    --text-3xl: 1.75rem;    /* 28px (was 24px) */
+    --text-4xl: 2.125rem;   /* 34px (was 30px) */
+    --text-5xl: 2.5rem;     /* 40px (was 36px) */
+
+    /* Design token text sizes - must be in :root to override properly */
+    --text-h1: 28px;        /* was 24px */
+    --text-h2: 22px;        /* was 20px */
+    --text-h3: 20px;        /* was 18px */
+    --text-body: 16px;      /* was 14px */
+    --text-small: 14px;     /* was 12px */
+    --text-xs-design: 12px; /* was 10px */
+  }
+
+  /* Override design-tokens.css utility classes which have hardcoded font sizes */
+  .text-h1 { font-size: 24px !important; }      /* was 20px */
+  .text-h2 { font-size: 20px !important; }      /* was 16px */
+  .text-h3 { font-size: 18px !important; }      /* was 14px */
+  .text-body { font-size: 14px !important; }    /* was 12px */
+  .text-small { font-size: 13px !important; }   /* was 10px */
+  .text-xs { font-size: 11px !important; }      /* was 8px */
+  .text-mono { font-size: 14px !important; }    /* was 12px */
+  
+  /* Override component utility classes in main.css */
+  .text-xs-design { font-size: 12px !important; }  /* was 10px */
+}
+
+/* ---------- App-level resets / helpers ---------- */
+@layer base {
+  html { 
+    color-scheme: dark light; 
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-offset, 6rem);
+  }
+
+  /* ---------- Text Selection ---------- */
+  ::selection {
+    background-color: color-mix(in oklch, var(--color-primary) 25%, transparent);
+    color: var(--color-text);
+  }
+
+  ::-moz-selection {
+    background-color: color-mix(in oklch, var(--color-primary) 25%, transparent);
+    color: var(--color-text);
+  }
+
+ /* ---------- WebKit (Chrome/Safari/Edge) ---------- */
+  *::-webkit-scrollbar {
+    width: var(--scrollbar-size);
+    height: var(--scrollbar-size);
+  }
+  *::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+  *::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 9999px;
+    border: 2px solid var(--scrollbar-track); /* makes the thumb look thinner */
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+  }
+
+  /* ---------- Firefox ---------- */
+  * {
+    scrollbar-width: thin; /* auto | thin | none */
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  }
+
+  /* glass */
+  .glass {
+    backdrop-filter: blur(var(--blur-lg));
+    -webkit-backdrop-filter: blur(var(--blur-lg));
+    background-color: color-mix(in oklch, var(--color-popover) 65%, transparent);
+    @apply border border-[color:var(--color-border)] shadow-lg;
+  }
+
+  /* focus ring */
+  .focus-ring {
+    @apply outline-none ring-2 ring-[color:var(--color-ring)] ring-offset-0;
+  }
+}
+
+/* ---------- Component crumbs ---------- */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition
+           bg-primary text-primary-foreground hover:opacity-90 active:opacity-100;
+  }
+  .btn-ghost {
+    @apply bg-transparent text-foreground hover:bg-accent/40 border border-transparent;
+  }
+
+  .card {
+    @apply rounded-lg bg-card text-card-foreground border border-[color:var(--color-border)] p-4;
+  }
+
+  .nav-input {
+    @apply w-full rounded-full px-4 py-2 text-sm bg-[color:var(--color-input)]/40
+           border border-[color:var(--color-border)]
+           placeholder:text-muted-foreground/80 focus-visible:ring-2 focus-visible:ring-[color:var(--color-ring)];
+    backdrop-filter: blur(var(--blur-sm));
+    -webkit-backdrop-filter: blur(var(--blur-sm));
+  }
+  .table {
+    @apply w-full text-sm;
+  }
+  .table th {
+    @apply text-left font-medium text-muted-foreground border-b border-[color:var(--color-border)] pb-3;
+  }
+  .table td {
+    @apply py-3 border-b border-[color:var(--color-border)];
+  }
+
+  /* Type pill (neutral by default) */
+  .pill {
+    @apply inline-flex items-center gap-1.5 h-[24px] px-2 rounded-full border text-[11px] border-[color:var(--color-border)] bg-muted/40 text-muted-foreground;
+  }
+
+  /* Metric chips */
+  .chip {
+    @apply inline-flex items-center justify-end gap-1 px-2 py-0.5 rounded-full border text-[11px] h-[24px];
+  }
+
+  .chip-pos {
+    @apply border-[color:var(--color-success)]/30 text-[color:var(--color-success)] bg-[color:var(--color-success)]/10;
+  }
+
+  .chip-neu {
+    @apply border-[color:var(--color-neutral)]/30 text-[color:var(--color-neutral)] bg-[color:var(--color-neutral)]/10;
+  }
+
+  .chip-neg {
+    @apply border-[color:var(--color-error)]/30 text-[color:var(--color-error)] bg-[color:var(--color-error)]/10;
+  }
+
+  .chip-warning {
+    @apply border-[color:var(--color-warning)]/30 text-[color:var(--color-warning)] bg-[color:var(--color-warning)]/10;
+  }
+
+  .subcard {
+    @apply rounded-xl border border-[color:var(--color-border)]/60 bg-muted/20 p-4;
+  }
+
+  .section-label {
+    @apply text-[11px] uppercase tracking-wide text-muted-foreground mb-1;
+  }
+
+  /* Design tokens text utilities */
+  .text-h1 { font-size: var(--text-h1); font-weight: 800; line-height: 1.2; }
+  .text-h2 { font-size: var(--text-h2); font-weight: 700; line-height: 1.3; }
+  .text-h3 { font-size: var(--text-h3); font-weight: 650; line-height: 1.4; }
+  .text-body { font-size: var(--text-body); font-weight: 400; line-height: 1.45; }
+  .text-small { font-size: var(--text-small); font-weight: 400; line-height: 1.4; }
+  .text-xs-design { font-size: var(--text-xs-design); font-weight: 400; line-height: 1.4; }
+
+  /* Subtle interactive lift for rows, chips, and links */
+  .hover-lift {
+    transition: transform .18s cubic-bezier(.2,.8,.2,1), box-shadow .18s cubic-bezier(.2,.8,.2,1), background-color .18s;
+  }
+  .hover-lift:hover,
+  .hover-lift:focus-visible {
+    transform: translateY(-1px);
+    box-shadow: 0 1px 2px rgba(0,0,0,.06), 0 8px 24px -16px rgba(0,0,0,.24);
+  }
+
+  /* Animated underline you can reuse for tabs/links if needed */
+  .underline-slide {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .18s cubic-bezier(.2,.8,.2,1);
+  }
+  .underline-slide:hover,
+  .underline-slide:focus-visible {
+    background-size: 100% 2px;
+  }
+
+  /* Directional fades (for <Transition> names if you add later) */
+  .fade-slide-y-enter-from,
+  .fade-slide-y-leave-to { opacity: 0; transform: translateY(4px); }
+  .fade-slide-y-enter-active,
+  .fade-slide-y-leave-active { transition: all .18s cubic-bezier(.2,.8,.2,1); }
+}
+
+/* Fade+scale for the subscribe button swap */
+.fade-scale-enter-from,
+.fade-scale-leave-to { @apply opacity-0 scale-95; }
+.fade-scale-enter-active,
+.fade-scale-leave-active { @apply transition duration-100 ease-out; }
+
+/* Optional: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .fade-scale-enter-active,
+  .fade-scale-leave-active { transition: none !important; }
+}
+
+
+/* Subtle shimmer for skeletons */
+.skeleton {
+  --shine: linear-gradient(90deg, transparent, rgba(255,255,255,0.06), transparent);
+  background-color: rgba(255,255,255,0.05);
+  position: relative;
+  overflow: hidden;
+}
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background-image: var(--shine);
+  animation: skeleton-shine 1.4s infinite;
+}
+@keyframes skeleton-shine {
+  100% { transform: translateX(100%); }
+}
+
+/* Optional: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .skeleton::after { animation: none; }
+}
+
+
+.news-html { @apply text-foreground/80 text-sm leading-snug font-sans; }
+.news-html strong { @apply text-foreground/80 font-semibold mb-2; }
+.news-html th strong { @apply text-secondary-foreground text-sm leading-snug font-sans; }
+.news-html h1, .news-html h2, .news-html h3 { @apply text-foreground font-bold mt-6 mb-2 text-lg; }
+.news-html p { @apply text-foreground/70 my-3; }
+.news-html em { @apply text-foreground/80 italic; }
+.news-html a { @apply text-primary/80 underline transition-colors duration-200; }
+.news-html a:hover { @apply text-primary/70; }
+.news-html hr { @apply border-t my-4; border-left:none; border-right:none; border-bottom:none; }
+.news-html table { @apply w-max min-w-full max-w-full overflow-x-auto block; }
+.news-html thead { @apply bg-muted-foreground; }
+.news-html th { @apply text-foreground/50 px-3 py-1 font-semibold border-b; white-space:nowrap; }
+.news-html td { @apply px-3 py-1 border-b align-middle; white-space:nowrap; }
+.news-html tr:last-child td { border-bottom:none; }
+.news-html tbody tr:nth-child(odd) { background-color: rgba(31,41,55,.3); }
+.news-html td:nth-child(n+3) { @apply text-right; }
+.news-html tbody { @apply overflow-x-scroll; }
+
+
+.theme-transition {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 200ms;
+}
+
+/* Table divider using accent color - inset line only */
+tbody tr {
+  border-bottom: 1px solid color-mix(in oklch, var(--color-primary) 5%, transparent);
+}
+
+/* Toast customization using design tokens */
+.Vue-Toastification__toast {
+  font-size: 12px !important;
+  background: color-mix(in oklab, var(--color-info) 20%, transparent) !important;
+  color: var(--color-info-contrast) !important;
+  border: 1px solid var(--color-info) !important;
+  backdrop-filter: blur(var(--blur-sm));
+  -webkit-backdrop-filter: blur(var(--blur-sm));
+}
+
+.Vue-Toastification__toast-body {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+}
+
+.Vue-Toastification__content {
+  font-size: 12px !important;
+}
+
+.Vue-Toastification__toast--success {
+  background: color-mix(in oklab, var(--color-positive) 20%, transparent) !important;
+  color: var(--color-positive-contrast) !important;
+  border: 1px solid var(--color-positive) !important;
+  backdrop-filter: blur(var(--blur-sm));
+  -webkit-backdrop-filter: blur(var(--blur-sm));
+}
+
+.Vue-Toastification__toast--error {
+  background: color-mix(in oklab, var(--color-negative) 20%, transparent) !important;
+  color: var(--color-negative-contrast) !important;
+  border: 1px solid var(--color-negative) !important;
+  backdrop-filter: blur(var(--blur-sm));
+  -webkit-backdrop-filter: blur(var(--blur-sm));
+}
+
+.Vue-Toastification__toast--warning {
+  background: color-mix(in oklab, var(--color-warning) 20%, transparent) !important;
+  color: var(--color-warning-contrast) !important;
+  border: 1px solid var(--color-warning) !important;
+  backdrop-filter: blur(var(--blur-sm));
+  -webkit-backdrop-filter: blur(var(--blur-sm));
+}
+
+.Vue-Toastification__toast--info {
+  background: color-mix(in oklab, var(--color-info) 20%, transparent) !important;
+  color: var(--color-info-contrast) !important;
+  border: 1px solid var(--color-info) !important;
+  backdrop-filter: blur(var(--blur-sm));
+  -webkit-backdrop-filter: blur(var(--blur-sm));
+}
+
+/* Toast progress bar */
+.Vue-Toastification__progress-bar {
+  background: var(--color-info-contrast) !important;
+}
+
+/* Toast close button */
+.Vue-Toastification__close-button {
+  color: var(--color-info-contrast) !important;
+}
+
+.Vue-Toastification__close-button:hover {
+  color: var(--color-info-contrast) !important;
+  opacity: 0.8;
+}

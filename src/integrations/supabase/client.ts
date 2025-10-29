@@ -5,16 +5,16 @@ import type { Database } from './types';
 const url = import.meta.env.VITE_SUPABASE_URL as string | undefined;
 const publishable = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string | undefined;
 
-if (!url || !publishable) {
-  throw new Error(
-    'Missing Supabase env vars. Set VITE_SUPABASE_URL and VITE_SUPABASE_PUBLISHABLE_KEY in your .env'
-  );
-}
+// Make Supabase optional for development - only create client if env vars are present
+export const supabase = (url && publishable)
+  ? createClient<Database>(url, publishable, {
+      auth: {
+        storage: localStorage,
+        persistSession: true,
+        autoRefreshToken: true,
+      },
+    })
+  : null;
 
-export const supabase = createClient<Database>(url, publishable, {
-  auth: {
-    storage: localStorage,
-    persistSession: true,
-    autoRefreshToken: true,
-  },
-});
+// Helper to check if Supabase is configured
+export const isSupabaseConfigured = () => !!url && !!publishable;

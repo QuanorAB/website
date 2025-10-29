@@ -1,0 +1,232 @@
+/* 
+ * Quanor Design Tokens
+ * Shared CSS custom properties for consistent theming across all applications
+ * 
+ * Usage: Import this file in your HTML, Vue.js, or email templates
+ * Example: <link rel="stylesheet" href="design-tokens.css">
+ */
+
+ :root {
+  /* Brand Identity */
+  --brand-name: "Quanor";
+  
+  /* Typography */
+  --font-sans: Inter, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  
+  /* Design System Properties */
+  --radius: 12px;
+  --shadow: 0 6px 20px rgba(0,0,0,.12);
+  --gap: 12px;
+  
+  /* LIGHT MODE COLORS */
+  
+  /* Background & Surface */
+  --color-bg: #f5fffe;          /* lightest mint */
+  --color-surface: #fcf8f8ef;     /* soft green surface */
+  --color-surface-overlay: #fcf8f8;     /* soft green surface */
+  --color-text: #00130F;        /* deepest teal for text */
+  --color-muted: #1d5e51e4;       /* mid teal for muted labels */
+  
+  /* Brand Colors */
+  --color-primary: #006a55;     /* brand primary */
+  --color-primary-contrast: #eefffc;
+  --color-primary-soft: #006a551a;  /* 10% opacity primary for subtle UI elements */
+  --color-accent: #3eb164;      /* secondary brand */
+  --color-accent-contrast: #e4f9f6;
+  
+  /* Semantic Colors */
+  --color-positive: #59be7b; /* very positive */
+  --color-positive-contrast: #000000;
+  --color-very-positive: #449e60;    /* success */
+  --color-very-positive-contrast: #001607;
+  --color-negative: #ec7d61;    /* error (brand orange) */
+  --color-negative-contrast: #1E0C00;
+  --color-very-negative: #f54317; /* very negative */
+  --color-very-negative-contrast: #1E0C00;
+  --color-neutral: #7e7e7e;     /* neutral */
+  --color-neutral-contrast: #1E0C00;
+  --color-warning: #ed9c67;     /* soft peach */
+  --color-warning-contrast: #1E0C00;
+  --color-info: #6ca2bf;        /* blue slate */
+  --color-info-contrast: #D4EFFD;
+  
+  /* Background Gradients */
+  --gradient-bg: linear-gradient(135deg, #ffffff 0%, #e4ecebfe 100%);
+}
+
+/* DARK MODE COLORS */
+:root.dark {
+  /* Background & Surface */
+  --color-bg: #202827;          /* dark base */
+  --color-surface: #212421a9;     /* darker surface */
+  --color-surface-overlay: #212421eb;     /* darker surface */
+  --color-text: #fbfdfd;        /* light text */
+  --color-muted: #d9f3eeb8;       /* softer muted */
+  
+  /* Brand Colors */
+  --color-primary: #d2f7f0;     /* deep teal */
+  --color-primary-contrast: #000000;
+  --color-primary-soft: #d2f7f01a;  /* 10% opacity primary for subtle UI elements */
+  --color-accent: #021508;      /* deep green */
+  --color-accent-contrast: #d3fee1;
+  
+  /* Semantic Colors */
+  --color-positive: #4dbe73;
+  --color-positive-contrast: #001607;
+  --color-very-positive: #13933e; /* very positive */
+  --color-very-positive-contrast: #000000;
+  --color-negative: #ec6b6b;
+  --color-negative-contrast: #FFE5D4;
+  --color-very-negative: #fb4c4c; /* very negative */
+  --color-very-negative-contrast: #ffffff;
+  --color-neutral: #6b6b6b;     /* neutral */
+  --color-neutral-contrast: #ffffff;
+  --color-warning: #e19563;
+  --color-warning-contrast: #1E0C00;
+  --color-info: #013E5F;
+  --color-info-contrast: #D4EFFD;
+  
+  /* Background Gradients */
+  --gradient-bg: linear-gradient(135deg, #003451 0%, #021508 100%);
+  --shadow: 0 8px 28px rgba(0,0,0,.35);
+}
+
+/* 
+ * UTILITY CLASSES
+ * Pre-built classes for common design patterns
+ */
+
+/* Typography Scale - Smaller sizes */
+.text-h1 { font-size: 20px; font-weight: 800; line-height: 1.2; }
+.text-h2 { font-size: 16px; font-weight: 700; line-height: 1.3; }
+.text-h3 { font-size: 14px; font-weight: 650; line-height: 1.4; }
+.text-body { font-size: 12px; font-weight: 400; line-height: 1.45; }
+.text-small { font-size: 10px; font-weight: 400; line-height: 1.4; }
+.text-xs { font-size: 8px; font-weight: 400; line-height: 1.4; }
+.text-mono { font-family: var(--font-mono); font-size: 12px; }
+.text-muted { color: var(--color-muted); }
+
+/* Button Styles */
+.btn {
+  border: 0;
+  padding: 9px 12px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-primary-contrast);
+}
+
+.btn-accent {
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-text);
+  outline: 1px dashed color-mix(in oklab, var(--color-text) 35%, transparent);
+}
+
+/* Alert Styles */
+.alert {
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  font-size: 12px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.alert-positive {
+  background: color-mix(in oklab, var(--color-positive) 18%, transparent);
+  color: var(--color-positive-contrast);
+  border: 1px solid var(--color-positive);
+}
+
+.alert-very-positive {
+  background: color-mix(in oklab, var(--color-very-positive) 18%, transparent);
+  color: var(--color-very-positive-contrast);
+  border: 1px solid var(--color-very-positive);
+}
+
+.alert-negative {
+  background: color-mix(in oklab, var(--color-negative) 18%, transparent);
+  color: var(--color-negative-contrast);
+  border: 1px solid var(--color-negative);
+}
+
+.alert-very-negative {
+  background: color-mix(in oklab, var(--color-very-negative) 18%, transparent);
+  color: var(--color-very-negative-contrast);
+  border: 1px solid var(--color-very-negative);
+}
+
+.alert-neutral {
+  background: color-mix(in oklab, var(--color-neutral) 18%, transparent);
+  color: var(--color-neutral-contrast);
+  border: 1px solid var(--color-neutral);
+}
+
+.alert-warning {
+  background: color-mix(in oklab, var(--color-warning) 22%, transparent);
+  color: var(--color-warning-contrast);
+  border: 1px solid var(--color-warning);
+}
+
+.alert-info {
+  background: color-mix(in oklab, var(--color-info) 20%, transparent);
+  color: var(--color-info-contrast);
+  border: 1px solid var(--color-info);
+}
+
+/* Card Styles */
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: 6px;
+  box-shadow: var(--shadow);
+}
+
+/* Code Styles */
+code, pre {
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+pre {
+  background: var(--color-bg);
+  border: 1px solid color-mix(in oklab, var(--color-text) 16%, transparent);
+  border-radius: var(--radius);
+  padding: 8px;
+  overflow: auto;
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--gradient-bg);
+  color: var(--color-text);
+  line-height: 1.45;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+/* Print Styles */
+@media print {
+  .no-print { display: none !important; }
+  body { background: #ffffff !important; }
+  .card { box-shadow: none !important; border: 1px solid #e5e7eb !important; }
+}
