@@ -2,7 +2,12 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -14,7 +19,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        'inter': ['Inter', 'system-ui', 'sans-serif'],
+        sans: ["var(--font-sans)", "Inter", "system-ui", "sans-serif"],
+        mono: ["var(--font-mono)", "ui-monospace", "monospace"],
+        inter: ["Inter", "system-ui", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -22,12 +29,9 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        surface: "hsl(var(--surface))",
-        "surface-elevated": "hsl(var(--surface-elevated))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
-          glow: "hsl(var(--primary-glow))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -44,8 +48,6 @@ export default {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
-          teal: "hsl(var(--accent-teal))",
-          navy: "hsl(var(--accent-navy))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -55,27 +57,79 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        success: "hsl(var(--success))",
-        warning: "hsl(var(--warning))",
+        // Semantic colors from design tokens
+        success: {
+          DEFAULT: "var(--color-positive)",
+          contrast: "var(--color-positive-contrast)",
+        },
+        warning: {
+          DEFAULT: "var(--color-warning)",
+          contrast: "var(--color-warning-contrast)",
+        },
+        error: {
+          DEFAULT: "var(--color-negative)",
+          contrast: "var(--color-negative-contrast)",
+        },
+        info: {
+          DEFAULT: "var(--color-info)",
+          contrast: "var(--color-info-contrast)",
+        },
+        // Direct design token colors (for direct usage)
+        "color-bg": "var(--color-bg)",
+        "color-surface": "var(--color-surface)",
+        "color-surface-overlay": "var(--color-surface-overlay)",
+        "color-text": "var(--color-text)",
+        "color-muted": "var(--color-muted)",
+        "color-primary": "var(--color-primary)",
+        "color-primary-contrast": "var(--color-primary-contrast)",
+        "color-accent": "var(--color-accent)",
+        "color-accent-contrast": "var(--color-accent-contrast)",
+        "color-positive": "var(--color-positive)",
+        "color-very-positive": "var(--color-very-positive)",
+        "color-negative": "var(--color-negative)",
+        "color-very-negative": "var(--color-very-negative)",
+        "color-neutral": "var(--color-neutral)",
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "var(--radius-lg)",
+        md: "var(--radius-md)",
+        sm: "var(--radius-sm)",
+        DEFAULT: "var(--radius)",
+        xl: "var(--radius-xl)",
+        "2xl": "var(--radius-2xl)",
       },
       backgroundImage: {
-        'gradient-primary': 'var(--gradient-primary)',
-        'gradient-hero': 'var(--gradient-hero)',
-        'gradient-card': 'var(--gradient-card)',
+        "gradient-bg": "var(--gradient-bg)",
       },
       boxShadow: {
-        'primary': 'var(--shadow-primary)',
-        'card': 'var(--shadow-card)',
-        'glow': 'var(--shadow-glow)',
+        DEFAULT: "var(--shadow)",
+        soft: "var(--shadow-soft)",
+        ring: "var(--shadow-ring)",
+      },
+      fontSize: {
+        xs: "var(--text-xs)",
+        sm: "var(--text-sm)",
+        base: "var(--text-base)",
+        lg: "var(--text-lg)",
+        xl: "var(--text-xl)",
+        "2xl": "var(--text-2xl)",
+        "3xl": "var(--text-3xl)",
+        "4xl": "var(--text-4xl)",
+        "5xl": "var(--text-5xl)",
+        h1: "var(--text-h1)",
+        h2: "var(--text-h2)",
+        h3: "var(--text-h3)",
+        body: "var(--text-body)",
+        small: "var(--text-small)",
+      },
+      blur: {
+        xs: "var(--blur-xs)",
+        sm: "var(--blur-sm)",
+        lg: "var(--blur-lg)",
       },
       transitionTimingFunction: {
-        'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
-        'spring': 'cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+        smooth: "cubic-bezier(0.4, 0, 0.2, 1)",
+        spring: "cubic-bezier(0.175, 0.885, 0.32, 1.275)",
       },
       keyframes: {
         "accordion-down": {
@@ -128,6 +182,21 @@ export default {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0)" },
         },
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-20px)" },
+        },
+        glow: {
+          from: {
+            boxShadow: "0 0 20px color-mix(in oklab, var(--color-primary) 20%, transparent)",
+          },
+          to: {
+            boxShadow: "0 0 30px color-mix(in oklab, var(--color-primary) 30%, transparent)",
+          },
+        },
+        "skeleton-shine": {
+          "100%": { transform: "translateX(100%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -136,6 +205,8 @@ export default {
         "fade-in": "fade-in 0.3s ease-out",
         "scale-in": "scale-in 0.2s ease-out",
         "slide-in-right": "slide-in-right 0.3s ease-out",
+        float: "float 6s ease-in-out infinite",
+        glow: "glow 3s ease-in-out infinite alternate",
       },
     },
   },

@@ -1,7 +1,7 @@
-import quanorAppDark from "@/assets/quanor-app-dark.png";
-import quanorAppLight from "@/assets/quanor-app-light.png";
-import quanorMobileDark from "@/assets/quanor-mobile-dark.jpg";
-import quanorMobileLight from "@/assets/quanor-mobile-light.jpg";
+import quanorAppDark from "@/assets/app_home_dark.jpg";
+import quanorAppLight from "@/assets/app_home_light.jpg";
+import quanorMobileDark from "@/assets/app_mobile_analysis_dark.jpg";
+import quanorMobileLight from "@/assets/app_mobile_analysis_light.jpg";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { useTheme } from "next-themes";
@@ -147,7 +147,7 @@ const Hero = () => {
                   alt={desktopImageAlt}
                   className="w-full h-auto rounded-2xl transition-all duration-500 group-hover:scale-[1.02]"
                   loading="eager"
-                  fetchPriority="high"
+                  {...({ fetchpriority: "high" } as any)}
                 />
                 
                 {/* Desktop glow overlay */}

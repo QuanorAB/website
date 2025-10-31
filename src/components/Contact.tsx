@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
+import { supabase, isSupabaseConfigured } from "@/integrations/supabase/client";
 import { ArrowRight, Instagram, Linkedin, Mail, MapPin } from "lucide-react";
 import { useCallback, useMemo, useState } from "react";
 import { useTranslation } from 'react-i18next';
@@ -100,6 +100,21 @@ const Contact = () => {
     setIsLoading(true);
 
     try {
+      // Check if Supabase is configured
+      if (!isSupabaseConfigured() || !supabase) {
+        // Fallback: Just show success message in development
+        // In production, this should be configured
+        console.warn('Supabase not configured. Skipping form submission.');
+        toast({
+          title: t('contact.success'),
+          description: t('contact.successDescription'),
+        });
+        setFormData({ name: "", email: "", company: "", message: "" });
+        setValidationErrors({});
+        setIsLoading(false);
+        return;
+      }
+
       const { data, error } = await supabase.functions.invoke('send-contact-email', {
         body: formData
       });

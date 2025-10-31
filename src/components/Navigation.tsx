@@ -32,16 +32,27 @@ const Navigation = () => {
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-background/80 backdrop-blur-md border-b border-border/50"
+            ? "bg-background/80 backdrop-blur-md"
             : "bg-transparent"
         }`}
       >
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <div className="text-2xl font-bold text-primary">
-              Quanor
-            </div>
+            <button
+              onClick={() => scrollToSection("home")}
+              className="flex items-center hover:opacity-80 transition-opacity"
+              aria-label="Go to home"
+            >
+              <img
+                src="/android-chrome-512x512.png"
+                alt="Quanor"
+                className="h-8 w-8 md:h-10 md:w-10"
+              />
+              <span className="ml-2 text-xl md:text-2xl font-bold text-primary hidden sm:inline">
+                Quanor
+              </span>
+            </button>
 
             {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center space-x-8">

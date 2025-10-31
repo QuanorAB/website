@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Performance & Security -->
+    <!-- Note: X-Frame-Options and CSP frame-ancestors should be set via HTTP headers in production -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-    <meta http-equiv="X-Frame-Options" content="DENY" />
     <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:; frame-ancestors 'none';" />
+    <!-- CSP: Allow WebSocket for dev server (ports 8080-8081), will be stricter in production via HTTP headers -->
+    <!-- Note: frame-ancestors can only be set via HTTP headers, not meta tags -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https: ws://localhost:8080 ws://localhost:8081 ws://127.0.0.1:8080 ws://127.0.0.1:8081 http://localhost:8080 http://localhost:8081 http://127.0.0.1:8080 http://127.0.0.1:8081;" />
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
     
     <!-- Preload critical font -->
@@ -22,10 +24,10 @@
     <meta name="msapplication-TileColor" content="#2B9B8A" />
     
      <!-- Apple touch icon and favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     
     <!-- Primary Meta Tags -->
@@ -205,8 +207,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     
-    <!-- Preload critical resources -->
-    <link rel="preload" href="/og-image.png" as="image" />
+    <!-- Note: og-image.png is referenced in meta tags for social sharing but not displayed on page, so no preload needed -->
     
     <!-- DNS prefetch for performance -->
     <link rel="dns-prefetch" href="//app.quanor.com" />
