@@ -86,6 +86,15 @@ const Navigation = () => {
             <div className="hidden md:flex items-center gap-2">
               <ThemeToggle />
               <LanguageSwitch />
+              <Button
+                variant="default"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary ml-2"
+                asChild
+              >
+                <a href="https://app.quanor.com">
+                  {t('nav.login')}
+                </a>
+              </Button>
               <Button 
                 variant="default" 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary ml-2"
@@ -156,6 +165,16 @@ const Navigation = () => {
               </button>
               
               <div className="pt-4 border-t border-border/50">
+                <Button
+                  variant="outline"
+                  className="w-full border-border/60 text-foreground hover:text-primary hover:border-primary/40"
+                  asChild
+                >
+                  <a href="https://app.quanor.com">
+                    {t('nav.login')}
+                  </a>
+                </Button>
+                <div className="h-3" />
                 <Button 
                   variant="default" 
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary"
