@@ -5,16 +5,15 @@
     "about": "Om oss",
     "contact": "Kontakt",
     "login": "Logga in",
-    "signUp": "Registrera dig",
+    "signUp": "Skapa konto",
     "backToHome": "Tillbaka till startsidan"
   },
   "hero": {
     "title": "AI-drivna finansiella insikter",
     "subtitle": "Vi effektiviserar aktieanalys och kapitalförvaltning med AI-teknik och datadrivna algoritmer. Våra insikter levereras snabbare, mer träffsäkert och med högre tillförlitlighet än traditionella metoder.",
-    "getStarted": "Kom igång",
+    "getStarted": "Skapa konto",
     "learnMore": "Lär dig mer",
     "builtIn": "Byggt i Sverige",
-    "liveAnalytics": "Realtidsanalys",
     "aiInsights": "AI-insikter",
     "stats": {
       "free": "Gratis",
@@ -26,33 +25,46 @@
     }
   },
   "products": {
-    "title": "Quanor Insights",
-    "subtitle": "AI-drivna finansiella insikter som förändrar hur du analyserar marknader och fattar investeringsbeslut.",
+    "title": "Avancerade AI-insikter – till kampanjpris",
+    "subtitle": "Få samma AI-drivna marknadsbevakning som professionella investerare – analyser av rapporter, PR-flöde och pre-market i ett paket.",
+    "badge": "Quanor Insights",
     "free": {
-      "name": "Gratis",
-      "price": "Gratis",
+      "name": "Free",
+      "price": "0 kr/månad",
       "description": "Grundläggande AI-drivna finansiella insikter för att komma igång",
       "features": [
-        "Grundläggande marknadsanalys",
-        "Följ begränsat antal företag",
-        "PR- och rapportanalyser",
+        "Full PR-, rapport- och pre-rapportanalys",
+        "Följ upp till 5 företag",
+        "Market Recap (sammanfattning av gårdagen)",
         "E-postsupport"
       ]
     },
     "essential": {
       "name": "Essential",
       "price": "99 kr/månad",
-      "description": "Avancerade AI-insikter för seriösa investerare och professionella",
+      "promoPrice": "39 kr/månad",
+      "promoNote": "första 3 månaderna",
+      "regularPrice": "därefter 99 kr/månad, avbryt när du vill",
+      "description": "Avancerade AI-insikter för seriösa investerare och professionella – och möjlighet att följa obegränsat antal bolag för maximal tidsbesparing.",
       "features": [
         "Utökad marknadsanalys",
         "Följ obegränsat antal företag",
         "PR-, rapport- och pre-rapportanalys",
-        "Prioriterad support"
+        "Prioriterad support",
+        "Full tillgång till alla bolagssidor i Quanors webapp"
       ]
     },
-    "getStarted": "Registrera dig",
-    "mostPopular": "Mest populär",
+    "getStarted": "Skapa konto",
+    "campaignOffer": "Kampanjerbjudande",
     "promoCode": "Har du en kampanjkod? Klicka här för att komma igång",
+    "promo": {
+      "show": "true",
+      "label": "Kampanjerbjudande",
+      "title": "Essential för 39 kr/mån i 3 månader",
+      "description": "Därefter ordinarie pris 99 kr/mån. Gäller vid registrering senast 30 november.",
+      "badge": "39 kr/mån första 3 månaderna",
+      "cta": "Aktivera erbjudandet"
+    },
     "whyChoose": "Varför välja Quanor?",
     "benefits": {
       "ai": {
@@ -68,10 +80,38 @@
         "description": "Företagssäkerhet och tillförlitlighet som är betrodd av finansexperter"
       }
     },
+    "features": {
+      "reportAnalysis": {
+        "title": "Rapportanalys",
+        "label": "Automatiserad genomgång",
+        "description": "Djupgående analys av bolagens kvartals- och årsrapporter med sammanfattade nyckeltal, risker, möjligheter och analytikerestimat."
+      },
+      "prAnalysis": {
+        "title": "PR-analys",
+        "label": "Nyhetsflöde",
+        "description": "Automatiserad tolkning av pressmeddelanden och nyheter."
+      },
+      "preReport": {
+        "title": "Pre-report analys",
+        "label": "Inför rapport",
+        "description": "AI-genererade förväntningar, sentiment, riskindikatorer och analytikerestimat inför nästa rapporttillfälle."
+      },
+      "marketRecap": {
+        "title": "Daglig Market Recap",
+        "label": "E-postbriefing",
+        "description": "Ett sammanfattande morgonmail som går igenom gårdagens makrobild och de viktigaste rörelserna för dina bevakade bolag – så du snabbt får en helhetsbild inför dagens handel."
+      },
+      "preMarket": {
+        "title": "Pre-Market Update",
+        "label": "Morgonmail",
+        "description": "Ett kort morgonmail inför öppning med fokus på färska nyheter, bud, rapporter och kursdrivande information – filtrerat för dina bevakade innehav."
+      }
+    },
     "services": {
       "title": "Omfattande analyspaket",
       "description": "Vi erbjuder PR-analys, rapportanalys, pre-rapportanalys, peer-täckning, global och svensk makro kopplad till bevakningslista, morgonbriefings och mycket mer. Full flexibilitet att välja bort eller till notiser beroende på dina specifika behov."
-    }
+    },
+    "disclaimer": "Innehållet genereras av Quanors AI-motorer och är avsett som beslutsstöd, inte personlig finansiell rådgivning."
   },
   "comparison": {
     "title": "Hur vi skiljer oss åt",

@@ -22,7 +22,14 @@ const Navigation = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const navHeight = 80; // Approximate navbar height in pixels
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
       setIsMobileMenuOpen(false); // Close mobile menu after navigation
     }
   };
@@ -98,11 +105,9 @@ const Navigation = () => {
               <Button 
                 variant="default" 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary ml-2"
-                asChild
+                onClick={() => scrollToSection("products")}
               >
-                <a href="https://app.quanor.com/register?stripePriceId=price_1SAy2rRfrQoXouvpBTrgh9ZW&trialPeriod=true&paymentMethod=stripe&packageType=trial&packageName=Insights+Essential+-+Free+Trial&packageDescription=0+kr+for+first+14+days,+then+99+kr/month">
-                  {t('nav.signUp')}
-                </a>
+                {t('nav.signUp')}
               </Button>
             </div>
 
@@ -178,11 +183,9 @@ const Navigation = () => {
                 <Button 
                   variant="default" 
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary"
-                  asChild
+                  onClick={() => scrollToSection("products")}
                 >
-                  <a href="https://app.quanor.com/register?stripePriceId=price_1SAy2rRfrQoXouvpBTrgh9ZW&trialPeriod=true&paymentMethod=stripe&packageType=trial&packageName=Insights+Essential+-+Free+Trial&packageDescription=0+kr+for+first+14+days,+then+99+kr/month">
-                    {t('nav.signUp')}
-                  </a>
+                  {t('nav.signUp')}
                 </Button>
               </div>
             </div>

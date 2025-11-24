@@ -28,7 +28,14 @@ const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const navHeight = 80; // Approximate navbar height in pixels
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
     }
   };
 
@@ -42,18 +49,6 @@ const Hero = () => {
     ? "Quanor AI mobile app in light mode showing Swedish equity analysis and market insights"
     : "Quanor AI mobile app in dark mode showing Swedish equity analysis and market insights";
 
-  const handleRegisterClick = (e: any) => {
-    try {
-      if (window.top !== window.self) {
-        e.preventDefault();
-        window.location.href = "https://app.quanor.com/register?stripePriceId=price_1SAy2rRfrQoXouvpBTrgh9ZW&trialPeriod=true&paymentMethod=stripe&packageType=trial&packageName=Insights+Essential+-+Free+Trial&packageDescription=0+kr+for+first+14+days,+then+99+kr/month";
-      }
-    } catch (err) {
-      // Fallback
-      e.preventDefault();
-      window.location.href = "https://app.quanor.com/register?stripePriceId=price_1SAy2rRfrQoXouvpBTrgh9ZW&trialPeriod=true&paymentMethod=stripe&packageType=trial&packageName=Insights+Essential+-+Free+Trial&packageDescription=0+kr+for+first+14+days,+then+99+kr/month";
-    }
-  };
 
   return (
     <section id="home" className="min-h-screen lg:max-h-screen hero-gradient relative overflow-visible lg:overflow-hidden">
@@ -68,14 +63,6 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="relative z-10 space-y-8 animate-fade-in-up">
-            {/* Enhanced Badge */}
-            <div className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-primary/10 via-primary/5 to-transparent border border-primary/30 backdrop-blur-md shadow-lg ring-1 ring-primary/20">
-              <div className="flex items-center justify-center w-5 h-5 rounded-full bg-primary/20">
-                <Sparkles className="w-3 h-3 text-primary animate-pulse" />
-              </div>
-              <span className="text-sm font-semibold text-primary tracking-wide">{t('hero.builtIn')}</span>
-            </div>
-
             {/* Main Headline */}
             <header className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
@@ -96,17 +83,13 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="relative bg-gradient-to-r from-primary via-primary to-primary/90 hover:from-primary/90 hover:via-primary hover:to-primary text-primary-foreground shadow-2xl shadow-primary/25 group mobile-optimized overflow-hidden"
-                asChild
+                onClick={() => scrollToSection("products")}
               >
-                <a 
-                  href="https://app.quanor.com/register?stripePriceId=price_1SAy2rRfrQoXouvpBTrgh9ZW&trialPeriod=true&paymentMethod=stripe&packageType=trial&packageName=Insights+Essential+-+Free+Trial&packageDescription=0+kr+for+first+14+days,+then+99+kr/month" 
-                  className="flex items-center justify-center relative z-10"
-                  onClick={handleRegisterClick}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-opacity duration-500" />
+                <span className="relative z-10 flex items-center justify-center">
                   {t('hero.getStarted')}
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                </a>
+                </span>
               </Button>
               
               <Button 
@@ -121,7 +104,7 @@ const Hero = () => {
             </div>
 
             {/* Enhanced Stats */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-8">
+            {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-8">
               <div className="group text-center p-3 sm:p-4 rounded-2xl bg-gradient-to-br from-background/40 to-background/20 backdrop-blur-sm border border-border/30 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 min-w-0 overflow-hidden">
                 <div className="text-xl sm:text-2xl md:text-3xl font-bold text-primary whitespace-normal break-words">{t('hero.stats.free')}</div>
                 <div className="text-xs sm:text-sm text-muted-foreground mt-1 leading-tight">{t('hero.stats.freeTier')}</div>
@@ -134,7 +117,7 @@ const Hero = () => {
                 <div className="text-xl sm:text-2xl md:text-3xl font-bold text-primary whitespace-normal break-words">{t('hero.stats.monitoring')}</div>
                 <div className="text-xs sm:text-sm text-muted-foreground mt-1 leading-tight">{t('hero.stats.marketMonitoring')}</div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Enhanced Dashboard Preview */}
@@ -170,12 +153,6 @@ const Hero = () => {
                 </div>
               </div>
               
-              {/* Enhanced Floating Elements */}
-              <div className="absolute -top-4 lg:-top-6 -right-3 sm:-right-4 lg:-right-6 bg-gradient-to-r from-primary via-primary to-primary/90 backdrop-blur-md rounded-2xl px-3 lg:px-5 py-2 lg:py-3 shadow-xl shadow-primary/25 animate-glow border border-primary/30">
-                <div className="text-xs lg:text-sm font-semibold text-primary-foreground flex items-center gap-2">
-                  {t('hero.liveAnalytics')}
-                </div>
-              </div>
               
               <div className="absolute -bottom-4 lg:-bottom-6 -left-3 sm:-left-4 lg:-left-6 bg-gradient-to-r from-background/90 via-background/80 to-background/70 backdrop-blur-md rounded-2xl px-3 lg:px-5 py-2 lg:py-3 border border-border/40 shadow-xl">
                 <div className="text-xs lg:text-sm font-semibold text-foreground flex items-center gap-2">

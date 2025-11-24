@@ -37,7 +37,14 @@ const Footer = () => {
     if (sectionId.startsWith("#")) {
       const element = document.getElementById(sectionId.substring(1));
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        const navHeight = 80; // Approximate navbar height in pixels
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+        
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
       }
     }
   };
