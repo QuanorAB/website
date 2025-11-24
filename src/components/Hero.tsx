@@ -152,14 +152,6 @@ const Hero = () => {
                   <div className="absolute inset-0 rounded-2xl ring-1 ring-primary/15 pointer-events-none" />
                 </div>
               </div>
-              
-              
-              <div className="absolute -bottom-4 lg:-bottom-6 -left-3 sm:-left-4 lg:-left-6 bg-gradient-to-r from-background/90 via-background/80 to-background/70 backdrop-blur-md rounded-2xl px-3 lg:px-5 py-2 lg:py-3 border border-border/40 shadow-xl">
-                <div className="text-xs lg:text-sm font-semibold text-foreground flex items-center gap-2">
-                  <Sparkles className="w-3 h-3 text-primary" />
-                  {t('hero.aiInsights')}
-                </div>
-              </div>
             </div>
           </div>
         </div>
