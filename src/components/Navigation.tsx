@@ -98,7 +98,7 @@ const Navigation = () => {
                 className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary ml-2"
                 asChild
               >
-                <a href="https://app.quanor.com">
+                <a href="https://app.quanor.com/login">
                   {t('nav.login')}
                 </a>
               </Button>
