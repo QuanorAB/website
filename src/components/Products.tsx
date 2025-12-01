@@ -144,10 +144,10 @@ const Products = () => {
                   {t('products.promo.label', { defaultValue: 'Campaign Offer' })}
                 </p>
                 <h3 className="text-xl md:text-2xl font-semibold">
-                  {t('products.promo.title', { defaultValue: 'Essential for 39 kr/month for 3 months' })}
+                  {t('products.promo.title', { defaultValue: 'Essential for 39 kr/month for 2 months' })}
                 </h3>
                 <p className="text-sm md:text-base text-primary-foreground/90">
-                  {t('products.promo.description', { defaultValue: 'Then regular price 99 kr/month. Valid for registrations by November 30.' })}
+                  {t('products.promo.description', { defaultValue: 'Then regular price 99 kr/month.' })}
                 </p>
               </div>
               <div className="flex flex-col items-start md:items-end gap-2">
@@ -156,7 +156,7 @@ const Products = () => {
                     {t('products.essential.price')}
                   </span>
                   <span className="inline-flex items-center rounded-full bg-primary-foreground/20 px-3 py-1 text-xs font-semibold text-primary-foreground">
-                    {t('products.promo.badge', { defaultValue: '39 kr/month first 3 months' })}
+                    {t('products.promo.badge', { defaultValue: '39 kr/month first 2 months' })}
                   </span>
                 </div>
                 <Button

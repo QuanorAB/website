@@ -42,7 +42,7 @@
       "name": "Essential",
       "price": "99 kr/month",
       "promoPrice": "39 kr/month",
-      "promoNote": "first 3 months",
+      "promoNote": "first 2 months",
       "regularPrice": "then 99 kr/month, cancel anytime",
       "description": "Advanced AI insights for serious investors and professionals – and the ability to follow unlimited companies for maximum time savings.",
       "features": [
@@ -59,9 +59,9 @@
     "promo": {
       "show": "true",
       "label": "Campaign Offer",
-      "title": "Essential for 39 kr/month for 3 months",
-      "description": "Then regular price 99 kr/month. Valid for registrations by November 30.",
-      "badge": "39 kr/month first 3 months",
+      "title": "Essential for 39 kr/month for 2 months",
+      "description": "Then regular price 99 kr/month.",
+      "badge": "39 kr/month first 2 months",
       "cta": "Activate offer"
     },
     "whyChoose": "Why choose Quanor?",

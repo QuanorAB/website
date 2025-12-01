@@ -42,7 +42,7 @@
       "name": "Essential",
       "price": "99 kr/månad",
       "promoPrice": "39 kr/månad",
-      "promoNote": "första 3 månaderna",
+      "promoNote": "första 2 månaderna",
       "regularPrice": "därefter 99 kr/månad, avbryt när du vill",
       "description": "Avancerade AI-insikter för seriösa investerare och professionella – och möjlighet att följa obegränsat antal bolag för maximal tidsbesparing.",
       "features": [
@@ -59,9 +59,9 @@
     "promo": {
       "show": "true",
       "label": "Kampanjerbjudande",
-      "title": "Essential för 39 kr/mån i 3 månader",
-      "description": "Därefter ordinarie pris 99 kr/mån. Gäller vid registrering senast 30 november.",
-      "badge": "39 kr/mån första 3 månaderna",
+      "title": "Essential för 39 kr/mån i 2 månader",
+      "description": "Därefter ordinarie pris 99 kr/mån.",
+      "badge": "39 kr/mån första 2 månaderna",
       "cta": "Aktivera erbjudandet"
     },
     "whyChoose": "Varför välja Quanor?",

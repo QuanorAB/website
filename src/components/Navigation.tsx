@@ -175,7 +175,7 @@ const Navigation = () => {
                   className="w-full border-border/60 text-foreground hover:text-primary hover:border-primary/40"
                   asChild
                 >
-                  <a href="https://app.quanor.com">
+                  <a href="https://app.quanor.com/login">
                     {t('nav.login')}
                   </a>
                 </Button>
