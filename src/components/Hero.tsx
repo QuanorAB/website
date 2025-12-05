@@ -3,10 +3,10 @@ import appHomeDarkSv from "@/assets/app_home_dark_sv.png";
 import appHomeLightEn from "@/assets/app_home_light_en.png";
 import appHomeLightSv from "@/assets/app_home_light_sv.png";
 
-import appHomeDarkMobileEn from "@/assets/app_home_dark_mobile_en.png";
-import appHomeDarkMobileSv from "@/assets/app_home_dark_mobile_sv.png";
-import appHomeLightMobileEn from "@/assets/app_home_light_mobile_en.png";
-import appHomeLightMobileSv from "@/assets/app_home_light_mobile_sv.png";
+import appHomeDarkMobileEn from "@/assets/app_home_dark_mobile_en.jpeg";
+import appHomeDarkMobileSv from "@/assets/app_home_dark_mobile_sv.jpeg";
+import appHomeLightMobileEn from "@/assets/app_home_light_mobile_en.jpeg";
+import appHomeLightMobileSv from "@/assets/app_home_light_mobile_sv.jpeg";
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
