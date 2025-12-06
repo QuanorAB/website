@@ -157,7 +157,7 @@ const Hero = () => {
           <div className="relative group">
             <div className="relative">
               {/* Enhanced Desktop View */}
-              <div className="relative overflow-hidden rounded-2xl shadow-lg shadow-primary/10 border border-border/10 bg-background/40">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg shadow-primary/10 border-2 border-border/25 bg-background/40">
                 <img
                   src={currentDesktopImage}
                   alt={desktopImageAlt}
