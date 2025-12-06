@@ -157,7 +157,7 @@ const Hero = () => {
           <div className="relative group">
             <div className="relative">
               {/* Enhanced Desktop View */}
-              <div className="relative overflow-hidden rounded-2xl shadow-lg shadow-primary/10 border-2 border-border/25 bg-background/40">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg shadow-primary/10 border-[2.5px] border-border/25 bg-background/40">
                 <img
                   src={currentDesktopImage}
                   alt={desktopImageAlt}
@@ -170,15 +170,15 @@ const Hero = () => {
 
               {/* Enhanced Mobile View - Overlapping */}
               <div className="absolute -bottom-6 sm:-bottom-8 md:-bottom-10 lg:-bottom-12 -right-2 sm:-right-4 lg:-right-6 xl:-right-8 w-28 sm:w-32 md:w-36 lg:w-40 transform hover:scale-105 transition-transform duration-300">
-                <div className="relative overflow-hidden rounded-3xl shadow-2xl shadow-primary/20 border-4 border-background/50 backdrop-blur-sm">
+                <div className="relative overflow-hidden rounded-3xl shadow-2xl shadow-primary/20 border-[2.5px] border-background/60 backdrop-blur-sm">
                   <img
                     src={currentMobileImage}
                     alt={mobileImageAlt}
-                    className="w-full h-auto rounded-2xl transition-opacity duration-300"
+                    className="block w-full h-auto rounded-[inherit] transition-opacity duration-300"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary/20 via-primary/5 to-transparent pointer-events-none" />
-                  <div className="absolute inset-0 rounded-2xl ring-1 ring-primary/15 pointer-events-none" />
+                  <div className="absolute inset-0 rounded-[inherit] bg-gradient-to-tr from-primary/20 via-primary/5 to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 rounded-[inherit] ring ring-primary/15 pointer-events-none" />
                 </div>
               </div>
             </div>
