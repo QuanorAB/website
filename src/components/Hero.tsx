@@ -157,15 +157,15 @@ const Hero = () => {
           <div className="relative group">
             <div className="relative">
               {/* Enhanced Desktop View */}
-              <div className="relative overflow-hidden rounded-xl shadow-lg shadow-primary/10 border border-border/10 bg-background/40 p-1">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg shadow-primary/10 border border-border/10 bg-background/40">
                 <img
                   src={currentDesktopImage}
                   alt={desktopImageAlt}
-                  className="w-full h-auto rounded-2xl transition-all duration-500 group-hover:scale-[1.02]"
+                  className="block w-full h-auto rounded-[inherit] transition-all duration-500 group-hover:scale-[1.02]"
                   loading="eager"
                   {...({ fetchpriority: "high" } as any)}
                 />
-                <div className="absolute inset-2 rounded-2xl bg-gradient-to-t from-primary/5 via-transparent to-transparent pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 rounded-[inherit] bg-gradient-to-t from-primary/5 via-transparent to-transparent pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
 
               {/* Enhanced Mobile View - Overlapping */}
