@@ -39,3 +39,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+legacy_backup/
+quanor_website_seo_complete.zip

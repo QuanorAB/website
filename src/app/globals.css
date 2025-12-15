@@ -1,26 +1,153 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --animate-fade-in-up: fade-in-up 0.5s ease-out forwards;
+  --animate-shimmer: shimmer 2s linear infinite;
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes shimmer {
+    from {
+      background-position: 0 0;
+    }
+
+    to {
+      background-position: -200% 0;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Base Styles */
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  /* Slate 900 */
+
+  /* Teal #2B9B8A */
+  --primary: #2B9B8A;
+  --primary-foreground: #ffffff;
+
+  --secondary: #f1f5f9;
+  /* Slate 100 */
+  --secondary-foreground: #0f172a;
+
+  --muted: #f8fafc;
+  /* Slate 50 */
+  --muted-foreground: #64748b;
+  /* Slate 500 */
+
+  --accent: #f1f5f9;
+  --accent-foreground: #0f172a;
+
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  --border: #e2e8f0;
+  /* Slate 200 */
+  --input: #e2e8f0;
+  --ring: #2B9B8A;
+
+  --radius: 0.75rem;
+}
+
+.dark {
+  /* Dark teal tones derived from brand #006A55 */
+  --background: #021a16;
+  --foreground: #f0fdf9;
+
+  --primary: #2B9B8A;
+  /* Teal */
+  --primary-foreground: #ffffff;
+
+  --secondary: #0a2f28;
+  --secondary-foreground: #f0fdf9;
+
+  --muted: #062420;
+  --muted-foreground: #86b5ac;
+
+  --accent: #0a2f28;
+  --accent-foreground: #f0fdf9;
+
+  --destructive: #7f1d1d;
+  --destructive-foreground: #f8fafc;
+
+  --border: #0d3830;
+  --input: #0d3830;
+  --ring: #2B9B8A;
+}
+
+@layer base {
+
+  /* Background Gradients - using brand colors #006A55 (teal) and #D2F7F0 (mint) */
+  :root {
+    /* Deep teal gradient - more visible teal tones */
+    --gradient-bg: linear-gradient(155deg, #032b24 0%, #021f1a 50%, #011512 100%);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    color-scheme: dark light;
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-offset, 6rem);
+    /* Apply gradient background */
+    background: var(--gradient-bg);
+    background-attachment: fixed;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: var(--gradient-bg);
+    background-attachment: fixed;
+    @apply text-foreground antialiased;
+  }
+}
+
+/* Utilities */
+@layer utilities {
+  .glass {
+    @apply bg-background/60 backdrop-blur-lg border border-white/10;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-400 to-pink-400;
+  }
 }
