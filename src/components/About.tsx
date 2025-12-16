@@ -1,5 +1,16 @@
 "use client";
 
+/**
+ * About Section Component
+ * 
+ * Homepage section showcasing company values and stats.
+ * Features company description, statistics grid, and value proposition cards.
+ * Uses inline translations for Swedish/English bilingual content.
+ * 
+ * @param {Object} props
+ * @param {string} props.lang - Language code ('sv' or 'en')
+ */
+
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { Globe, Lightbulb, Target } from "lucide-react";

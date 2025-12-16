@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const currentUrl = `${baseUrl}/${lang}`;
 
   const title = lang === 'sv'
-    ? "Quanor - AI-driven aktieanalys för nordiska marknader"
-    : "Quanor - AI-powered stock analysis for Nordic markets";
+    ? "Quanor - Omedelbar aktieanalys för nordiska marknader"
+    : "Quanor - Instant stock analysis for Nordic markets";
 
   const description = lang === 'sv'
     ? "Få institutionell finansiell analys med AI. Realtidsbevakning av pressmeddelanden, kvartalsrapporter och pre-earnings för svenska aktier."
@@ -75,7 +75,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
           url: `${baseUrl}/images/og-image.png`,
           width: 1200,
           height: 630,
-          alt: 'Quanor - AI-driven aktieanalys',
+          alt: 'Quanor - Omedelbar aktieanalys',
         },
       ],
     },

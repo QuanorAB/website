@@ -20,7 +20,7 @@ import Image from "next/image";
 export default function Hero({ lang }: { lang: string }) {
     const content = {
         sv: {
-            title: ["AI-driven", "aktieanalys"],
+            title: ["Omedelbar", "Aktieanalys"],
             subtitle: "Få institutionell analys av pressmeddelanden, kvartalsrapporter och pre-earnings för nordiska aktier – sekunder efter publicering.",
             getStarted: "Kom igång gratis",
             learnMore: "Läs mer",
@@ -32,7 +32,7 @@ export default function Hero({ lang }: { lang: string }) {
             }
         },
         en: {
-            title: ["AI-powered", "stock analysis"],
+            title: ["Instant", "Stock Analysis"],
             subtitle: "Get institutional-grade analysis of press releases, quarterly reports, and pre-earnings for Nordic stocks – seconds after release.",
             getStarted: "Get started free",
             learnMore: "Learn more",

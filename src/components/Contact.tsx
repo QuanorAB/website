@@ -1,5 +1,16 @@
 "use client";
 
+/**
+ * Contact Section Component
+ * 
+ * Displays a contact form with Supabase integration for email submission.
+ * Also shows contact info cards (email, location, LinkedIn).
+ * Uses inline translations for Swedish/English bilingual content.
+ * 
+ * @param {Object} props
+ * @param {string} props.lang - Language code ('sv' or 'en')
+ */
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";

@@ -21,8 +21,8 @@ export function JsonLd({ lang }: JsonLdProps) {
             "height": 512
         },
         "description": lang === "sv"
-            ? "AI-driven aktieanalys för nordiska marknader. Realtidsanalys av kvartalsrapporter, pressmeddelanden och pre-earnings."
-            : "AI-powered stock analysis for Nordic markets. Real-time analysis of quarterly reports, press releases and pre-earnings.",
+            ? "Omedelbar aktieanalys för nordiska marknader. Realtidsanalys av kvartalsrapporter, pressmeddelanden och pre-earnings."
+            : "Instant stock analysis for Nordic markets. Real-time analysis of quarterly reports, press releases and pre-earnings.",
         "foundingDate": "2024",
         "founders": [
             {
@@ -50,8 +50,8 @@ export function JsonLd({ lang }: JsonLdProps) {
         "url": baseUrl,
         "name": "Quanor",
         "description": lang === "sv"
-            ? "AI-driven finansiell analys för nordiska aktier"
-            : "AI-powered financial analysis for Nordic stocks",
+            ? "Omedelbar finansiell analys för nordiska aktier"
+            : "Instant financial analysis for Nordic stocks",
         "publisher": {
             "@id": `${baseUrl}/#organization`
         },
@@ -88,8 +88,8 @@ export function JsonLd({ lang }: JsonLdProps) {
             "worstRating": "1"
         },
         "description": lang === "sv"
-            ? "AI-driven aktieanalys med realtidsbevakning av pressmeddelanden, kvartalsrapporter och pre-earnings."
-            : "AI-powered stock analysis with real-time monitoring of press releases, quarterly reports and pre-earnings.",
+            ? "Omedelbar aktieanalys med realtidsbevakning av pressmeddelanden, kvartalsrapporter och pre-earnings."
+            : "Instant stock analysis with real-time monitoring of press releases, quarterly reports and pre-earnings.",
         "featureList": lang === "sv"
             ? ["Kvartalsrapport-analys", "Pressmeddelande-analys", "Pre-earnings analys", "Kurstrigger-analys", "Dagligt marknadsrecap"]
             : ["Quarterly report analysis", "Press release analysis", "Pre-earnings analysis", "Price trigger analysis", "Daily market recap"]

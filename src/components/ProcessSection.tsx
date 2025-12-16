@@ -1,5 +1,16 @@
 "use client";
 
+/**
+ * Process Section Component
+ * 
+ * Explains how the AI transforms information into actionable analysis.
+ * Features a text section with bullet points and the AiVisualization component.
+ * Uses inline translations for Swedish/English bilingual content.
+ * 
+ * @param {Object} props
+ * @param {string} props.lang - Language code ('sv' or 'en')
+ */
+
 import { motion } from "framer-motion";
 import { ArrowRight, Check } from "lucide-react";
 import { AiVisualization } from "./ui/AiVisualization";

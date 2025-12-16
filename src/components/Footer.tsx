@@ -10,14 +10,14 @@
  * @param {string} props.lang - Language code ('sv' or 'en')
  */
 
-import { Linkedin, Twitter } from "lucide-react";
+import { Instagram, Linkedin, Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer({ lang }: { lang: string }) {
     const content = {
         sv: {
-            description: "AI-driven finansanalys för nordiska aktier. Realtidsbevakning av pressmeddelanden, rapporter och marknadshändelser.",
+            description: "Omedelbar finansanalys för nordiska aktier. Realtidsbevakning av pressmeddelanden, rapporter och marknadshändelser.",
             sections: {
                 products: "Produkter",
                 company: "Företag",
@@ -39,7 +39,7 @@ export default function Footer({ lang }: { lang: string }) {
             builtIn: "Byggt i Sverige 🇸🇪"
         },
         en: {
-            description: "AI-powered financial analysis for Nordic stocks. Real-time monitoring of press releases, reports, and market events.",
+            description: "Instant financial analysis for Nordic stocks. Real-time monitoring of press releases, reports, and market events.",
             sections: {
                 products: "Products",
                 company: "Company",
@@ -78,10 +78,13 @@ export default function Footer({ lang }: { lang: string }) {
                             {t.description}
                         </p>
                         <div className="flex gap-4">
-                            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Twitter">
+                            <a href="https://twitter.com/QuanorFinance" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Twitter">
                                 <Twitter className="w-5 h-5" />
                             </a>
-                            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="LinkedIn">
+                            <a href="https://instagram.com/QuanorFinance" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Instagram">
+                                <Instagram className="w-5 h-5" />
+                            </a>
+                            <a href="https://www.linkedin.com/company/quanor" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="LinkedIn">
                                 <Linkedin className="w-5 h-5" />
                             </a>
                         </div>
