@@ -199,8 +199,9 @@ export function RelationshipUniverse({ lang = "en" }: { lang?: string }) {
                 </div>
             </div>
 
-            {/* Main horizontal flow: Suppliers → Volvo → Customers */}
-            <div className="flex items-center justify-center gap-4 mb-6">
+            {/* Main flow: Suppliers → Volvo → Customers */}
+            {/* Mobile: vertical stack | Desktop: horizontal flow */}
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-4 mb-6">
                 {/* Suppliers column */}
                 <div className="flex flex-col items-center gap-2">
                     <motion.span
@@ -212,7 +213,7 @@ export function RelationshipUniverse({ lang = "en" }: { lang?: string }) {
                     >
                         {t.suppliers}
                     </motion.span>
-                    <div className="flex flex-col gap-1.5">
+                    <div className="flex flex-row lg:flex-col gap-1.5">
                         {suppliers.map((company, i) => (
                             <CompanyCard
                                 key={company.name}
@@ -227,8 +228,8 @@ export function RelationshipUniverse({ lang = "en" }: { lang?: string }) {
                     </div>
                 </div>
 
-                {/* Flow: Suppliers → Volvo */}
-                <div className="flex flex-col gap-2 py-8">
+                {/* Flow: Suppliers → Volvo (desktop only) */}
+                <div className="hidden lg:flex flex-col gap-2 py-8">
                     <HorizontalFlow direction="right" color="bg-amber-400" delay={0.5} />
                     <HorizontalFlow direction="right" color="bg-amber-400" delay={0.7} />
                     <HorizontalFlow direction="right" color="bg-amber-400" delay={0.9} />
@@ -244,8 +245,8 @@ export function RelationshipUniverse({ lang = "en" }: { lang?: string }) {
                     isPrimary
                 />
 
-                {/* Flow: Volvo → Customers */}
-                <div className="flex flex-col gap-2 py-8">
+                {/* Flow: Volvo → Customers (desktop only) */}
+                <div className="hidden lg:flex flex-col gap-2 py-8">
                     <HorizontalFlow direction="right" color="bg-cyan-400" delay={0.6} />
                     <HorizontalFlow direction="right" color="bg-cyan-400" delay={0.8} />
                     <HorizontalFlow direction="right" color="bg-cyan-400" delay={1.0} />
@@ -262,7 +263,7 @@ export function RelationshipUniverse({ lang = "en" }: { lang?: string }) {
                     >
                         {t.customers}
                     </motion.span>
-                    <div className="flex flex-col gap-1.5">
+                    <div className="flex flex-row lg:flex-col gap-1.5">
                         {customers.map((company, i) => (
                             <CompanyCard
                                 key={company.name}
@@ -289,7 +290,7 @@ export function RelationshipUniverse({ lang = "en" }: { lang?: string }) {
                 >
                     {t.peers}
                 </motion.span>
-                <div className="flex gap-3">
+                <div className="flex flex-wrap justify-center gap-2 lg:gap-3">
                     {peers.map((company, i) => (
                         <CompanyCard
                             key={company.name}

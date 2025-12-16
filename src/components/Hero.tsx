@@ -120,8 +120,8 @@ export default function Hero({ lang }: { lang: string }) {
                             transition={{ duration: 0.6, delay: 0.5 }}
                             className="relative rounded-xl overflow-hidden shadow-[0_25px_60px_-15px_rgba(0,0,0,0.5)] border border-white/10 bg-background"
                         >
-                            {/* Browser chrome */}
-                            <div className="flex items-center gap-2 px-4 py-3 bg-zinc-900/80 border-b border-white/5">
+                            {/* Browser chrome - hidden on mobile for cleaner look */}
+                            <div className="hidden md:flex items-center gap-2 px-4 py-3 bg-zinc-900/80 border-b border-white/5">
                                 <div className="flex gap-1.5">
                                     <div className="w-3 h-3 rounded-full bg-red-500/80" />
                                     <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
@@ -143,12 +143,12 @@ export default function Hero({ lang }: { lang: string }) {
                             />
                         </motion.div>
 
-                        {/* Mobile Phone - Positioned overlapping bottom right */}
+                        {/* Mobile Phone - Hidden on small screens, show on md+ */}
                         <motion.div
                             initial={{ opacity: 0, x: 30, y: 30 }}
                             animate={{ opacity: 1, x: 0, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.7 }}
-                            className="absolute -bottom-8 right-4 md:right-12 w-[25%] md:w-[18%] max-w-[180px]"
+                            className="hidden md:block absolute -bottom-8 right-4 md:right-12 w-[18%] max-w-[180px]"
                         >
                             <motion.div
                                 animate={{ y: [0, -8, 0] }}
