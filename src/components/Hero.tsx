@@ -1,192 +1,172 @@
-import appHomeDarkEn from "@/assets/app_home_dark_en.png";
-import appHomeDarkSv from "@/assets/app_home_dark_sv.png";
-import appHomeLightEn from "@/assets/app_home_light_en.png";
-import appHomeLightSv from "@/assets/app_home_light_sv.png";
+"use client";
 
-import appHomeDarkMobileEn from "@/assets/app_home_dark_mobile_en.jpeg";
-import appHomeDarkMobileSv from "@/assets/app_home_dark_mobile_sv.jpeg";
-import appHomeLightMobileEn from "@/assets/app_home_light_mobile_en.jpeg";
-import appHomeLightMobileSv from "@/assets/app_home_light_mobile_sv.jpeg";
+/**
+ * Hero Section Component
+ * 
+ * Primary landing section with centered headline, CTAs, and device mockups.
+ * Features staggered animations, browser-chrome styled screenshots, and
+ * floating mobile device.
+ * 
+ * @param {Object} props
+ * @param {string} props.lang - Language code ('sv' | 'en') for i18n
+ */
 
 import { Button } from "@/components/ui/button";
+import { HeroBackground } from "@/components/ui/HeroBackground";
+import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { useTheme } from "next-themes";
-import { useEffect, useMemo, useState } from "react";
-import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
-const Hero = () => {
-  const { t, i18n } = useTranslation();
-  const { resolvedTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+export default function Hero({ lang }: { lang: string }) {
+    const content = {
+        sv: {
+            title: ["Omedelbar", "Aktieanalys"],
+            subtitle: "Få professionell analys av pressmeddelanden, kvartalsrapporter och pre-earnings för svenska aktier – sekunder efter publicering.",
+            getStarted: "Kom igång gratis",
+            learnMore: "Läs mer",
+            stats: {
+                monitoring: "24/7",
+                marketMonitoring: "bevakning",
+                realtime: "Snabb",
+                aiAnalysis: "AI-analys"
+            }
+        },
+        en: {
+            title: ["Instant", "Stock Analysis"],
+            subtitle: "Get professional analysis of press releases, quarterly reports, and pre-earnings for Swedish stocks – seconds after release.",
+            getStarted: "Get started free",
+            learnMore: "Learn more",
+            stats: {
+                monitoring: "24/7",
+                marketMonitoring: "monitoring",
+                realtime: "Fast",
+                aiAnalysis: "AI analysis"
+            }
+        }
+    };
 
-  // Normalize language (e.g. "sv-SE" -> "sv")
-  const language = useMemo(() => {
-    const base = i18n.language?.split("-")[0];
-    return base === "sv" ? "sv" : "en";
-  }, [i18n.language]);
+    const t = lang === "sv" ? content.sv : content.en;
 
-  // No memo here – ensures correct title when language changes
-  const titleWords = t("hero.title")
-    .split(" ")
-    .map((word, index) => ({
-      id: `word-${index}`,
-      text: word,
-      isFirst: index === 0,
-    }));
+    return (
+        <section className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-16 overflow-hidden">
+            <HeroBackground />
 
-  // Avoid hydration mismatch
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+            <div className="container mx-auto px-6 flex flex-col items-center z-10">
+                {/* Centered Text Content */}
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    className="flex flex-col items-center gap-6 text-center max-w-4xl"
+                >
+                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.1]">
+                        {t.title.map((line, i) => (
+                            <span key={i} className={`block ${i === 0 ? 'text-primary' : 'text-foreground'}`}>
+                                {line}
+                            </span>
+                        ))}
+                    </h1>
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const navHeight = 80; // Approximate navbar height in pixels
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+                    <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl">
+                        {t.subtitle}
+                    </p>
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-  };
+                    <div className="flex flex-col sm:flex-row gap-4 mt-4">
+                        <Button size="lg" className="group text-lg h-14 px-8 rounded-full shadow-lg shadow-primary/20" asChild>
+                            <a href="https://app.quanor.com/register/essential">
+                                {t.getStarted}
+                                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                            </a>
+                        </Button>
+                        <Button size="lg" variant="outline" className="text-lg h-14 px-8 rounded-full bg-background/50 backdrop-blur-sm border-muted-foreground/20 hover:bg-background/80">
+                            {t.learnMore}
+                        </Button>
+                    </div>
 
-  // Theme: treat pre-mount as dark to avoid hydration mismatch
-  const isLightTheme = mounted && resolvedTheme === "light";
+                    {/* Stats row */}
+                    <div className="flex flex-wrap items-center justify-center gap-8 mt-6 pt-8 border-t border-border/50">
+                        <div className="flex items-center gap-3">
+                            <span className="flex h-3 w-3 relative">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                            </span>
+                            <span className="text-sm font-medium text-muted-foreground">{t.stats.monitoring} {t.stats.marketMonitoring}</span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <span className="flex h-3 w-3 relative">
+                                <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+                            </span>
+                            <span className="text-sm font-medium text-muted-foreground">{t.stats.realtime} {t.stats.aiAnalysis}</span>
+                        </div>
+                    </div>
+                </motion.div>
 
-  // Choose desktop image based on theme + language
-  const currentDesktopImage = useMemo(() => {
-    if (isLightTheme) {
-      return language === "sv" ? appHomeLightSv : appHomeLightEn;
-    }
-    return language === "sv" ? appHomeDarkSv : appHomeDarkEn;
-  }, [isLightTheme, language]);
+                {/* Device Mockups Below */}
+                <motion.div
+                    initial={{ opacity: 0, y: 60 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.3 }}
+                    className="relative w-full max-w-6xl mt-16"
+                >
+                    {/* Desktop + Mobile Composition */}
+                    <div className="relative">
+                        {/* Glow effect behind devices */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-primary/5 to-transparent rounded-3xl blur-3xl" />
 
-  // Choose mobile image based on theme + language
-  const currentMobileImage = useMemo(() => {
-    if (isLightTheme) {
-      return language === "sv" ? appHomeLightMobileSv : appHomeLightMobileEn;
-    }
-    return language === "sv" ? appHomeDarkMobileSv : appHomeDarkMobileEn;
-  }, [isLightTheme, language]);
+                        {/* Desktop Window */}
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.6, delay: 0.5 }}
+                            className="relative rounded-xl overflow-hidden shadow-[0_25px_60px_-15px_rgba(0,0,0,0.5)] border border-white/10 bg-background"
+                        >
+                            {/* Browser chrome - hidden on mobile for cleaner look */}
+                            <div className="hidden md:flex items-center gap-2 px-4 py-3 bg-zinc-900/80 border-b border-white/5">
+                                <div className="flex gap-1.5">
+                                    <div className="w-3 h-3 rounded-full bg-red-500/80" />
+                                    <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
+                                    <div className="w-3 h-3 rounded-full bg-green-500/80" />
+                                </div>
+                                <div className="flex-1 flex justify-center">
+                                    <div className="px-4 py-1 rounded-md bg-zinc-800/50 text-xs text-muted-foreground">
+                                        app.quanor.com
+                                    </div>
+                                </div>
+                            </div>
+                            <Image
+                                src={lang === 'sv' ? "/images/app_home_dark_sv.png" : "/images/app_home_dark_en.png"}
+                                alt="Quanor Platform Desktop"
+                                width={1400}
+                                height={900}
+                                className="w-full h-auto"
+                                priority
+                            />
+                        </motion.div>
 
-  // Alt texts: language + theme aware
-  const desktopImageAlt =
-    language === "sv"
-      ? isLightTheme
-        ? "Quanor AI-plattform för finansiella insikter, skrivbordsvy i ljust läge med analys av svenska aktier, realtidsmarknadsdata och investeringsinsikter"
-        : "Quanor AI-plattform för finansiella insikter, skrivbordsvy i mörkt läge med analys av svenska aktier, realtidsmarknadsdata och investeringsinsikter"
-      : isLightTheme
-      ? "Quanor AI financial insights platform desktop view in light mode showing Swedish equity analysis tools, real-time market data, and investment insights"
-      : "Quanor AI financial insights platform desktop view in dark mode showing Swedish equity analysis tools, real-time market data, and investment insights";
-
-  const mobileImageAlt =
-    language === "sv"
-      ? isLightTheme
-        ? "Quanor AI mobilapp i ljust läge som visar analys av svenska aktier och marknadsinsikter"
-        : "Quanor AI mobilapp i mörkt läge som visar analys av svenska aktier och marknadsinsikter"
-      : isLightTheme
-      ? "Quanor AI mobile app in light mode showing Swedish equity analysis and market insights"
-      : "Quanor AI mobile app in dark mode showing Swedish equity analysis and market insights";
-
-  return (
-    <section
-      id="home"
-      className="min-h-screen lg:max-h-screen hero-gradient relative overflow-visible lg:overflow-hidden"
-    >
-      {/* Enhanced Background Effects */}
-      <div className="absolute inset-0 pointer-events-none z-0">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(174_60%_40%/0.15)_0%,transparent_60%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,hsl(174_70%_50%/0.1)_0%,transparent_60%)]" />
-        <div className="absolute inset-0 bg-[conic-gradient(from_0deg_at_50%_50%,transparent_0deg,hsl(174_50%_50%/0.03)_60deg,transparent_120deg)]" />
-      </div>
-
-      <div className="relative z-10 container mx-auto px-6 pt-32 pb-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
-          <div className="relative z-10 space-y-8 animate-fade-in-up">
-            {/* Main Headline */}
-            <header className="space-y-4">
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                {titleWords.map((word) => (
-                  <span
-                    key={word.id}
-                    className={
-                      word.isFirst ? "text-primary glow-text" : "text-foreground"
-                    }
-                  >
-                    {word.text}{" "}
-                  </span>
-                ))}
-              </h1>
-
-              <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                {t("hero.subtitle")}
-              </p>
-            </header>
-
-            {/* Enhanced CTA Buttons */}
-            <div className="flex flex-col sm:flex-row flex-wrap gap-4">
-              <Button
-                size="lg"
-                className="relative bg-gradient-to-r from-primary via-primary to-primary/90 hover:from-primary/90 hover:via-primary hover:to-primary text-primary-foreground shadow-2xl shadow-primary/25 group mobile-optimized overflow-hidden"
-                onClick={() => scrollToSection("products")}
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-opacity duration-500" />
-                <span className="relative z-10 flex items-center justify-center">
-                  {t("hero.getStarted")}
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                </span>
-              </Button>
-
-              <Button
-                size="lg"
-                variant="outline"
-                className="relative border-border/30 bg-background/60 backdrop-blur-md hover:bg-background/80 hover:border-primary/30 hover:text-primary hover:shadow-xl hover:shadow-primary/10 hover:scale-[1.02] transition-all duration-300 mobile-optimized group overflow-hidden"
-                onClick={() => scrollToSection("products")}
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <span className="relative z-10">{t("hero.learnMore")}</span>
-              </Button>
+                        {/* Mobile Phone - Hidden on small screens, show on md+ */}
+                        <motion.div
+                            initial={{ opacity: 0, x: 30, y: 30 }}
+                            animate={{ opacity: 1, x: 0, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.7 }}
+                            className="hidden md:block absolute -bottom-8 right-4 md:right-12 w-[18%] max-w-[180px]"
+                        >
+                            <motion.div
+                                animate={{ y: [0, -8, 0] }}
+                                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                                className="rounded-[2rem] overflow-hidden shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)] border-[3px] border-zinc-800 bg-zinc-950"
+                            >
+                                <Image
+                                    src={lang === 'sv' ? "/images/app_home_dark_mobile_sv.jpeg" : "/images/app_home_dark_mobile_en.jpeg"}
+                                    alt="Quanor Platform Mobile"
+                                    width={300}
+                                    height={600}
+                                    className="w-full h-auto"
+                                />
+                            </motion.div>
+                        </motion.div>
+                    </div>
+                </motion.div>
             </div>
-          </div>
-
-          {/* Enhanced Dashboard Preview */}
-          <div className="relative group">
-            <div className="relative">
-              {/* Enhanced Desktop View */}
-              <div className="relative overflow-hidden rounded-2xl shadow-lg shadow-primary/10 border-[2.5px] border-border/25 bg-background/40">
-                <img
-                  src={currentDesktopImage}
-                  alt={desktopImageAlt}
-                  className="block w-full h-auto rounded-[inherit] transition-all duration-500 group-hover:scale-[1.02]"
-                  loading="eager"
-                  {...({ fetchpriority: "high" } as any)}
-                />
-                <div className="absolute inset-0 rounded-[inherit] bg-gradient-to-t from-primary/5 via-transparent to-transparent pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              </div>
-
-              {/* Enhanced Mobile View - Overlapping */}
-              <div className="absolute -bottom-6 sm:-bottom-8 md:-bottom-10 lg:-bottom-12 -right-2 sm:-right-4 lg:-right-6 xl:-right-8 w-28 sm:w-32 md:w-36 lg:w-40 transform hover:scale-105 transition-transform duration-300">
-                <div className="relative overflow-hidden rounded-3xl shadow-2xl shadow-primary/20 border-[2.5px] border-background/60 backdrop-blur-sm">
-                  <img
-                    src={currentMobileImage}
-                    alt={mobileImageAlt}
-                    className="block w-full h-auto rounded-[inherit] transition-opacity duration-300"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 rounded-[inherit] bg-gradient-to-tr from-primary/20 via-primary/5 to-transparent pointer-events-none" />
-                  <div className="absolute inset-0 rounded-[inherit] ring ring-primary/15 pointer-events-none" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default Hero;
+        </section>
+    );
+}

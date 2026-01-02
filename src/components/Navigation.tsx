@@ -1,199 +1,176 @@
-import { useState, useEffect } from "react";
+"use client";
+
 import { Button } from "@/components/ui/button";
-import { useTranslation } from 'react-i18next';
-import { Menu, X } from 'lucide-react';
-import LanguageSwitch from './LanguageSwitch';
-import ThemeToggle from './ThemeToggle';
+import { Globe, Menu, X } from 'lucide-react';
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
-const Navigation = () => {
-  const { t } = useTranslation();
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+export default function Navigation({ lang }: { lang: string }) {
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 20);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const otherLang = lang === 'sv' ? 'en' : 'sv';
+
+    const content = {
+        sv: {
+            features: "Funktioner",
+            pricing: "Priser",
+            about: "Om oss",
+            contact: "Kontakt",
+            blog: "Blogg",
+            login: "Logga in",
+            signUp: "Kom igång"
+        },
+        en: {
+            features: "Features",
+            pricing: "Pricing",
+            about: "About",
+            contact: "Contact",
+            blog: "Blog",
+            login: "Sign In",
+            signUp: "Get Started"
+        }
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    const t = lang === "sv" ? content.sv : content.en;
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const navHeight = 80; // Approximate navbar height in pixels
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - navHeight;
-      
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
-      setIsMobileMenuOpen(false); // Close mobile menu after navigation
-    }
-  };
+    const navLinks = [
+        { href: `/${lang}/features`, label: t.features },
+        { href: `/${lang}/pricing`, label: t.pricing },
+        { href: `/${lang}/about`, label: t.about },
+        { href: `/${lang}/contact`, label: t.contact },
+        { href: `/${lang}/blog`, label: t.blog },
+    ];
 
-  return (
-    <>
-      <nav
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          isScrolled
-            ? "bg-background/80 backdrop-blur-md"
-            : "bg-transparent"
-        }`}
-      >
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            {/* Logo */}
-            <button
-              onClick={() => scrollToSection("home")}
-              className="flex items-center hover:opacity-80 transition-opacity"
-              aria-label="Go to home"
+    return (
+        <>
+            <nav
+                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
+                    ? "py-2"
+                    : "py-4"
+                    }`}
             >
-              <img
-                src="/android-chrome-512x512.png"
-                alt="Quanor"
-                className="h-8 w-8 md:h-10 md:w-10"
-              />
-              <span className="ml-2 text-xl md:text-2xl font-bold text-primary hidden sm:inline">
-                Quanor
-              </span>
-            </button>
+                <div className="container mx-auto px-6">
+                    <div className={`
+                        flex items-center justify-between
+                        ${isScrolled
+                            ? "bg-background/70 backdrop-blur-xl border border-border/50 rounded-2xl px-6 py-3 shadow-lg shadow-black/5"
+                            : "bg-transparent"
+                        }
+                        transition-all duration-500
+                    `}>
+                        {/* Logo - Left */}
+                        <Link href={`/${lang}`} className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                            <Image
+                                src="/logo.png"
+                                alt="Quanor"
+                                width={36}
+                                height={36}
+                                className="h-8 w-8"
+                            />
+                            <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                                Quanor
+                            </span>
+                        </Link>
 
-            {/* Desktop Navigation Links */}
-            <div className="hidden md:flex items-center space-x-8">
-              <button
-                onClick={() => scrollToSection("home")}
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {t('nav.home')}
-              </button>
-              <button
-                onClick={() => scrollToSection("products")}
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {t('nav.products')}
-              </button>
-              <button
-                onClick={() => scrollToSection("about")}
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {t('nav.about')}
-              </button>
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {t('nav.contact')}
-              </button>
-            </div>
+                        {/* Center Navigation - Desktop */}
+                        <div className="hidden lg:flex items-center gap-1 absolute left-1/2 -translate-x-1/2">
+                            {navLinks.map((link) => (
+                                <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-white/5"
+                                >
+                                    {link.label}
+                                </Link>
+                            ))}
+                        </div>
 
-            {/* Desktop Controls & CTA */}
-            <div className="hidden md:flex items-center gap-2">
-              <ThemeToggle />
-              <LanguageSwitch />
-              <Button
-                variant="default"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary ml-2"
-                asChild
-              >
-                <a href="https://app.quanor.com/login">
-                  {t('nav.login')}
-                </a>
-              </Button>
-              <Button 
-                variant="default" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary ml-2"
-                onClick={() => scrollToSection("products")}
-              >
-                {t('nav.signUp')}
-              </Button>
-            </div>
+                        {/* Right side - Language & CTAs */}
+                        <div className="hidden lg:flex items-center gap-3">
+                            {/* Language Switch */}
+                            <Link href={`/${otherLang}`}>
+                                <Button variant="ghost" size="sm" className="gap-1.5 text-muted-foreground hover:text-foreground">
+                                    <Globe className="h-4 w-4" />
+                                    <span className="text-xs font-medium">{otherLang.toUpperCase()}</span>
+                                </Button>
+                            </Link>
 
-            {/* Mobile Controls & Menu Button */}
-            <div className="md:hidden flex items-center gap-1">
-              <ThemeToggle />
-              <LanguageSwitch />
-              <Button
-                variant="ghost"
-                size="sm" 
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="p-2"
-                aria-label="Toggle navigation menu"
-              >
-                {isMobileMenuOpen ? (
-                  <X className="w-5 h-5" />
-                ) : (
-                  <Menu className="w-5 h-5" />
-                )}
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
+                            <div className="w-px h-5 bg-border/50" />
 
-      {/* Mobile Menu Overlay */}
-      {isMobileMenuOpen && (
-        <div 
-          className="fixed inset-0 z-40 bg-background/80 backdrop-blur-md md:hidden"
-          onClick={() => setIsMobileMenuOpen(false)}
-        >
-          <div 
-            className="fixed top-[73px] left-0 right-0 bg-background border-b border-border/50 shadow-lg"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="container mx-auto px-6 py-6 space-y-4">
-              <button
-                onClick={() => scrollToSection("home")}
-                className="block w-full text-left text-foreground hover:text-primary transition-colors py-2"
-              >
-                {t('nav.home')}
-              </button>
-              <button
-                onClick={() => scrollToSection("products")}
-                className="block w-full text-left text-foreground hover:text-primary transition-colors py-2"
-              >
-                {t('nav.products')}
-              </button>
-              <button
-                onClick={() => scrollToSection("about")}
-                className="block w-full text-left text-foreground hover:text-primary transition-colors py-2"
-              >
-                {t('nav.about')}
-              </button>
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="block w-full text-left text-foreground hover:text-primary transition-colors py-2"
-              >
-                {t('nav.contact')}
-              </button>
-              
-              <div className="pt-4 border-t border-border/50">
-                <Button
-                  variant="outline"
-                  className="w-full border-border/60 text-foreground hover:text-primary hover:border-primary/40"
-                  asChild
+                            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground" asChild>
+                                <a href="https://app.quanor.com/login">{t.login}</a>
+                            </Button>
+
+                            <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/20" asChild>
+                                <a href="https://app.quanor.com/register/essential">{t.signUp}</a>
+                            </Button>
+                        </div>
+
+                        {/* Mobile Menu Button */}
+                        <div className="lg:hidden flex items-center gap-2">
+                            <Link href={`/${otherLang}`}>
+                                <Button variant="ghost" size="icon" className="h-9 w-9">
+                                    <Globe className="h-4 w-4" />
+                                </Button>
+                            </Link>
+                            <Button
+                                variant="ghost"
+                                size="icon"
+                                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                                className="h-9 w-9"
+                            >
+                                {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            {/* Mobile Menu */}
+            {isMobileMenuOpen && (
+                <div
+                    className="fixed inset-0 z-40 lg:hidden"
+                    onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  <a href="https://app.quanor.com/login">
-                    {t('nav.login')}
-                  </a>
-                </Button>
-                <div className="h-3" />
-                <Button 
-                  variant="default" 
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary"
-                  onClick={() => scrollToSection("products")}
-                >
-                  {t('nav.signUp')}
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-    </>
-  );
-};
-
-export default Navigation;
+                    <div className="absolute inset-0 bg-background/80 backdrop-blur-md" />
+                    <div
+                        className="absolute top-20 left-4 right-4 bg-card border border-border/50 rounded-2xl shadow-2xl overflow-hidden"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <div className="p-4 space-y-1">
+                            {navLinks.map((link) => (
+                                <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    className="block w-full px-4 py-3 text-foreground hover:text-primary hover:bg-primary/5 transition-colors rounded-xl font-medium"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                    {link.label}
+                                </Link>
+                            ))}
+                        </div>
+                        <div className="border-t border-border/50 p-4 space-y-2">
+                            <Button variant="outline" className="w-full justify-center" asChild>
+                                <a href="https://app.quanor.com/login">{t.login}</a>
+                            </Button>
+                            <Button className="w-full justify-center bg-primary hover:bg-primary/90" asChild>
+                                <a href="https://app.quanor.com/register/essential">{t.signUp}</a>
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+            )}
+        </>
+    );
+}
