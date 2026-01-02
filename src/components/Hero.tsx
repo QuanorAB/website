@@ -153,7 +153,7 @@ export default function Hero({ lang }: { lang: string }) {
                             <motion.div
                                 animate={{ y: [0, -8, 0] }}
                                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                                className="rounded-[2rem] overflow-hidden shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)] border-[3px] border-zinc-800 bg-zinc-950"
+                                className="rounded-[2rem] overflow-hidden shadow-[0_25px_60px_-15px_rgba(0,0,0,0.5)] border border-white/10 bg-background"
                             >
                                 <Image
                                     src={lang === 'sv' ? "/images/app_home_dark_mobile_sv.jpeg" : "/images/app_home_dark_mobile_en.jpeg"}
