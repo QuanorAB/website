@@ -168,7 +168,7 @@ export default function AboutPageClient({ lang, teamMembers, content: t }: About
                         whileInView="visible"
                         viewport={{ once: true }}
                         variants={staggerContainer}
-                        className="flex justify-center gap-16 max-w-3xl mx-auto"
+                        className="flex flex-col md:flex-row justify-center gap-8 md:gap-16 max-w-3xl mx-auto items-center"
                     >
                         {teamMembers.advisors.map((advisor, i) => (
                             <motion.div
