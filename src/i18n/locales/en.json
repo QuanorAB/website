@@ -1,544 +1,544 @@
 {
-  "nav": {
-    "home": "Home",
-    "products": "Products",
-    "about": "About",
-    "contact": "Contact",
-    "login": "Log in",
-    "signUp": "Create account",
-    "backToHome": "Back to home"
-  },
-  "hero": {
-    "title": "AI-powered financial insights",
-    "subtitle": "We streamline equity analysis and asset management with AI technology and data-driven algorithms. Our insights are delivered faster, more accurately, and with greater reliability than traditional methods.",
-    "getStarted": "Create account",
-    "learnMore": "Learn more",
-    "builtIn": "Built in Sweden",
-    "aiInsights": "AI insights",
-    "stats": {
-      "free": "Free",
-      "freeTier": "available",
-      "realtime": "Real-time",
-      "aiAnalysis": "AI analysis",
-      "monitoring": "24/7",
-      "marketMonitoring": "monitoring"
-    }
-  },
-  "products": {
-    "title": "Advanced AI insights – at campaign price",
-    "subtitle": "Get the same AI-driven market monitoring as professional investors – analysis of reports, PR flow and pre-market in one package.",
-    "badge": "Quanor Insights",
-    "free": {
-      "name": "Free",
-      "price": "0 kr/month",
-      "description": "Basic AI-powered financial insights to get started",
-      "features": [
-        "Full PR, report and pre-report analysis",
-        "Follow up to 5 companies",
-        "Email support"
-      ]
+    "nav": {
+        "home": "Home",
+        "products": "Products",
+        "about": "About",
+        "contact": "Contact",
+        "login": "Log in",
+        "signUp": "Create account",
+        "backToHome": "Back to home"
     },
-    "essential": {
-      "name": "Essential",
-      "price": "99 kr/month",
-      "promoPrice": "39 kr/month",
-      "promoNote": "first 2 months",
-      "regularPrice": "then 99 kr/month, cancel anytime",
-      "description": "Advanced AI insights for serious investors and professionals – and the ability to follow unlimited companies for maximum time savings.",
-      "features": [
-        "Expanded market analysis",
-        "Follow unlimited companies",
-        "PR, report and pre-report analysis",
-        "Priority support",
-        "Full access to all company pages in Quanor's webapp"
-      ]
-    },
-    "getStarted": "Sign up",
-    "campaignOffer": "Campaign Offer",
-    "promoCode": "Have a promo code? Click here to get started",
-    "promo": {
-      "show": "true",
-      "label": "Campaign Offer",
-      "title": "Essential for 39 kr/month for 2 months",
-      "description": "Then regular price 99 kr/month.",
-      "badge": "39 kr/month first 2 months",
-      "cta": "Activate offer"
-    },
-    "whyChoose": "Why choose Quanor?",
-    "benefits": {
-      "ai": {
-        "title": "AI-powered intelligence",
-        "description": "Advanced machine learning models trained on extensive financial datasets"
-      },
-      "realtime": {
-        "title": "Real-time processing",
-        "description": "Instant analysis and insights delivered as market conditions change"
-      },
-      "institutional": {
-        "title": "Institutional standard",
-        "description": "Enterprise security and reliability trusted by financial experts"
-      }
-    },
-    "features": {
-      "reportAnalysis": {
-        "title": "Report Analysis",
-        "label": "Automated Review",
-        "description": "In-depth analysis of companies' quarterly and annual reports with summarized key metrics, risks, opportunities and analyst estimates."
-      },
-      "prAnalysis": {
-        "title": "PR Analysis",
-        "label": "News Flow",
-        "description": "Automated interpretation of press releases and news."
-      },
-      "preReport": {
-        "title": "Pre-Earnings Analysis",
-        "label": "Before Report",
-        "description": "Expectations, sentiment, risk indicators and analyst estimates ahead of the next reporting date."
-      },
-      "marketRecap": {
-        "title": "Daily Market Recap",
-        "label": "Email Briefing",
-        "description": "A summary evening email that goes through today's macro picture and the most important movements for your watched companies – so you quickly get a complete picture ahead of tomorrow's trading."
-      },
-      "preMarket": {
-        "title": "Pre-Market Update",
-        "label": "Morning Email",
-        "description": "A short morning email before opening with focus on fresh news, bids, reports and price-driving information – filtered for your watched holdings."
-      }
-    },
-    "services": {
-      "title": "Comprehensive analysis suite",
-      "description": "We offer PR analysis, report analysis, pre-report analysis, comprehensive peer monitoring, automatic triggers that we continuously monitor, global and Swedish macro linked to a watchlist, morning briefings and much more. Full flexibility to opt out or into notifications depending on your specific needs."
-    },
-    "disclaimer": "Content generated by Quanor's AI engines and is intended as decision support, not personal financial advice."
-  },
-  "comparison": {
-    "title": "How we differ",
-    "subtitle": "See how we compare to online brokers and LLM tools",
-    "columns": {
-      "feature": "Feature",
-      "traditional": "Online brokers",
-      "aiTools": "LLM tools",
-      "quanor": "Quanor"
-    },
-    "features": {
-      "onReport": "Report analysis",
-      "preReport": "Pre-Earnings analysis",
-      "metricsExtraction": "Instant key metrics",
-      "prAnalysis": "PR analysis",
-      "sentiment": "Advanced sentiment analysis",
-      "frameworkAnalysis": "In-house analysis framework",
-      "swedishFocus": "Swedish focus"
-    },
-    "legend": {
-      "full": "Full support",
-      "partial": "Basic/partial",
-      "none": "Not available"
-    }
-  },
-  "about": {
-    "title": "Leading the future of financial insights",
-    "subtitle": "Founded in Stockholm, Sweden, Quanor represents the forefront of AI-driven financial technology.",
-    "description1": "We believe that sophisticated investment insights should not be limited to large institutions. Our platform democratizes advanced market intelligence through new AI technology and algorithms.",
-    "description2": "Every algorithm, every insight is powered by our custom AI models that process large amounts of market data in real time, delivering valuable insights that help you make better investment decisions.",
-    "team": "Our small but dedicated team consists of PhDs in mathematical statistics, AI/LLM experts, data scientists, and entrepreneurs passionate about transforming the financial industry with new technology.",
-    "stats": {
-      "companies": "900+",
-      "companiesLabel": "Swedish companies",
-      "prSpeed": "≈20\u202Fs",
-      "prSpeedLabel": "PR analysis time",
-      "reportSpeed": "≈1.5\u202Fmin",
-      "reportSpeedLabel": "Report analysis time",
-      "accuracy": "99\u202F%",
-      "accuracyLabel": "Key metrics accuracy"
-    },
-    "values": {
-      "innovation": {
-        "title": "Focus on innovation",
-        "description": "Developing the next generation of AI-powered financial insights through our own research and development."
-      },
-      "transparency": {
-        "title": "Full transparency",
-        "description": "Open about our methods, clear about our limitations, and honest about market uncertainties."
-      },
-      "excellence": {
-        "title": "Reliable solutions",
-        "description": "Built with precision and focused on delivering consistent, reliable results."
-      }
-    }
-  },
-  "contact": {
-    "title": "Ready to change how you invest?",
-    "subtitle": "Contact our team to learn how Quanor Insights can improve your investment process.",
-    "getInTouch": {
-      "title": "Get in touch",
-      "description": "Have questions about our AI-powered financial analysis platform? We're here to help you understand how Quanor can streamline your investment process."
-    },
-    "form": {
-      "title": "Send message",
-      "description": "Fill out the form below and we'll get back to you within 24 hours.",
-      "name": "Full name",
-      "namePlaceholder": "John Doe",
-      "email": "Email address",
-      "emailPlaceholder": "john@example.com",
-      "company": "Company name (optional)",
-      "companyPlaceholder": "Your company name",
-      "message": "How can we help you?",
-      "messagePlaceholder": "Tell us about your investment needs and how we can help...",
-      "send": "Send message",
-      "sending": "Sending...",
-      "validation": {
-        "required": {
-          "title": "Missing information",
-          "description": "Please fill in all required fields"
-        },
-        "email": {
-          "title": "Invalid email",
-          "description": "Please enter a valid email address"
-        },
-        "error": {
-          "title": "Error",
-          "description": "Could not send message. Please try again or contact hello@quanor.com directly."
+    "hero": {
+        "title": "Instant\nStock Analysis",
+        "subtitle": "We streamline equity analysis and asset management with AI technology and data-driven algorithms. Our analysis is delivered faster, more accurately, and with greater reliability than traditional methods.",
+        "getStarted": "Create account",
+        "learnMore": "Learn more",
+        "builtIn": "Built in Sweden",
+        "aiInsights": "Smart analysis",
+        "stats": {
+            "free": "Free",
+            "freeTier": "available",
+            "realtime": "Fast",
+            "aiAnalysis": "AI analysis",
+            "monitoring": "24/7",
+            "marketMonitoring": "monitoring"
         }
-      }
     },
-    "info": {
-      "email": {
-        "title": "Email us",
-        "description": "Contact our team"
-      },
-      "location": {
-        "title": "Visit us",
-        "description": "Klarabergsviadukten 63, 111 64 Stockholm"
-      }
-    },
-    "invitation": {
-      "title": "Be part of the journey",
-      "description": "Join the next generation of intelligent investors. Request early access to our advanced features and get priority onboarding with our team of experts."
-    },
-    "success": "Thank you! Your message has been sent successfully.",
-    "successDescription": "We'll get back to you within 24 hours."
-  },
-  "legal": {
-    "privacy": {
-      "title": "Privacy policy",
-      "lastUpdated": "Last updated: September 13, 2025",
-      "sections": {
-        "informationCollect": {
-          "title": "1. Information we collect",
-          "personal": {
-            "title": "Personal information",
-            "description": "We collect information you provide directly, including name, email address, company information and financial data necessary to provide our AI-powered financial analysis services."
-          },
-          "usage": {
-            "title": "Usage data",
-            "description": "We automatically collect information about your use of our services, including IP address, browser type, device information and usage patterns to improve our AI algorithms."
-          },
-          "financial": {
-            "title": "Financial data",
-            "description": "We process financial market data, portfolio information and investment preferences to provide personalized AI-driven insights and analysis."
-          }
-        },
-        "howWeUse": {
-          "title": "2. How we use your information",
-          "items": [
-            "Provide AI-powered financial insights and market analysis for informational purposes only",
-            "Generate market insights and sentiment analysis (not investment recommendations)",
-            "Improve our machine learning models and algorithms",
-            "Send important service updates and market alerts",
-            "Comply with financial regulations and legal requirements",
-            "Detect and prevent fraud or unauthorized access"
-          ]
-        },
-        "legalBasis": {
-          "title": "Legal basis",
-          "items": [
-            "Contract: To provide and administer the service",
-            "Legitimate interest: To improve models and prevent abuse",
-            "Legal obligation: To comply with financial and regulatory requirements",
-            "Consent: When we explicitly request it (e.g., certain communications)"
-          ]
-        },
-        "controller": {
-          "title": "Data controller",
-          "description": "Quanor AB (Reg. No. 559497-1482) is the data controller. Contact: privacy@quanor.com"
-        },
-        "informationSharing": {
-          "title": "3. Information sharing and disclosure",
-          "description": "We do not sell, trade or otherwise transfer your personal information to third parties except in the following circumstances:",
-          "items": [
-            "Service providers: We may share information with trusted third-party service providers who help operate our platform",
-            "Legal compliance: When required by law, regulation or legal process",
-            "Business transactions: In connection with a merger, sale or acquisition of assets",
-            "Safety and security: To protect the rights, property or safety of Quanor, our customers or others"
-          ]
-        },
-        "dataSecurity": {
-          "title": "4. Data security",
-          "description": "We implement industry-standard security measures including encryption, secure data transmission, access controls and regular security audits. Our systems comply with financial industry security standards and Swedish data protection regulations."
-        },
-        "dataRetention": {
-          "title": "5. Data retention",
-          "description": "We retain your personal information as long as necessary to provide our services, comply with legal obligations, resolve disputes and enforce our agreements. Financial data may be retained longer as required by applicable regulations."
-        },
-        "yourRights": {
-          "title": "6. Your rights (GDPR)",
-          "description": "Under GDPR, you have the right to:",
-          "items": [
-            "Access your personal data",
-            "Rectify inaccurate information",
-            "Erase your data (subject to legal requirements)",
-            "Restrict processing of your data",
-            "Data portability",
-            "Object to processing",
-            "Withdraw consent at any time"
-          ]
-        },
-        "contact": {
-          "title": "7. Contact information",
-          "description": "For questions about this privacy policy or to exercise your rights, contact us at:",
-          "email": "Email: privacy@quanor.com",
-          "address": "Address: Klarabergsviadukten 63, 111 64 Stockholm, Sweden"
-        }
-      }
-    },
-    "terms": {
-      "title": "Terms of service",
-      "lastUpdated": "Last updated: September 13, 2025",
-      "sections": {
-        "acceptance": {
-          "title": "1. Acceptance of terms",
-          "description": "By using Quanor's AI-powered financial analysis platform, you accept and agree to be bound by these terms of service. If you do not agree to these terms, you may not use our services."
-        },
-        "description": {
-          "title": "2. Description of service",
-          "description": "Quanor provides AI-powered financial analysis services including:",
-          "items": [
-            "PR analysis and report analysis",
-            "Pre-report analysis and market insights",
-            "Peer coverage and market flashes",
-            "Global and Swedish macro analysis",
-            "Morning briefings and customizable notifications",
-            "Coverage of 900+ Swedish companies"
-          ]
-        },
-        "userObligations": {
-          "title": "3. User obligations",
-          "account": {
-            "title": "Account responsibility",
-            "description": "You are responsible for maintaining the confidentiality of your login credentials and for all activities under your account."
-          },
-          "acceptable": {
-            "title": "Acceptable use",
-            "description": "You agree to use our services only for lawful purposes and in accordance with these terms. You must not attempt to reverse engineer, hack or misuse our AI systems."
-          },
-          "data": {
-            "title": "Data accuracy",
-            "description": "You are responsible for providing accurate information and maintaining the accuracy of your account data."
-          }
-        },
-        "disclaimer": {
-          "title": "4. Investment and information disclaimer",
-          "critical": "CRITICAL DISCLAIMER: Quanor AB (Reg. No. 559497-1482) provides informational services only. We do NOT provide financial, investment or legal advice.",
-          "items": [
-            "No investment advice: Our insights and analysis do not constitute investment recommendations or offers to buy or sell securities",
-            "No warranties: We make no warranties or representations regarding the accuracy, completeness or reliability of the information provided",
-            "Sentiment labels: Sentiment labels from Quanor are not buy/sell suggestions. “Positive”/“Negative”/“Neutral” reflect how our AI perceives that a news item or information is likely to affect the company’s stock price in the short term (up to about one week). This is not a full assessment of the company, and other market participants may reach different conclusions or use different time horizons.",
-            "Risk warning: All investments carry risk of loss. Past performance does not guarantee future results",
-            "Professional advice: You should consult qualified financial advisors before making investment decisions",
-            "Accuracy metric: Our 99% metric precision is based on historical evaluation in our internal testing against other validated sources and does not guarantee future results, market developments or forecasts.",
-            "Informational only: All information is provided for educational and informational purposes and should not be considered personalized financial advice",
-            "General nature: Any analyses, signals, sentiment labels or market insights are general in nature and do not take into account your personal financial situation, objectives or risk profile",
-            "Licensing: Quanor AB is not a licensed investment firm and is not subject to the Swedish Financial Supervisory Authority’s (Finansinspektionen) authorization requirement for advisory services",
-            "Interpretation: If any content could be interpreted as an investment recommendation, it shall be deemed general and non-personalized and is subject to this disclaimer",
-            "AI limitations: AI-generated analyses may contain errors, bias or be incomplete and should not be the sole basis for investment decisions without additional professional advice",
-            "Availability and outages: The service is provided without a guarantee of uninterrupted availability. Disruptions, maintenance, third-party failures or other technical issues may cause interruptions, delays or data errors. To the extent permitted by applicable law, Quanor AB is not liable for damages or losses arising from such outages.",
-            "Coverage: Quanor AB does not guarantee PR, report or pre-report analysis for every company a user follows. This is an ambition and may be affected by, among other things, data availability, issuer communications, market conditions, technical constraints and internal priorities.",
-            "Responsible analyst: Unless otherwise stated in connection with a publication, the responsible analyst for published material is Vilhelm Niklasson, Chief Operating Officer (COO) at Quanor AB.",
-            "Conflicts of interest: Quanor AB always discloses relevant conflicts of interest before or in direct connection with publication. Currently, Edvin Malmgård, Chief Commercial Officer (CCO) at Quanor AB, is Head of IR at Raketech and a board member of Adverty. He holds less than 1% of the shares in both companies. This does not affect Quanor’s analysis but is disclosed in accordance with good market practice.",
-            "MAR/EU compliance: If any content falls under Article 20 of MAR or Commission Delegated Regulation (EU) 2016/958, Quanor AB will, at publication, state the publishing entity, responsible analyst, date/time, instruments/issuers concerned, applied methodology, sources, assumptions and relevant conflicts of interest, and will maintain an update and withdrawal policy.",
-            "MiFID II: All Quanor AB content is general market information and should not be interpreted as a personal recommendation under MiFID II.",
-            "Updates and validity: Quanor updates or withdraws analyses when material new information arises. The timestamp indicates when the analysis was last updated.",
-            "Jurisdictions: This material is not directed at jurisdictions where distribution or use would be contrary to local law."
-          ]
-        },
-        "subscription": {
-          "title": "5. Subscription and payment",
-          "billing": {
-            "title": "Billing",
-            "description": "Subscription fees are billed in Swedish kronor (SEK). The Essential plan is 99 kr/month, billed monthly in advance."
-          },
-          "cancellation": {
-            "title": "Cancellation",
-            "description": "You may cancel your subscription at any time. Cancellation takes effect at the end of the current billing period."
-          },
-          "refunds": {
-            "title": "Refunds",
-            "description": "Refunds are provided at our discretion and typically only for technical issues that prevent service use."
-          }
-        },
-        "intellectual": {
-          "title": "6. Intellectual property and data protection",
-          "ownership": {
-            "title": "Ownership",
-            "description": "All content, algorithms, AI models, data, insights and intellectual property associated with Quanor's services remain our exclusive property. You receive a limited, non-exclusive license to use our services during your subscription period."
-          },
-          "prohibited": {
-            "title": "Prohibited data usage",
-            "warning": "STRICTLY PROHIBITED: Data scraping, mining, extraction or automated collection of content from our platform is forbidden.",
-            "items": [
-              "No data scraping, crawling or automated extraction is permitted",
-              "Redistribution, republication or resale of our data is prohibited",
-              "No third party may present, display or use our data without written consent",
-              "Reverse engineering of our algorithms or AI models is strictly forbidden",
-              "Systematic downloading or bulk extraction will result in immediate termination"
+    "products": {
+        "title": "Advanced AI analysis – at campaign price",
+        "subtitle": "Get the same AI-driven market monitoring as professional investors – analysis of reports, PR flow and pre-market in one package.",
+        "badge": "Quanor Analysis",
+        "free": {
+            "name": "Free",
+            "price": "0 kr/month",
+            "description": "Basic AI-powered financial analysis to get started",
+            "features": [
+                "Full PR, report and pre-report analysis",
+                "Follow up to 5 companies",
+                "Email support"
             ]
-          },
-          "consent": {
-            "title": "Written consent required",
-            "description": "Any use of Quanor's data, insights or content outside our platform requires explicit written consent from Quanor. Unauthorized use may result in legal action and damages."
-          }
         },
-        "liability": {
-          "title": "7. Limitation of liability",
-          "description": "Quanor’s liability is limited to the amount paid for services in the 12 months preceding any claim. We are not liable for investment losses, market volatility or decisions made based on our AI insights. Our services are provided \"as is\" without warranties."
-        },
-        "governing": {
-          "title": "8. Governing law",
-          "description": "These terms are governed by Swedish law. Any disputes will be resolved in the courts of Stockholm, Sweden."
-        },
-        "contact": {
-          "title": "9. Contact information",
-          "description": "For questions about these terms of service, contact us at:",
-          "email": "Email: legal@quanor.com",
-          "address": "Address: Klarabergsviadukten 63, 111 64 Stockholm, Sweden"
-        }
-      }
-    },
-    "cookies": {
-      "title": "Cookie policy",
-      "lastUpdated": "Last updated: September 13, 2025",
-      "sections": {
-        "what": {
-          "title": "What are cookies?",
-          "description": "Cookies are small text files placed on your device when you visit our website. We only use essential cookies for the site to function, such as security, login and basic operations. Our services are informational only and do not provide investment advice."
-        },
-        "howWeUse": {
-          "title": "How we use cookies",
-          "essential": {
-            "title": "Essential cookies",
-            "description": "These cookies are required for our website to function properly. They enable core functionality such as security, session management, login and accessibility."
-          },
-          "performance": {
-            "title": "Performance cookies",
-            "description": "We do not use performance cookies."
-          },
-          "functional": {
-            "title": "Functional cookies",
-            "description": "We do not use functional cookies beyond those strictly necessary for the service to work."
-          },
-          "analytics": {
-            "title": "Analytics cookies",
-            "description": "We do not use analytics cookies."
-          }
-        },
-        "types": {
-          "title": "Types of cookies we use",
-          "session": {
-            "title": "Session cookies",
-            "description": "Temporary cookies that expire when you close your browser. Used to maintain your session and ensure core functions."
-          },
-          "persistent": {
-            "title": "Persistent cookies",
-            "description": "Remain on your device for a limited period or until you delete them. Used only if necessary, e.g. to remember a secure login."
-          },
-          "firstParty": {
-            "title": "First-party cookies",
-            "description": "Set directly by Quanor for essential purposes only. We do not use analytic or performance cookies."
-          },
-          "thirdParty": {
-            "title": "Third-party cookies",
-            "description": "We do not use third-party cookies or third-party tracking via cookies."
-          }
-        },
-        "consent": {
-          "title": "Cookie consent and control",
-          "choices": {
-            "title": "Your choices",
-            "description": "Since we only use essential cookies, we do not display a consent banner. You can manage and delete cookies at any time through your browser."
-          },
-          "browser": {
-            "title": "Browser controls",
-            "description": "Most browsers allow you to control cookies through their settings. You can usually:",
-            "items": [
-              "View cookies stored on your device",
-              "Block all or specific cookies",
-              "Delete existing cookies",
-              "Set preferences for future cookies"
+        "essential": {
+            "name": "Essential",
+            "price": "99 kr/month",
+            "promoPrice": "39 kr/month",
+            "promoNote": "first 2 months",
+            "regularPrice": "then 99 kr/month, cancel anytime",
+            "description": "Advanced AI analysis for serious investors and professionals – and the ability to follow unlimited companies for maximum time savings.",
+            "features": [
+                "Expanded market analysis",
+                "Follow unlimited companies",
+                "PR, report and pre-report analysis",
+                "Priority support",
+                "Full access to all company pages in Quanor's webapp"
             ]
-          },
-          "impact": {
-            "title": "Impact of disabling cookies",
-            "description": "If you block essential cookies, parts of our website may stop working, such as login and secure sessions."
-          }
         },
-        "thirdParty": {
-          "title": "Third-party services",
-          "description": "We do not use third-party cookies or tracking via cookies."
+        "getStarted": "Sign up",
+        "campaignOffer": "Campaign Offer",
+        "promoCode": "Have a promo code? Click here to get started",
+        "promo": {
+            "show": "true",
+            "label": "Campaign Offer",
+            "title": "Essential for 39 kr/month for 2 months",
+            "description": "Then regular price 99 kr/month.",
+            "badge": "39 kr/month first 2 months",
+            "cta": "Activate offer"
         },
-        "necessaryList": {
-          "title": "Which essential cookies we use",
-          "description": "Below are examples of essential cookies that may be set by our website:",
-          "items": [
-            {
-              "name": "session_id",
-              "purpose": "Maintains secure logged-in session",
-              "duration": "Session-based"
+        "whyChoose": "Why choose Quanor?",
+        "benefits": {
+            "ai": {
+                "title": "AI-powered intelligence",
+                "description": "Advanced machine learning models trained on extensive financial datasets"
             },
-            {
-              "name": "csrf_token",
-              "purpose": "Protects forms against CSRF attacks",
-              "duration": "Session-based"
+            "realtime": {
+                "title": "Real-time processing",
+                "description": "Instant analysis delivered as market conditions change"
+            },
+            "institutional": {
+                "title": "Professional standard",
+                "description": "Enterprise security and reliability trusted by financial experts"
             }
-          ]
         },
-        "updates": {
-          "title": "Updates to this policy",
-          "description": "We may update this cookie policy when our technical solutions change or for legal reasons. The \"Last updated\" date will be revised with each significant change."
+        "features": {
+            "reportAnalysis": {
+                "title": "Report Analysis",
+                "label": "Automated Review",
+                "description": "In-depth analysis of companies' quarterly and annual reports with summarized key metrics, risks, opportunities and analyst estimates."
+            },
+            "prAnalysis": {
+                "title": "PR Analysis",
+                "label": "News Flow",
+                "description": "Automated interpretation of press releases and news."
+            },
+            "preReport": {
+                "title": "Pre-Earnings Analysis",
+                "label": "Before Report",
+                "description": "Expectations, sentiment, risk indicators and analyst estimates ahead of the next reporting date."
+            },
+            "marketRecap": {
+                "title": "Daily Market Recap",
+                "label": "Email Briefing",
+                "description": "A summary evening email that goes through today's macro picture and the most important movements for your watched companies – so you quickly get a complete picture ahead of tomorrow's trading."
+            },
+            "preMarket": {
+                "title": "Pre-Market Update",
+                "label": "Morning Email",
+                "description": "A short morning email before opening with focus on fresh news, bids, reports and price-driving information – filtered for your watched holdings."
+            }
         },
-        "contact": {
-          "title": "Contact us",
-          "description": "If you have questions about our use of cookies, contact us at:",
-          "email": "Email: privacy@quanor.com",
-          "address": "Address: Klarabergsviadukten 63, 111 64 Stockholm, Sweden"
-        }
-      }
-    }
-  },
-  "notFound": {
-    "title": "404",
-    "message": "Oops! Page not found"
-  },
-  "footer": {
-    "description": "AI-powered financial insights. Streamlining equity analysis and asset management with new technology.",
-    "builtIn": "Developed in Stockholm, Sweden",
-    "sections": {
-      "products": "Products",
-      "company": "Company",
-      "resources": "Resources"
+        "services": {
+            "title": "Comprehensive analysis suite",
+            "description": "We offer PR analysis, report analysis, pre-report analysis, comprehensive peer monitoring, automatic triggers that we continuously monitor, global and Swedish macro linked to a watchlist, morning briefings and much more. Full flexibility to opt out or into notifications depending on your specific needs."
+        },
+        "disclaimer": "Content generated by Quanor's AI engines and is intended as decision support, not personal financial advice."
     },
-    "links": {
-      "insights": "Quanor Insights",
-      "pricing": "Pricing",
-      "about": "About",
-      "contact": "Contact",
-      "support": "Support"
+    "comparison": {
+        "title": "How we differ",
+        "subtitle": "See how we compare to online brokers and LLM tools",
+        "columns": {
+            "feature": "Feature",
+            "traditional": "Online brokers",
+            "aiTools": "LLM tools",
+            "quanor": "Quanor"
+        },
+        "features": {
+            "onReport": "Report analysis",
+            "preReport": "Pre-Earnings analysis",
+            "metricsExtraction": "Instant key metrics",
+            "prAnalysis": "PR analysis",
+            "sentiment": "Advanced sentiment analysis",
+            "frameworkAnalysis": "In-house analysis framework",
+            "swedishFocus": "Swedish focus"
+        },
+        "legend": {
+            "full": "Full support",
+            "partial": "Basic/partial",
+            "none": "Not available"
+        }
+    },
+    "about": {
+        "title": "Leading the future of financial analysis",
+        "subtitle": "Founded in Stockholm, Sweden, Quanor represents the forefront of AI-driven financial technology.",
+        "description1": "We believe that sophisticated investment analysis should not be limited to large institutions. Our platform democratizes advanced market intelligence through new AI technology and algorithms.",
+        "description2": "Every algorithm, every analysis is powered by our custom AI models that process large amounts of market data in real time, delivering valuable analysis that helps you make better investment decisions.",
+        "team": "Our small but dedicated team consists of PhDs in mathematical statistics, AI/LLM experts, data scientists, and entrepreneurs passionate about transforming the financial industry with new technology.",
+        "stats": {
+            "companies": "900+",
+            "companiesLabel": "Swedish companies",
+            "prSpeed": "<3s",
+            "prSpeedLabel": "PR analysis time",
+            "reportSpeed": "≈1.5\u202Fmin",
+            "reportSpeedLabel": "Report analysis time",
+            "accuracy": "99\u202F%",
+            "accuracyLabel": "Key metrics accuracy"
+        },
+        "values": {
+            "innovation": {
+                "title": "Focus on innovation",
+                "description": "Developing the next generation of AI-powered financial analysis through our own research and development."
+            },
+            "transparency": {
+                "title": "Full transparency",
+                "description": "Open about our methods, clear about our limitations, and honest about market uncertainties."
+            },
+            "excellence": {
+                "title": "Reliable solutions",
+                "description": "Built with precision and focused on delivering consistent, reliable results."
+            }
+        }
+    },
+    "contact": {
+        "title": "Ready to change how you invest?",
+        "subtitle": "Contact our team to learn how Quanor Analysis can improve your investment process.",
+        "getInTouch": {
+            "title": "Get in touch",
+            "description": "Have questions about our AI-powered financial analysis platform? We're here to help you understand how Quanor can streamline your investment process."
+        },
+        "form": {
+            "title": "Send message",
+            "description": "Fill out the form below and we'll get back to you within 24 hours.",
+            "name": "Full name",
+            "namePlaceholder": "John Doe",
+            "email": "Email address",
+            "emailPlaceholder": "john@example.com",
+            "company": "Company name (optional)",
+            "companyPlaceholder": "Your company name",
+            "message": "How can we help you?",
+            "messagePlaceholder": "Tell us about your investment needs and how we can help...",
+            "send": "Send message",
+            "sending": "Sending...",
+            "validation": {
+                "required": {
+                    "title": "Missing information",
+                    "description": "Please fill in all required fields"
+                },
+                "email": {
+                    "title": "Invalid email",
+                    "description": "Please enter a valid email address"
+                },
+                "error": {
+                    "title": "Error",
+                    "description": "Could not send message. Please try again or contact hello@quanor.com directly."
+                }
+            }
+        },
+        "info": {
+            "email": {
+                "title": "Email us",
+                "description": "Contact our team"
+            },
+            "location": {
+                "title": "Visit us",
+                "description": "Klarabergsviadukten 63, 111 64 Stockholm"
+            }
+        },
+        "invitation": {
+            "title": "Be part of the journey",
+            "description": "Join the next generation of intelligent investors. Request early access to our advanced features and get priority onboarding with our team of experts."
+        },
+        "success": "Thank you! Your message has been sent successfully.",
+        "successDescription": "We'll get back to you within 24 hours."
     },
     "legal": {
-      "privacy": "Privacy policy",
-      "terms": "Terms of service",
-      "cookies": "Cookie policy"
+        "privacy": {
+            "title": "Privacy policy",
+            "lastUpdated": "Last updated: September 13, 2025",
+            "sections": {
+                "informationCollect": {
+                    "title": "1. Information we collect",
+                    "personal": {
+                        "title": "Personal information",
+                        "description": "We collect information you provide directly, including name, email address, company information and financial data necessary to provide our AI-powered financial analysis services."
+                    },
+                    "usage": {
+                        "title": "Usage data",
+                        "description": "We automatically collect information about your use of our services, including IP address, browser type, device information and usage patterns to improve our AI algorithms."
+                    },
+                    "financial": {
+                        "title": "Financial data",
+                        "description": "We process financial market data, portfolio information and investment preferences to provide personalized AI-driven insights and analysis."
+                    }
+                },
+                "howWeUse": {
+                    "title": "2. How we use your information",
+                    "items": [
+                        "Provide AI-powered financial insights and market analysis for informational purposes only",
+                        "Generate market insights and sentiment analysis (not investment recommendations)",
+                        "Improve our machine learning models and algorithms",
+                        "Send important service updates and market alerts",
+                        "Comply with financial regulations and legal requirements",
+                        "Detect and prevent fraud or unauthorized access"
+                    ]
+                },
+                "legalBasis": {
+                    "title": "Legal basis",
+                    "items": [
+                        "Contract: To provide and administer the service",
+                        "Legitimate interest: To improve models and prevent abuse",
+                        "Legal obligation: To comply with financial and regulatory requirements",
+                        "Consent: When we explicitly request it (e.g., certain communications)"
+                    ]
+                },
+                "controller": {
+                    "title": "Data controller",
+                    "description": "Quanor AB (Reg. No. 559497-1482) is the data controller. Contact: privacy@quanor.com"
+                },
+                "informationSharing": {
+                    "title": "3. Information sharing and disclosure",
+                    "description": "We do not sell, trade or otherwise transfer your personal information to third parties except in the following circumstances:",
+                    "items": [
+                        "Service providers: We may share information with trusted third-party service providers who help operate our platform",
+                        "Legal compliance: When required by law, regulation or legal process",
+                        "Business transactions: In connection with a merger, sale or acquisition of assets",
+                        "Safety and security: To protect the rights, property or safety of Quanor, our customers or others"
+                    ]
+                },
+                "dataSecurity": {
+                    "title": "4. Data security",
+                    "description": "We implement industry-standard security measures including encryption, secure data transmission, access controls and regular security audits. Our systems comply with financial industry security standards and Swedish data protection regulations."
+                },
+                "dataRetention": {
+                    "title": "5. Data retention",
+                    "description": "We retain your personal information as long as necessary to provide our services, comply with legal obligations, resolve disputes and enforce our agreements. Financial data may be retained longer as required by applicable regulations."
+                },
+                "yourRights": {
+                    "title": "6. Your rights (GDPR)",
+                    "description": "Under GDPR, you have the right to:",
+                    "items": [
+                        "Access your personal data",
+                        "Rectify inaccurate information",
+                        "Erase your data (subject to legal requirements)",
+                        "Restrict processing of your data",
+                        "Data portability",
+                        "Object to processing",
+                        "Withdraw consent at any time"
+                    ]
+                },
+                "contact": {
+                    "title": "7. Contact information",
+                    "description": "For questions about this privacy policy or to exercise your rights, contact us at:",
+                    "email": "Email: privacy@quanor.com",
+                    "address": "Address: Klarabergsviadukten 63, 111 64 Stockholm, Sweden"
+                }
+            }
+        },
+        "terms": {
+            "title": "Terms of service",
+            "lastUpdated": "Last updated: September 13, 2025",
+            "sections": {
+                "acceptance": {
+                    "title": "1. Acceptance of terms",
+                    "description": "By using Quanor's AI-powered financial analysis platform, you accept and agree to be bound by these terms of service. If you do not agree to these terms, you may not use our services."
+                },
+                "description": {
+                    "title": "2. Description of service",
+                    "description": "Quanor provides AI-powered financial analysis services including:",
+                    "items": [
+                        "PR analysis and report analysis",
+                        "Pre-report analysis and market insights",
+                        "Peer coverage and market flashes",
+                        "Global and Swedish macro analysis",
+                        "Morning briefings and customizable notifications",
+                        "Coverage of 900+ Swedish companies"
+                    ]
+                },
+                "userObligations": {
+                    "title": "3. User obligations",
+                    "account": {
+                        "title": "Account responsibility",
+                        "description": "You are responsible for maintaining the confidentiality of your login credentials and for all activities under your account."
+                    },
+                    "acceptable": {
+                        "title": "Acceptable use",
+                        "description": "You agree to use our services only for lawful purposes and in accordance with these terms. You must not attempt to reverse engineer, hack or misuse our AI systems."
+                    },
+                    "data": {
+                        "title": "Data accuracy",
+                        "description": "You are responsible for providing accurate information and maintaining the accuracy of your account data."
+                    }
+                },
+                "disclaimer": {
+                    "title": "4. Investment and information disclaimer",
+                    "critical": "CRITICAL DISCLAIMER: Quanor AB (Reg. No. 559497-1482) provides informational services only. We do NOT provide financial, investment or legal advice.",
+                    "items": [
+                        "No investment advice: Our insights and analysis do not constitute investment recommendations or offers to buy or sell securities",
+                        "No warranties: We make no warranties or representations regarding the accuracy, completeness or reliability of the information provided",
+                        "Sentiment labels: Sentiment labels from Quanor are not buy/sell suggestions. “Positive”/“Negative”/“Neutral” reflect how our AI perceives that a news item or information is likely to affect the company’s stock price in the short term (up to about one week). This is not a full assessment of the company, and other market participants may reach different conclusions or use different time horizons.",
+                        "Risk warning: All investments carry risk of loss. Past performance does not guarantee future results",
+                        "Professional advice: You should consult qualified financial advisors before making investment decisions",
+                        "Accuracy metric: Our 99% metric precision is based on historical evaluation in our internal testing against other validated sources and does not guarantee future results, market developments or forecasts.",
+                        "Informational only: All information is provided for educational and informational purposes and should not be considered personalized financial advice",
+                        "General nature: Any analyses, signals, sentiment labels or market insights are general in nature and do not take into account your personal financial situation, objectives or risk profile",
+                        "Licensing: Quanor AB is not a licensed investment firm and is not subject to the Swedish Financial Supervisory Authority’s (Finansinspektionen) authorization requirement for advisory services",
+                        "Interpretation: If any content could be interpreted as an investment recommendation, it shall be deemed general and non-personalized and is subject to this disclaimer",
+                        "AI limitations: AI-generated analyses may contain errors, bias or be incomplete and should not be the sole basis for investment decisions without additional professional advice",
+                        "Availability and outages: The service is provided without a guarantee of uninterrupted availability. Disruptions, maintenance, third-party failures or other technical issues may cause interruptions, delays or data errors. To the extent permitted by applicable law, Quanor AB is not liable for damages or losses arising from such outages.",
+                        "Coverage: Quanor AB does not guarantee PR, report or pre-report analysis for every company a user follows. This is an ambition and may be affected by, among other things, data availability, issuer communications, market conditions, technical constraints and internal priorities.",
+                        "Responsible analyst: Unless otherwise stated in connection with a publication, the responsible analyst for published material is Vilhelm Niklasson, Chief Operating Officer (COO) at Quanor AB.",
+                        "Conflicts of interest: Quanor AB always discloses relevant conflicts of interest before or in direct connection with publication. Currently, Edvin Malmgård, Chief Commercial Officer (CCO) at Quanor AB, is Head of IR at Raketech and a board member of Adverty. He holds less than 1% of the shares in both companies. This does not affect Quanor’s analysis but is disclosed in accordance with good market practice.",
+                        "MAR/EU compliance: If any content falls under Article 20 of MAR or Commission Delegated Regulation (EU) 2016/958, Quanor AB will, at publication, state the publishing entity, responsible analyst, date/time, instruments/issuers concerned, applied methodology, sources, assumptions and relevant conflicts of interest, and will maintain an update and withdrawal policy.",
+                        "MiFID II: All Quanor AB content is general market information and should not be interpreted as a personal recommendation under MiFID II.",
+                        "Updates and validity: Quanor updates or withdraws analyses when material new information arises. The timestamp indicates when the analysis was last updated.",
+                        "Jurisdictions: This material is not directed at jurisdictions where distribution or use would be contrary to local law."
+                    ]
+                },
+                "subscription": {
+                    "title": "5. Subscription and payment",
+                    "billing": {
+                        "title": "Billing",
+                        "description": "Subscription fees are billed in Swedish kronor (SEK). The Essential plan is 99 kr/month, billed monthly in advance."
+                    },
+                    "cancellation": {
+                        "title": "Cancellation",
+                        "description": "You may cancel your subscription at any time. Cancellation takes effect at the end of the current billing period."
+                    },
+                    "refunds": {
+                        "title": "Refunds",
+                        "description": "Refunds are provided at our discretion and typically only for technical issues that prevent service use."
+                    }
+                },
+                "intellectual": {
+                    "title": "6. Intellectual property and data protection",
+                    "ownership": {
+                        "title": "Ownership",
+                        "description": "All content, algorithms, AI models, data, insights and intellectual property associated with Quanor's services remain our exclusive property. You receive a limited, non-exclusive license to use our services during your subscription period."
+                    },
+                    "prohibited": {
+                        "title": "Prohibited data usage",
+                        "warning": "STRICTLY PROHIBITED: Data scraping, mining, extraction or automated collection of content from our platform is forbidden.",
+                        "items": [
+                            "No data scraping, crawling or automated extraction is permitted",
+                            "Redistribution, republication or resale of our data is prohibited",
+                            "No third party may present, display or use our data without written consent",
+                            "Reverse engineering of our algorithms or AI models is strictly forbidden",
+                            "Systematic downloading or bulk extraction will result in immediate termination"
+                        ]
+                    },
+                    "consent": {
+                        "title": "Written consent required",
+                        "description": "Any use of Quanor's data, insights or content outside our platform requires explicit written consent from Quanor. Unauthorized use may result in legal action and damages."
+                    }
+                },
+                "liability": {
+                    "title": "7. Limitation of liability",
+                    "description": "Quanor’s liability is limited to the amount paid for services in the 12 months preceding any claim. We are not liable for investment losses, market volatility or decisions made based on our AI insights. Our services are provided \"as is\" without warranties."
+                },
+                "governing": {
+                    "title": "8. Governing law",
+                    "description": "These terms are governed by Swedish law. Any disputes will be resolved in the courts of Stockholm, Sweden."
+                },
+                "contact": {
+                    "title": "9. Contact information",
+                    "description": "For questions about these terms of service, contact us at:",
+                    "email": "Email: legal@quanor.com",
+                    "address": "Address: Klarabergsviadukten 63, 111 64 Stockholm, Sweden"
+                }
+            }
+        },
+        "cookies": {
+            "title": "Cookie policy",
+            "lastUpdated": "Last updated: September 13, 2025",
+            "sections": {
+                "what": {
+                    "title": "What are cookies?",
+                    "description": "Cookies are small text files placed on your device when you visit our website. We only use essential cookies for the site to function, such as security, login and basic operations. Our services are informational only and do not provide investment advice."
+                },
+                "howWeUse": {
+                    "title": "How we use cookies",
+                    "essential": {
+                        "title": "Essential cookies",
+                        "description": "These cookies are required for our website to function properly. They enable core functionality such as security, session management, login and accessibility."
+                    },
+                    "performance": {
+                        "title": "Performance cookies",
+                        "description": "We do not use performance cookies."
+                    },
+                    "functional": {
+                        "title": "Functional cookies",
+                        "description": "We do not use functional cookies beyond those strictly necessary for the service to work."
+                    },
+                    "analytics": {
+                        "title": "Analytics cookies",
+                        "description": "We do not use analytics cookies."
+                    }
+                },
+                "types": {
+                    "title": "Types of cookies we use",
+                    "session": {
+                        "title": "Session cookies",
+                        "description": "Temporary cookies that expire when you close your browser. Used to maintain your session and ensure core functions."
+                    },
+                    "persistent": {
+                        "title": "Persistent cookies",
+                        "description": "Remain on your device for a limited period or until you delete them. Used only if necessary, e.g. to remember a secure login."
+                    },
+                    "firstParty": {
+                        "title": "First-party cookies",
+                        "description": "Set directly by Quanor for essential purposes only. We do not use analytic or performance cookies."
+                    },
+                    "thirdParty": {
+                        "title": "Third-party cookies",
+                        "description": "We do not use third-party cookies or third-party tracking via cookies."
+                    }
+                },
+                "consent": {
+                    "title": "Cookie consent and control",
+                    "choices": {
+                        "title": "Your choices",
+                        "description": "Since we only use essential cookies, we do not display a consent banner. You can manage and delete cookies at any time through your browser."
+                    },
+                    "browser": {
+                        "title": "Browser controls",
+                        "description": "Most browsers allow you to control cookies through their settings. You can usually:",
+                        "items": [
+                            "View cookies stored on your device",
+                            "Block all or specific cookies",
+                            "Delete existing cookies",
+                            "Set preferences for future cookies"
+                        ]
+                    },
+                    "impact": {
+                        "title": "Impact of disabling cookies",
+                        "description": "If you block essential cookies, parts of our website may stop working, such as login and secure sessions."
+                    }
+                },
+                "thirdParty": {
+                    "title": "Third-party services",
+                    "description": "We do not use third-party cookies or tracking via cookies."
+                },
+                "necessaryList": {
+                    "title": "Which essential cookies we use",
+                    "description": "Below are examples of essential cookies that may be set by our website:",
+                    "items": [
+                        {
+                            "name": "session_id",
+                            "purpose": "Maintains secure logged-in session",
+                            "duration": "Session-based"
+                        },
+                        {
+                            "name": "csrf_token",
+                            "purpose": "Protects forms against CSRF attacks",
+                            "duration": "Session-based"
+                        }
+                    ]
+                },
+                "updates": {
+                    "title": "Updates to this policy",
+                    "description": "We may update this cookie policy when our technical solutions change or for legal reasons. The \"Last updated\" date will be revised with each significant change."
+                },
+                "contact": {
+                    "title": "Contact us",
+                    "description": "If you have questions about our use of cookies, contact us at:",
+                    "email": "Email: privacy@quanor.com",
+                    "address": "Address: Klarabergsviadukten 63, 111 64 Stockholm, Sweden"
+                }
+            }
+        }
     },
-    "copyright": "© 2025 Quanor AB (Reg. No. 559497-1482). All rights reserved."
-  }
+    "notFound": {
+        "title": "404",
+        "message": "Oops! Page not found"
+    },
+    "footer": {
+        "description": "Instant financial analysis. Streamlining equity analysis and asset management with new technology.",
+        "builtIn": "Developed in Stockholm, Sweden",
+        "sections": {
+            "products": "Products",
+            "company": "Company",
+            "resources": "Resources"
+        },
+        "links": {
+            "insights": "Quanor Analysis",
+            "pricing": "Pricing",
+            "about": "About",
+            "contact": "Contact",
+            "support": "Support"
+        },
+        "legal": {
+            "privacy": "Privacy policy",
+            "terms": "Terms of service",
+            "cookies": "Cookie policy"
+        },
+        "copyright": "© 2025 Quanor AB (Reg. No. 559497-1482). All rights reserved."
+    }
 }

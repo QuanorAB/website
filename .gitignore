@@ -40,3 +40,5 @@ coverage
 supabase/.branches
 supabase/.temp
 supabase/functions/**/node_modules
+
+.next/
