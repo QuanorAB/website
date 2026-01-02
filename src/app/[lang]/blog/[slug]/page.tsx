@@ -93,6 +93,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ lang:
             },
         },
         "datePublished": post.published_at,
+        "dateModified": post.updated_at || post.published_at,
         "image": post.cover_image || "https://www.quanor.com/images/og-image.png",
         "mainEntityOfPage": {
             "@type": "WebPage",
