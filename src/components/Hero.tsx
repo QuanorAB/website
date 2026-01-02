@@ -151,9 +151,7 @@ export default function Hero({ lang }: { lang: string }) {
                             className="absolute -bottom-4 right-2 w-[25%] max-w-[120px] md:-bottom-8 md:right-12 md:w-[18%] md:max-w-[180px]"
                         >
                             <motion.div
-                                animate={{ y: [0, -8, 0] }}
-                                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                                className="rounded-[2rem] overflow-hidden shadow-[0_25px_60px_-15px_rgba(0,0,0,0.5)] border border-white/10 bg-background"
+                                className="rounded-xl md:rounded-[1.5rem] overflow-hidden shadow-[0_25px_60px_-15px_rgba(0,0,0,0.5)] border border-white/10 bg-background"
                             >
                                 <Image
                                     src={lang === 'sv' ? "/images/app_home_dark_mobile_sv.jpeg" : "/images/app_home_dark_mobile_en.jpeg"}
