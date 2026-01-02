@@ -8,7 +8,7 @@ export default function Teaser({ lang }: { lang: string }) {
     const content = {
         sv: {
             title: "Varför välja Quanor?",
-            subtitle: "Se hur bolag hänger ihop och förstå marknaden på djupet.",
+            subtitle: "Förstå bolagsrelationer och få djupare marknadsinsikter.",
             description: "Vi har ett proprietärt relationsuniversum och bolagsspecifika triggers som vi använder i våra analyser. Förstå hur varje bolag är kopplat till sina konkurrenter, kunder och leverantörer, och få automatiska varningar för viktiga händelser.",
             features: [
                 "Snabb och träffsäker analys som tar hänsyn till relationer och tidigare kommunikation",
@@ -19,7 +19,7 @@ export default function Teaser({ lang }: { lang: string }) {
         },
         en: {
             title: "Why choose Quanor?",
-            subtitle: "See how companies connect and understand the market deeply.",
+            subtitle: "Understand company relationships and gain deeper market insights.",
             description: "We have a proprietary relationship universe and company-specific triggers that we use in our analysis. Understand how each company is connected to its competitors, customers, and suppliers, and get automatic alerts for important events.",
             features: [
                 "Fast and accurate analysis considering relationships and past communications",

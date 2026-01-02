@@ -26,7 +26,7 @@ export default function Contact({ lang }: { lang: string }) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    company: "",
+    subject: "",
     message: ""
   });
   const [isLoading, setIsLoading] = useState(false);
@@ -42,7 +42,8 @@ export default function Contact({ lang }: { lang: string }) {
       form: {
         name: "Namn",
         email: "E-post",
-        company: "Företag",
+        subject: "Ämne",
+        subjectOptions: ["Allmän förfrågan", "Produktdemo", "Teknisk support", "Prissättning", "Övrigt"],
         message: "Meddelande",
         submit: "Skicka meddelande",
         sending: "Skickar..."
@@ -65,7 +66,8 @@ export default function Contact({ lang }: { lang: string }) {
       form: {
         name: "Name",
         email: "Email",
-        company: "Company",
+        subject: "Subject",
+        subjectOptions: ["General inquiry", "Product demo", "Technical support", "Pricing", "Other"],
         message: "Message",
         submit: "Send message",
         sending: "Sending..."
@@ -92,14 +94,14 @@ export default function Contact({ lang }: { lang: string }) {
           body: {
             name: formData.name,
             email: formData.email,
-            company: formData.company,
+            company: formData.subject, // Map subject to company field for compatibility
             message: formData.message,
           }
         });
       }
 
       toast.success(t.success);
-      setFormData({ name: "", email: "", company: "", message: "" });
+      setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
       console.error('Error submitting form:', error);
       toast.error(t.error);
@@ -167,12 +169,19 @@ export default function Contact({ lang }: { lang: string }) {
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="company">{t.form.company}</Label>
-                    <Input
-                      id="company"
-                      value={formData.company}
-                      onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                    />
+                    <Label htmlFor="subject">{t.form.subject}</Label>
+                    <select
+                      id="subject"
+                      required
+                      value={formData.subject}
+                      onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                      className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm ring-offset-background focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+                    >
+                      <option value="">---</option>
+                      {t.form.subjectOptions.map((option, i) => (
+                        <option key={i} value={option}>{option}</option>
+                      ))}
+                    </select>
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="message">{t.form.message}</Label>

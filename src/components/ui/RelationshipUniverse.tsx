@@ -187,21 +187,99 @@ export function RelationshipUniverse({ lang = "en" }: { lang?: string }) {
                 </div>
             </div>
 
-            {/* Vertical connection from triggers */}
-            <div className="flex justify-center mb-4">
-                <div className="relative w-0.5 h-8">
-                    <div className="absolute inset-0 bg-muted-foreground/30" />
+            {/* Vertical connection from triggers - Desktop only */}
+            <div className="hidden lg:flex justify-center mb-4">
+                <div className="relative flex flex-col items-center">
+                    {/* Gradient line */}
+                    <div className="w-0.5 h-10 bg-gradient-to-b from-primary/60 via-primary/40 to-primary/10 rounded-full" />
+
+                    {/* Animated traveling dot */}
                     <motion.div
-                        animate={{ top: ["0%", "100%"], opacity: [0, 1, 1, 0] }}
-                        transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
-                        className="absolute left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-muted-foreground"
+                        animate={{ y: [0, 32, 0], opacity: [0, 1, 0] }}
+                        transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                        className="absolute top-0 w-2 h-2 bg-primary rounded-full shadow-lg shadow-primary/50"
                     />
+
+                    {/* Arrow tip */}
+                    <svg className="w-3 h-3 text-primary/60 -mt-0.5" viewBox="0 0 12 12" fill="currentColor">
+                        <path d="M6 9L2 5h8L6 9z" />
+                    </svg>
                 </div>
             </div>
 
             {/* Main flow: Suppliers → Volvo → Customers */}
-            {/* Mobile: vertical stack | Desktop: horizontal flow */}
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-4 mb-6">
+            {/* Desktop: horizontal flow | Mobile: Volvo first, then suppliers/customers row */}
+
+            {/* Mobile layout: Volvo centered at top, relationships below */}
+            <div className="lg:hidden flex flex-col items-center gap-4 mb-6">
+                {/* Volvo - Primary focus on mobile */}
+                <CompanyCard
+                    name="Volvo"
+                    color="text-primary"
+                    bgColor="bg-primary/10"
+                    borderColor="border-primary/50"
+                    delay={0.2}
+                    isPrimary
+                />
+
+                {/* Suppliers and Customers side by side on mobile */}
+                <div className="flex flex-row gap-6">
+                    {/* Suppliers */}
+                    <div className="flex flex-col items-center gap-2">
+                        <motion.span
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.3 }}
+                            className="text-xs font-semibold uppercase tracking-wider text-amber-400"
+                        >
+                            {t.suppliers}
+                        </motion.span>
+                        <div className="flex flex-col gap-1.5">
+                            {suppliers.map((company, i) => (
+                                <CompanyCard
+                                    key={company.name}
+                                    name={company.name}
+                                    ticker={company.ticker}
+                                    color="text-amber-300"
+                                    bgColor="bg-amber-500/10"
+                                    borderColor="border-amber-500/30"
+                                    delay={0.4 + i * 0.1}
+                                />
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Customers */}
+                    <div className="flex flex-col items-center gap-2">
+                        <motion.span
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.35 }}
+                            className="text-xs font-semibold uppercase tracking-wider text-cyan-400"
+                        >
+                            {t.customers}
+                        </motion.span>
+                        <div className="flex flex-col gap-1.5">
+                            {customers.map((company, i) => (
+                                <CompanyCard
+                                    key={company.name}
+                                    name={company.name}
+                                    ticker={company.ticker}
+                                    color="text-cyan-300"
+                                    bgColor="bg-cyan-500/10"
+                                    borderColor="border-cyan-500/30"
+                                    delay={0.45 + i * 0.1}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Desktop layout: Horizontal flow */}
+            <div className="hidden lg:flex flex-row items-center justify-center gap-4 mb-6">
                 {/* Suppliers column */}
                 <div className="flex flex-col items-center gap-2">
                     <motion.span
@@ -213,7 +291,7 @@ export function RelationshipUniverse({ lang = "en" }: { lang?: string }) {
                     >
                         {t.suppliers}
                     </motion.span>
-                    <div className="flex flex-row lg:flex-col gap-1.5">
+                    <div className="flex flex-col gap-1.5">
                         {suppliers.map((company, i) => (
                             <CompanyCard
                                 key={company.name}
@@ -228,8 +306,8 @@ export function RelationshipUniverse({ lang = "en" }: { lang?: string }) {
                     </div>
                 </div>
 
-                {/* Flow: Suppliers → Volvo (desktop only) */}
-                <div className="hidden lg:flex flex-col gap-2 py-8">
+                {/* Flow: Suppliers → Volvo */}
+                <div className="flex flex-col gap-2 py-8">
                     <HorizontalFlow direction="right" color="bg-amber-400" delay={0.5} />
                     <HorizontalFlow direction="right" color="bg-amber-400" delay={0.7} />
                     <HorizontalFlow direction="right" color="bg-amber-400" delay={0.9} />
@@ -245,8 +323,8 @@ export function RelationshipUniverse({ lang = "en" }: { lang?: string }) {
                     isPrimary
                 />
 
-                {/* Flow: Volvo → Customers (desktop only) */}
-                <div className="hidden lg:flex flex-col gap-2 py-8">
+                {/* Flow: Volvo → Customers */}
+                <div className="flex flex-col gap-2 py-8">
                     <HorizontalFlow direction="right" color="bg-cyan-400" delay={0.6} />
                     <HorizontalFlow direction="right" color="bg-cyan-400" delay={0.8} />
                     <HorizontalFlow direction="right" color="bg-cyan-400" delay={1.0} />
@@ -263,7 +341,7 @@ export function RelationshipUniverse({ lang = "en" }: { lang?: string }) {
                     >
                         {t.customers}
                     </motion.span>
-                    <div className="flex flex-row lg:flex-col gap-1.5">
+                    <div className="flex flex-col gap-1.5">
                         {customers.map((company, i) => (
                             <CompanyCard
                                 key={company.name}
