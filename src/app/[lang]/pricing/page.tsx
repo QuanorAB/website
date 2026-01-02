@@ -205,5 +205,5 @@ export default async function Pricing({ params }: { params: Promise<{ lang: stri
     const { lang } = await params;
     const t = lang === "sv" ? content.sv : content.en;
 
-    return <PricingPageClient content={t} />;
+    return <PricingPageClient lang={lang} content={t} />;
 }
