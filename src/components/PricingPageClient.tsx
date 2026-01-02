@@ -170,7 +170,7 @@ export default function PricingPageClient({ lang, content: t }: PricingPageClien
                         transition={{ duration: 0.6 }}
                         className="max-w-4xl mx-auto overflow-x-auto"
                     >
-                        <table className="w-full">
+                        <table className="w-full min-w-[500px] table-fixed">
                             <thead>
                                 <tr className="border-b border-white/10">
                                     <th className="text-left py-4 px-4 font-semibold">Feature</th>
@@ -189,7 +189,7 @@ export default function PricingPageClient({ lang, content: t }: PricingPageClien
                                         transition={{ delay: i * 0.05 }}
                                         className="border-b border-white/5"
                                     >
-                                        <td className="py-4 px-4">{feature.name}</td>
+                                        <td className="py-4 px-4 text-sm break-words">{feature.name}</td>
                                         <td className="text-center py-4 px-4">
                                             {typeof feature.starter === 'boolean' ? (
                                                 feature.starter ? (

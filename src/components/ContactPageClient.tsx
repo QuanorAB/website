@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { supabase } from "@/lib/supabase";
 import { motion } from "framer-motion";
-import { Clock, Headphones, Mail, MapPin, Send, Users } from "lucide-react";
+import { Headphones, Mail, MapPin, Send, Users } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -33,7 +33,7 @@ interface ContactPageClientProps {
             postalTitle?: string;
             postalAddress?: string[];
             hours: string;
-            hoursLabel: string;
+            hoursLabel?: string;
         };
         faq: {
             title: string;
@@ -297,15 +297,6 @@ export default function ContactPageClient({ lang, content: t }: ContactPageClien
                                         </div>
                                     </>
                                 )}
-
-                                {/* Office Hours */}
-                                <div className="flex items-center gap-3 pt-4 border-t border-white/10">
-                                    <Clock className="h-5 w-5 text-primary" />
-                                    <div>
-                                        <p className="text-sm font-medium">{t.office.hoursLabel}</p>
-                                        <p className="text-sm text-muted-foreground">{t.office.hours}</p>
-                                    </div>
-                                </div>
                             </div>
 
                             {/* Google Maps */}

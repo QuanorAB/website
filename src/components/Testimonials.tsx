@@ -78,26 +78,21 @@ export default function Testimonials({ lang }: { lang: string }) {
                     }
                 `}</style>
 
-                <div className="scroll-container inline-flex gap-6">
+                <div className="scroll-container inline-flex gap-4 md:gap-6">
                     {allTestimonials.map((testimonial, index) => (
                         <div
                             key={index}
-                            className="flex-shrink-0 w-[400px] p-6 bg-card/50 border border-border/50 rounded-xl backdrop-blur-sm"
+                            className="flex-shrink-0 w-[280px] md:w-[400px] p-4 md:p-6 bg-card/50 border border-border/50 rounded-xl backdrop-blur-sm"
                         >
                             <Quote className="w-8 h-8 text-primary/30 mb-4" />
                             <p className="text-foreground/90 mb-6 leading-relaxed">
                                 {lang === 'sv' ? testimonial.sv : testimonial.en}
                             </p>
-                            <div className="flex items-center gap-4">
-                                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-lg">
-                                    {testimonial.name.split(' ').map(n => n[0]).join('')}
-                                </div>
-                                <div>
-                                    <p className="font-semibold text-foreground">{testimonial.name}</p>
-                                    <p className="text-sm text-muted-foreground">
-                                        {lang === 'sv' ? testimonial.role.sv : testimonial.role.en}
-                                    </p>
-                                </div>
+                            <div>
+                                <p className="font-semibold text-foreground">{testimonial.name}</p>
+                                <p className="text-sm text-muted-foreground">
+                                    {lang === 'sv' ? testimonial.role.sv : testimonial.role.en}
+                                </p>
                             </div>
                         </div>
                     ))}
