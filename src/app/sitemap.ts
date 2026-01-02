@@ -1,9 +1,10 @@
 import { languages } from '@/i18n/settings'
-import { getAllPostSlugs } from '@/lib/blog'
+import { getAllPostsForSitemap } from '@/lib/blog'
 import { MetadataRoute } from 'next'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = 'https://www.quanor.com'
+    const buildDate = new Date()
 
     // Main pages with higher priority
     const mainRoutes = ['', '/features', '/pricing', '/about', '/contact', '/blog']
@@ -25,7 +26,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
             sitemapEntries.push({
                 url: `${baseUrl}/${lang}${route}`,
-                lastModified: new Date(),
+                lastModified: buildDate,
                 changeFrequency: route === '' ? 'daily' : route === '/blog' ? 'daily' : 'weekly',
                 priority: route === '' ? 1 : route === '/blog' ? 0.9 : 0.8,
                 alternates: {
@@ -46,7 +47,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
             sitemapEntries.push({
                 url: `${baseUrl}/${lang}${route}`,
-                lastModified: new Date(),
+                lastModified: buildDate,
                 changeFrequency: 'monthly',
                 priority: 0.3,
                 alternates: {
@@ -56,20 +57,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         })
     })
 
-    // Add blog posts
+    // Add blog posts with actual updated_at dates from Supabase
     try {
-        const slugs = await getAllPostSlugs()
-        slugs.forEach((slug) => {
+        const posts = await getAllPostsForSitemap()
+        posts.forEach((post) => {
             languages.forEach((lang) => {
                 const alternates: Record<string, string> = {}
                 languages.forEach((l) => {
-                    alternates[l] = `${baseUrl}/${l}/blog/${slug}`
+                    alternates[l] = `${baseUrl}/${l}/blog/${post.slug}`
                 })
-                alternates['x-default'] = `${baseUrl}/sv/blog/${slug}`
+                alternates['x-default'] = `${baseUrl}/sv/blog/${post.slug}`
 
                 sitemapEntries.push({
-                    url: `${baseUrl}/${lang}/blog/${slug}`,
-                    lastModified: new Date(),
+                    url: `${baseUrl}/${lang}/blog/${post.slug}`,
+                    // Use actual updated_at from Supabase, fallback to build date
+                    lastModified: post.updated_at ? new Date(post.updated_at) : buildDate,
                     changeFrequency: 'monthly',
                     priority: 0.7,
                     alternates: {

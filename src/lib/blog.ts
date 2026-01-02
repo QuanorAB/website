@@ -26,6 +26,7 @@ export interface BlogPostLocalized {
     cover_image: string | null
     author: string
     published_at: string
+    updated_at: string
 }
 
 /**
@@ -98,6 +99,27 @@ export async function getAllPostSlugs(): Promise<string[]> {
 }
 
 /**
+ * Get all posts with dates for sitemap generation
+ */
+export async function getAllPostsForSitemap(): Promise<{ slug: string; updated_at: string }[]> {
+    if (!supabase) {
+        return []
+    }
+
+    const { data, error } = await supabase
+        .from('blog_posts')
+        .select('slug, updated_at')
+        .eq('is_published', true)
+        .lte('published_at', new Date().toISOString())
+
+    if (error || !data) {
+        return []
+    }
+
+    return data as { slug: string; updated_at: string }[]
+}
+
+/**
  * Helper to localize a post based on language
  */
 function localizePost(post: BlogPost, lang: string): BlogPostLocalized {
@@ -110,6 +132,7 @@ function localizePost(post: BlogPost, lang: string): BlogPostLocalized {
         cover_image: post.cover_image,
         author: post.author,
         published_at: post.published_at,
+        updated_at: post.updated_at,
     }
 }
 

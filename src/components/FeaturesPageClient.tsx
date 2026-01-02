@@ -126,7 +126,7 @@ export default function FeaturesPageClient({ content: t }: FeaturesPageClientPro
                                             </motion.div>
                                             <span className="text-sm text-primary font-medium uppercase tracking-wider">{feature.subtitle}</span>
                                         </div>
-                                        <h2 className="text-3xl font-bold mb-4">{feature.title}</h2>
+                                        <h2 className="text-3xl font-bold mb-4 break-words">{feature.title}</h2>
                                         <p className="text-lg text-muted-foreground mb-6">{feature.description}</p>
 
                                         <motion.ul
