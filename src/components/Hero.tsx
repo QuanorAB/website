@@ -113,12 +113,12 @@ export default function Hero({ lang }: { lang: string }) {
                         {/* Glow effect behind devices */}
                         <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-primary/5 to-transparent rounded-3xl blur-3xl" />
 
-                        {/* Desktop Window - Hidden on mobile */}
+                        {/* Desktop Window - Visible on all screens */}
                         <motion.div
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.6, delay: 0.5 }}
-                            className="hidden md:block relative rounded-xl overflow-hidden shadow-[0_25px_60px_-15px_rgba(0,0,0,0.5)] border border-white/10 bg-background"
+                            className="relative rounded-xl overflow-hidden shadow-[0_25px_60px_-15px_rgba(0,0,0,0.5)] border border-white/10 bg-background"
                         >
                             {/* Browser chrome - hidden on mobile for cleaner look */}
                             <div className="hidden md:flex items-center gap-2 px-4 py-3 bg-zinc-900/80 border-b border-white/5">
@@ -143,35 +143,12 @@ export default function Hero({ lang }: { lang: string }) {
                             />
                         </motion.div>
 
-                        {/* Mobile Phone - Show on small screens centered, overlay on md+ */}
-                        <motion.div
-                            initial={{ opacity: 0, x: 30, y: 30 }}
-                            animate={{ opacity: 1, x: 0, y: 0 }}
-                            transition={{ duration: 0.6, delay: 0.5 }}
-                            className="md:hidden flex justify-center"
-                        >
-                            <motion.div
-                                animate={{ y: [0, -8, 0] }}
-                                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                                className="w-[60%] max-w-[280px] rounded-[2rem] overflow-hidden shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)] border-[3px] border-zinc-800 bg-zinc-950"
-                            >
-                                <Image
-                                    src={lang === 'sv' ? "/images/app_home_dark_mobile_sv.jpeg" : "/images/app_home_dark_mobile_en.jpeg"}
-                                    alt="Quanor Platform Mobile"
-                                    width={300}
-                                    height={600}
-                                    className="w-full h-auto"
-                                    priority
-                                />
-                            </motion.div>
-                        </motion.div>
-
-                        {/* Mobile Phone Overlay - Hidden on small screens, show on md+ */}
+                        {/* Mobile Phone Overlay - Protrudes from bottom right */}
                         <motion.div
                             initial={{ opacity: 0, x: 30, y: 30 }}
                             animate={{ opacity: 1, x: 0, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.7 }}
-                            className="hidden md:block absolute -bottom-8 right-4 md:right-12 w-[18%] max-w-[180px]"
+                            className="absolute -bottom-4 right-2 w-[25%] max-w-[120px] md:-bottom-8 md:right-12 md:w-[18%] md:max-w-[180px]"
                         >
                             <motion.div
                                 animate={{ y: [0, -8, 0] }}
