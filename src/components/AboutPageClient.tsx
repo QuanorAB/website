@@ -271,7 +271,7 @@ export default function AboutPageClient({ lang, teamMembers, content: t }: About
                         {t.cta.subtitle}
                     </motion.p>
                     <motion.a
-                        href="#"
+                        href="https://app.quanor.com/register/free"
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
