@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Check, HelpCircle, X } from "lucide-react";
 
 interface PricingPageClientProps {
+    lang: string;
     content: {
         hero: { title: string; subtitle: string };
         monthly: string;
@@ -45,7 +46,8 @@ const staggerContainer = {
     }
 };
 
-export default function PricingPageClient({ content: t }: PricingPageClientProps) {
+export default function PricingPageClient({ lang, content: t }: PricingPageClientProps) {
+    const popularLabel = lang === 'sv' ? 'Mest populär' : 'Most Popular';
     return (
         <div className="pt-20">
             {/* Hero */}
@@ -98,7 +100,7 @@ export default function PricingPageClient({ content: t }: PricingPageClientProps
                                         transition={{ delay: 0.5 }}
                                         className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium"
                                     >
-                                        Most Popular
+                                        {popularLabel}
                                     </motion.div>
                                 )}
                                 <h3 className="text-2xl font-bold mb-2">{tier.name}</h3>

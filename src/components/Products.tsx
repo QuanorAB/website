@@ -171,7 +171,7 @@ export default function Products({ lang }: { lang: string }) {
                 }`}>
                 {tier.popular && (
                   <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-4 py-1 text-xs font-bold rounded-bl-xl">
-                    POPULAR
+                    {lang === 'sv' ? 'MEST POPULÄR' : 'MOST POPULAR'}
                   </div>
                 )}
                 <CardHeader>
