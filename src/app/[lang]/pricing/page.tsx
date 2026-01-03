@@ -29,7 +29,7 @@ const content = {
                 name: "Starter",
                 price: "0 kr",
                 desc: "Perfekt för att komma igång",
-                features: ["5 bevakningar", "Begränsad AI-analys", "Pre-market mail", "E-postsupport"],
+                features: ["5 bevakningar", "Begränsad AI-analys", "Mail inför börsöppning", "E-postsupport"],
                 cta: "Kom igång gratis",
                 popular: false,
             },
@@ -47,7 +47,7 @@ const content = {
                 name: "Enterprise",
                 price: "Kontakta oss",
                 desc: "För institutioner och team",
-                features: ["Allt i Essential", "API-tillgång", "Skräddarsydda AI-modeller", "Dedikerad account manager", "On-premise option", "Single Sign-On (SSO)"],
+                features: ["Allt i Essential", "API-tillgång"],
                 cta: "Kontakta sälj",
                 popular: false,
             },
@@ -77,20 +77,8 @@ const content = {
                     a: "Nej, vi har inga bindningstider. Du kan avsluta din prenumeration när som helst, och du behåller tillgång till tjänsten tills faktureringsperioden löper ut."
                 },
                 {
-                    q: "Hur fungerar den kostnadsfria provperioden?",
-                    a: "Pro-planen kommer med 14 dagars gratis provperiod. Du behöver inte ange kortuppgifter för att starta. Om du gillar tjänsten kan du sedan välja att uppgradera."
-                },
-                {
                     q: "Vilka betalningsmetoder accepterar ni?",
                     a: "Vi accepterar alla större kreditkort (Visa, Mastercard, American Express) samt Swish för svenska kunder. Enterprise-kunder kan även betala via faktura."
-                },
-                {
-                    q: "Erbjuder ni rabatt för årlig betalning?",
-                    a: "Ja! Om du väljer att betala årligen istället för månadsvis sparar du 20%. Det motsvarar två månader gratis."
-                },
-                {
-                    q: "Vad händer med min data om jag avslutar?",
-                    a: "Din data tillhör dig. Vid avslut kan du exportera all din data. Vi raderar dina uppgifter inom 30 dagar enligt GDPR."
                 },
                 {
                     q: "Hur installerar jag Quanor-appen på min mobil?",
@@ -138,7 +126,7 @@ const content = {
                 name: "Enterprise",
                 price: "Contact us",
                 desc: "For institutions and teams",
-                features: ["Everything in Essential", "API access", "Custom AI models", "Dedicated account manager", "On-premise option", "Single Sign-On (SSO)"],
+                features: ["Everything in Essential", "API access"],
                 cta: "Contact Sales",
                 popular: false,
             },
@@ -168,20 +156,8 @@ const content = {
                     a: "No, we have no commitment periods. You can cancel your subscription at any time, and you retain access to the service until the billing period expires."
                 },
                 {
-                    q: "How does the free trial work?",
-                    a: "The Pro plan comes with a 14-day free trial. No credit card required to start. If you like the service, you can then choose to upgrade."
-                },
-                {
                     q: "What payment methods do you accept?",
                     a: "We accept all major credit cards (Visa, Mastercard, American Express). Enterprise customers can also pay via invoice."
-                },
-                {
-                    q: "Do you offer a discount for annual billing?",
-                    a: "Yes! If you choose to pay annually instead of monthly, you save 20%. That's equivalent to two months free."
-                },
-                {
-                    q: "What happens to my data if I cancel?",
-                    a: "Your data belongs to you. Upon cancellation, you can export all your data. We delete your information within 30 days in accordance with GDPR."
                 },
                 {
                     q: "How do I install the Quanor app on my phone?",
