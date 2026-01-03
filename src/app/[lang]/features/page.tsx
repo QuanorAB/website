@@ -57,9 +57,9 @@ const content = {
             },
             {
                 iconName: "FileText",
-                title: "Rapporter inför kvartalsrapport",
+                title: "Analys inför kvartalsrapport",
                 subtitle: "Förbered dig inför rapportsäsongen",
-                description: "Inför varje kvartalsrapport genererar vi detaljerade rapporter som hjälper dig förbereda och identifiera vad du ska fokusera på.",
+                description: "Inför varje kvartalsrapport genererar vi detaljerade analyser som hjälper dig förbereda och identifiera vad du ska fokusera på.",
                 capabilities: [
                     "Trendanalys av ledningens kommentarer över tid",
                     "Anpassade bevakningspunkter och triggers",
@@ -68,7 +68,7 @@ const content = {
                 ],
                 useCase: {
                     title: "Användningsfall",
-                    description: "En investerare läser Quanors rapport inför kvartalsrapport och ser att ledningen konsekvent nedtonat kostnadsinflation i tidigare kommentarer - men siffrorna visade annat. Viktig insikt inför kommande rapport."
+                    description: "En investerare läser Quanors analys inför kvartalsrapport och ser att ledningen konsekvent nedtonat kostnadsinflation i tidigare kommentarer - men siffrorna visade annat. Viktig insikt inför kommande rapport."
                 }
             },
             {
