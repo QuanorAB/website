@@ -61,7 +61,7 @@ export default function Contact({ lang }: { lang: string }) {
       subtitle: "Contact our team to learn how Quanor Analysis can improve your investment process.",
       getInTouch: {
         title: "Get in touch",
-        description: "Have questions about our AI-powered financial analysis platform? We're here to help you understand how Quanor can streamline your investment process."
+        description: "Have questions about our AI-driven financial analysis platform? We're here to help you understand how Quanor can streamline your investment process."
       },
       form: {
         name: "Name",

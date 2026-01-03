@@ -21,7 +21,7 @@ export function JsonLd({ lang }: JsonLdProps) {
             "height": 512
         },
         "description": lang === "sv"
-            ? "Omedelbar aktieanalys för svenska marknader. Realtidsanalys av kvartalsrapporter, pressmeddelanden och pre-earnings."
+            ? "Omedelbar aktieanalys för svenska marknader. Realtidsanalys av kvartalsrapporter, pressmeddelanden och analyser inför rapport."
             : "Instant stock analysis for Swedish markets. Real-time analysis of quarterly reports, press releases and pre-earnings.",
         "foundingDate": "2024",
         "founders": [
@@ -88,10 +88,10 @@ export function JsonLd({ lang }: JsonLdProps) {
             "worstRating": "1"
         },
         "description": lang === "sv"
-            ? "Omedelbar aktieanalys med realtidsbevakning av pressmeddelanden, kvartalsrapporter och pre-earnings."
+            ? "Omedelbar aktieanalys med realtidsbevakning av pressmeddelanden, kvartalsrapporter och analyser inför rapport."
             : "Instant stock analysis with real-time monitoring of press releases, quarterly reports and pre-earnings.",
         "featureList": lang === "sv"
-            ? ["Kvartalsrapport-analys", "Pressmeddelande-analys", "Pre-earnings analys", "Kurstrigger-analys", "Daglig marknadsöversikt"]
+            ? ["Kvartalsrapportanalys", "Pressmeddelandeanalys", "Analys inför rapport", "Kurstrigger-analys", "Daglig marknadsöversikt"]
             : ["Quarterly report analysis", "Press release analysis", "Pre-earnings analysis", "Price trigger analysis", "Daily market recap"]
     };
 

@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         title: lang === 'sv' ? 'Blogg | Quanor' : 'Blog | Quanor',
         description: lang === 'sv'
             ? 'Läs de senaste nyheterna, insikterna och uppdateringarna från Quanor-teamet om AI-driven finansiell analys.'
-            : 'Read the latest news, insights, and updates from the Quanor team about AI-powered financial analysis.',
+            : 'Read the latest news, insights, and updates from the Quanor team about AI-driven financial analysis.',
         alternates: {
             canonical: `${baseUrl}/${lang}/blog`,
             languages: {

@@ -39,7 +39,7 @@ const content = {
                 promo: "första 2 månaderna",
                 regularPrice: "därefter 99 kr/månad",
                 desc: "För aktiva investerare",
-                features: ["Obegränsade bevakningar", "PR- och rapportanalys i realtid", "Kurstrigger-analys", "Pre-earnings analys", "Flash-analys", "Dagligt marknads-recap"],
+                features: ["Obegränsade bevakningar", "PR- och rapportanalys i realtid", "Kurstrigger-analys", "Analys inför rapport", "Flashanalys", "Daglig marknadsöversikt"],
                 cta: "Börja nu",
                 popular: true,
             },
@@ -57,8 +57,8 @@ const content = {
             features: [
                 { name: "Bevakningar", starter: "5", essential: "Obegränsade", enterprise: "Obegränsade" },
                 { name: "Rapportanalys", starter: false, essential: true, enterprise: true },
-                { name: "Pressmeddelande-analys", starter: false, essential: true, enterprise: true },
-                { name: "Pre-earnings analys", starter: false, essential: true, enterprise: true },
+                { name: "Pressmeddelandeanalys", starter: false, essential: true, enterprise: true },
+                { name: "Analys inför rapport", starter: false, essential: true, enterprise: true },
                 { name: "Dynamisk kurstrigger-analys", starter: false, essential: true, enterprise: true },
                 { name: "Daglig marknadsöversikt", starter: false, essential: true, enterprise: true },
                 { name: "API-tillgång", starter: false, essential: false, enterprise: true },
@@ -78,7 +78,7 @@ const content = {
                 },
                 {
                     q: "Vilka betalningsmetoder accepterar ni?",
-                    a: "Vi accepterar alla större kreditkort (Visa, Mastercard, American Express) samt Swish för svenska kunder. Enterprise-kunder kan även betala via faktura."
+                    a: "Vi accepterar alla större kreditkort (Visa, Mastercard, American Express). Enterprise-kunder kan även betala via faktura."
                 },
                 {
                     q: "Hur installerar jag Quanor-appen på min mobil?",

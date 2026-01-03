@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         title: `${t('legal.cookies.title')} - Quanor AB`,
         description: lang === 'sv'
             ? 'Quanor AB cookiepolicy som förklarar hur vi använder cookies på vår AI-drivna plattform för finansanalys.'
-            : 'Quanor AB cookie policy explaining how we use cookies in our AI-powered financial analysis platform.',
+            : 'Quanor AB cookie policy explaining how we use cookies in our AI-driven financial analysis platform.',
     };
 }
 

@@ -40,7 +40,7 @@ export default function Products({ lang }: { lang: string }) {
           promo: "första 2 månaderna",
           regularPrice: "därefter 99 kr/månad",
           description: "För den seriösa investeraren som vill ligga steget före.",
-          features: ["Obegränsade bevakningar", "PR- och rapportanalys i realtid", "Kurstrigger-analys", "Pre-earnings analys", "Flash-analys", "Daglig marknadsöversikt"],
+          features: ["Obegränsade bevakningar", "PR- och rapportanalys i realtid", "Kurstrigger-analys", "Analys inför rapport", "Flashanalys", "Daglig marknadsöversikt"],
           buttonVariant: "default" as const,
           popular: true
         }
@@ -52,7 +52,7 @@ export default function Products({ lang }: { lang: string }) {
           icon: FileText
         },
         {
-          title: "PR-Analys",
+          title: "PR-analys",
           desc: "Realtidsanalys av pressmeddelanden och nyheter.",
           icon: Newspaper
         },

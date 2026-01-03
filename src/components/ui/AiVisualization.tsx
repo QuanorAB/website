@@ -34,7 +34,7 @@ interface DataSource {
 const dataSources: DataSource[] = [
     { icon: Newspaper, label: { sv: "Pressmeddelanden", en: "Press Releases" }, color: "text-blue-400", bgColor: "bg-blue-500/10" },
     { icon: FileText, label: { sv: "Kvartalsrapporter", en: "Quarterly Reports" }, color: "text-violet-400", bgColor: "bg-violet-500/10" },
-    { icon: TrendingUp, label: { sv: "Pre-earnings", en: "Pre-earnings" }, color: "text-amber-400", bgColor: "bg-amber-500/10" },
+    { icon: TrendingUp, label: { sv: "Inför rapport", en: "Pre-earnings" }, color: "text-amber-400", bgColor: "bg-amber-500/10" },
     { icon: Globe, label: { sv: "Makrodata", en: "Macro Data" }, color: "text-cyan-400", bgColor: "bg-cyan-500/10" },
     { icon: DollarSign, label: { sv: "Prisförändringar", en: "Price Changes" }, color: "text-primary", bgColor: "bg-primary/10" },
 ];
