@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     : "Quanor - Instant stock analysis for Swedish markets";
 
   const description = lang === 'sv'
-    ? "Få professionell finansiell analys med AI. Realtidsbevakning av pressmeddelanden, kvartalsrapporter och pre-earnings för svenska aktier."
+    ? "Få professionell finansiell analys med AI. Realtidsbevakning av pressmeddelanden, kvartalsrapporter och analyser inför rapport för svenska aktier."
     : "Get professional financial analysis with AI. Real-time monitoring of press releases, quarterly reports and pre-earnings for Swedish stocks.";
 
   // Generate alternates for all languages
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     title,
     description,
     keywords: lang === 'sv'
-      ? ['aktieanalys', 'AI', 'kvartalsrapporter', 'pressmeddelanden', 'pre-earnings', 'svenska aktier', 'finansiell analys', 'nordiska aktier']
+      ? ['aktieanalys', 'AI', 'kvartalsrapporter', 'pressmeddelanden', 'inför rapport', 'svenska aktier', 'finansiell analys', 'nordiska aktier']
       : ['stock analysis', 'AI', 'quarterly reports', 'press releases', 'pre-earnings', 'Nordic stocks', 'financial analysis', 'Swedish stocks'],
     authors: [{ name: 'Quanor AB' }],
     creator: 'Quanor AB',

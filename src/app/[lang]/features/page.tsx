@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     return {
         title: lang === 'sv' ? 'Funktioner | Quanor' : 'Features | Quanor',
         description: lang === 'sv'
-            ? 'Upptäck Quanors AI-drivna finansiella analyser. Realtidsdata, automatisk rapportanalys, pressmeddelande-bevakning och mer.'
+            ? 'Upptäck Quanors AI-drivna finansiella analyser. Realtidsdata, automatisk rapportanalys, pressmeddelandebevakning och mer.'
             : 'Discover Quanor\'s AI-driven financial analysis. Real-time data, automated report analysis, press release monitoring and more.',
     };
 }
@@ -57,9 +57,9 @@ const content = {
             },
             {
                 iconName: "FileText",
-                title: "Pre-earnings rapporter",
+                title: "Rapporter inför kvartalsrapport",
                 subtitle: "Förbered dig inför rapportsäsongen",
-                description: "Inför varje kvartalsrapport genererar vi detaljerade pre-earnings rapporter som hjälper dig förbereda och identifiera vad du ska fokusera på.",
+                description: "Inför varje kvartalsrapport genererar vi detaljerade rapporter som hjälper dig förbereda och identifiera vad du ska fokusera på.",
                 capabilities: [
                     "Trendanalys av ledningens kommentarer över tid",
                     "Anpassade bevakningspunkter och triggers",
@@ -68,7 +68,7 @@ const content = {
                 ],
                 useCase: {
                     title: "Användningsfall",
-                    description: "En investerare läser Quanors pre-earnings rapport och ser att ledningen konsekvent nedtonat kostnadsinflation i tidigare kommentarer - men siffrorna visade annat. Viktig insikt inför kommande rapport."
+                    description: "En investerare läser Quanors rapport inför kvartalsrapport och ser att ledningen konsekvent nedtonat kostnadsinflation i tidigare kommentarer - men siffrorna visade annat. Viktig insikt inför kommande rapport."
                 }
             },
             {

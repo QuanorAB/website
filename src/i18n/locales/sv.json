@@ -20,8 +20,7 @@
             "freeTier": "tillgängligt",
             "realtime": "Snabb",
             "aiAnalysis": "AI-analys",
-            "monitoring": "24/7",
-            "marketMonitoring": "bevakning"
+            "monitoring": "24/7-bevakning"
         }
     },
     "products": {
@@ -33,7 +32,7 @@
             "price": "0 kr/månad",
             "description": "Grundläggande AI-driven finansanalys för att komma igång",
             "features": [
-                "Full PR-, rapport- och pre-rapportanalys",
+                "Full PR-, rapport- och analys inför rapport",
                 "Följ upp till 5 företag",
                 "E-postsupport"
             ]
@@ -48,7 +47,7 @@
             "features": [
                 "Utökad marknadsanalys",
                 "Följ obegränsat antal företag",
-                "PR-, rapport- och pre-rapportanalys",
+                "PR-, rapport- och analys inför rapport",
                 "Prioriterad support",
                 "Full tillgång till alla bolagssidor i Quanors webapp"
             ]
@@ -91,12 +90,12 @@
                 "description": "Automatiserad tolkning av pressmeddelanden och nyheter."
             },
             "preReport": {
-                "title": "Pre earnings-analys",
+                "title": "Analys inför rapport",
                 "label": "Inför rapport",
                 "description": "Förväntningar, sentiment, riskindikatorer och analytikerestimat inför nästa rapporttillfälle."
             },
             "marketRecap": {
-                "title": "Daglig Market Recap",
+                "title": "Daglig marknadsöversikt",
                 "label": "Kvällsbriefing",
                 "description": "Ett sammanfattande kvällsmail som går igenom dagens makrobild och de viktigaste rörelserna för dina bevakade bolag – så du snabbt får en helhetsbild inför morgondagens handel."
             },
@@ -108,7 +107,7 @@
         },
         "services": {
             "title": "Omfattande analyspaket",
-            "description": "Vi erbjuder PR-analys, rapportanalys, pre-rapportanalys, omfattande peer-bevakning, automatiska triggers som vi kontinuerligt övervakar, global och svensk makro kopplad till bevakningslista, morgonbriefings och mycket mer. Full flexibilitet att välja bort eller till notiser beroende på dina specifika behov."
+            "description": "Vi erbjuder PR-analys, rapportanalys, analys inför rapport, omfattande peer-bevakning, automatiska triggers som vi kontinuerligt övervakar, global och svensk makro kopplad till bevakningslista, morgonbriefings och mycket mer. Full flexibilitet att välja bort eller till notiser beroende på dina specifika behov."
         },
         "disclaimer": "Innehållet genereras av Quanors AI-motorer och är avsett som beslutsstöd, inte personlig finansiell rådgivning."
     },
@@ -123,7 +122,7 @@
         },
         "features": {
             "onReport": "Rapportanalys",
-            "preReport": "Inför rapport-analys",
+            "preReport": "Analys inför rapport",
             "metricsExtraction": "Snabba nyckeltal",
             "prAnalysis": "PR-analys",
             "sentiment": "Avancerad sentimentanalys",
@@ -315,7 +314,7 @@
                     "description": "Quanor tillhandahåller AI-drivna finansiella analystjänster inklusive:",
                     "items": [
                         "PR-analys och rapportanalys",
-                        "Pre-rapportanalys och marknadsinsikter",
+                        "Analys inför rapport och marknadsinsikter",
                         "Peer-täckning och marknadsflashes",
                         "Global och svensk makroanalys",
                         "Morgonbriefings och anpassningsbara notiser",
@@ -353,7 +352,7 @@
                         "Tolkning: Om något innehåll skulle kunna tolkas som en investeringsrekommendation ska det betraktas som generellt och icke-personaliserat och omfattas av denna friskrivning",
                         "AI-begränsningar: AI-genererade analyser kan innehålla fel, bias eller vara ofullständiga och bör inte ligga till grund för enskilda investeringsbeslut utan kompletterande professionell rådgivning",
                         "Tillgänglighet och avbrott: Tjänsten tillhandahålls utan garanti om oavbruten tillgänglighet. Driftstörningar, underhåll, tredjepartsfel eller andra tekniska problem kan medföra avbrott, fördröjningar eller datafel. Quanor AB ansvarar inte för skador eller förluster som uppstår till följd av sådana avbrott i den utsträckning tillåten enligt tillämplig lag.",
-                        "Täckning: Quanor AB garanterar inte PR-, rapport- eller pre-rapportanalyser för alla bolag som användaren följer. Detta är en målsättning och kan påverkas av bl.a. datatillgång, bolagskommunikation, marknadsläge, tekniska begränsningar och interna prioriteringar.",
+                        "Täckning: Quanor AB garanterar inte PR-, rapport- eller analyser inför rapport för alla bolag som användaren följer. Detta är en målsättning och kan påverkas av bl.a. datatillgång, bolagskommunikation, marknadsläge, tekniska begränsningar och interna prioriteringar.",
                         "Ansvarig analytiker: Om inget annat uttrycks i anslutning till publicering är ansvarig analytiker för publicerat material Vilhelm Niklasson, operativt ansvarig (COO) på Quanor AB.",
                         "Intressekonflikter: Quanor AB redovisar alltid relevanta intressekonflikter innan eller i direkt anslutning till publicering. I nuläget gäller att Edvin Malmgård, kommersiellt ansvarig (CCO) på Quanor AB, är IR-ansvarig på Raketech och styrelseledamot i Adverty. Han äger mindre än 1 % av aktierna i båda bolagen. Detta påverkar inte Quanors analyser men redovisas öppet i enlighet med god marknadssed.",
                         "MAR/EU-efterlevnad: Om något innehåll skulle omfattas av artikel 20 i MAR eller Kommissionens delegerade förordning (EU) 2016/958 anger Quanor AB vid publicering publicerande enhet, ansvarig analytiker, datum/tid, berörda instrument/emittenter, metod, källor, antaganden och relevanta intressekonflikter samt håller en uppdaterings- och återkallelsepolicy tillgänglig.",

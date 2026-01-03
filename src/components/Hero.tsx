@@ -21,12 +21,11 @@ export default function Hero({ lang }: { lang: string }) {
     const content = {
         sv: {
             title: ["Omedelbar", "Aktieanalys"],
-            subtitle: "Få professionell analys av pressmeddelanden, kvartalsrapporter och pre-earnings för svenska aktier – sekunder efter publicering.",
+            subtitle: "Få professionell analys av pressmeddelanden, kvartalsrapporter och analyser inför rapport för svenska aktier – sekunder efter publicering.",
             getStarted: "Kom igång gratis",
             learnMore: "Läs mer",
             stats: {
-                monitoring: "24/7",
-                marketMonitoring: "bevakning",
+                monitoring: "24/7-bevakning",
                 realtime: "Snabb",
                 aiAnalysis: "AI-analys"
             }
@@ -37,8 +36,7 @@ export default function Hero({ lang }: { lang: string }) {
             getStarted: "Get started free",
             learnMore: "Learn more",
             stats: {
-                monitoring: "24/7",
-                marketMonitoring: "monitoring",
+                monitoring: "24/7 monitoring",
                 realtime: "Fast",
                 aiAnalysis: "AI analysis"
             }
@@ -90,7 +88,7 @@ export default function Hero({ lang }: { lang: string }) {
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                             </span>
-                            <span className="text-sm font-medium text-muted-foreground">{t.stats.monitoring} {t.stats.marketMonitoring}</span>
+                            <span className="text-sm font-medium text-muted-foreground">{t.stats.monitoring}</span>
                         </div>
                         <div className="flex items-center gap-3">
                             <span className="flex h-3 w-3 relative">
