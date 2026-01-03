@@ -29,7 +29,7 @@ export default function Products({ lang }: { lang: string }) {
           name: "Free",
           price: "0 kr",
           description: "För dig som vill testa kraften i AI-analys.",
-          features: ["Bevaka upp till 5 bolag", "Begränsad AI-analys", "Pre-market mail"],
+          features: ["Bevaka upp till 5 bolag", "Begränsad AI-analys", "Mail inför börsöppning"],
           buttonVariant: "outline" as const
         },
         {

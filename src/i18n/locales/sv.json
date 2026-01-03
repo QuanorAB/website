@@ -26,7 +26,7 @@
     },
     "products": {
         "title": "Avancerad AI-analys – till kampanjpris",
-        "subtitle": "Få samma AI-drivna marknadsbevakning som professionella investerare – analyser av rapporter, PR-flöde och pre-market i ett paket.",
+        "subtitle": "Få samma AI-drivna marknadsbevakning som professionella investerare – analyser av rapporter, PR-flöde och info inför börsöppning i ett paket.",
         "badge": "Quanor Analys",
         "free": {
             "name": "Free",
@@ -101,7 +101,7 @@
                 "description": "Ett sammanfattande kvällsmail som går igenom dagens makrobild och de viktigaste rörelserna för dina bevakade bolag – så du snabbt får en helhetsbild inför morgondagens handel."
             },
             "preMarket": {
-                "title": "Pre-Market Update",
+                "title": "Inför börsöppning",
                 "label": "Morgonmail",
                 "description": "Ett kort morgonmail inför öppning med fokus på färska nyheter, bud, rapporter och kursdrivande information – filtrerat för dina bevakade innehav."
             }
