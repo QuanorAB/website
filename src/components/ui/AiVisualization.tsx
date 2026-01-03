@@ -56,14 +56,18 @@ export function AiVisualization({ lang = "en" }: { lang?: string }) {
             output: "AI-analys",
             sentiment: "Sentiment",
             impact: "Marknadsimpakt",
-            action: "Signal"
+            action: "Signal",
+            positive: "Positiv",
+            medium: "Medium"
         },
         en: {
             processing: "Processing...",
             output: "AI Analysis",
             sentiment: "Sentiment",
             impact: "Market Impact",
-            action: "Signal"
+            action: "Signal",
+            positive: "Positive",
+            medium: "Medium"
         }
     };
 
@@ -203,7 +207,7 @@ export function AiVisualization({ lang = "en" }: { lang?: string }) {
                         <div>
                             <div className="flex justify-between text-xs mb-1">
                                 <span className="text-muted-foreground">{t.sentiment}</span>
-                                <span className="text-primary font-medium">Positiv</span>
+                                <span className="text-primary font-medium">{t.positive}</span>
                             </div>
                             <div className="h-1.5 w-full bg-muted rounded-full overflow-hidden">
                                 <motion.div
@@ -219,7 +223,7 @@ export function AiVisualization({ lang = "en" }: { lang?: string }) {
                         <div>
                             <div className="flex justify-between text-xs mb-1">
                                 <span className="text-muted-foreground">{t.impact}</span>
-                                <span className="text-blue-400 font-medium">Medium</span>
+                                <span className="text-blue-400 font-medium">{t.medium}</span>
                             </div>
                             <div className="h-1.5 w-full bg-muted rounded-full overflow-hidden">
                                 <motion.div
@@ -239,7 +243,7 @@ export function AiVisualization({ lang = "en" }: { lang?: string }) {
                             className="flex items-center gap-2 mt-3 p-2 bg-primary/10 rounded-lg border border-primary/15"
                         >
                             <ArrowRight className="w-4 h-4 text-primary" />
-                            <span className="text-sm font-medium text-primary">{t.action}: Positiv</span>
+                            <span className="text-sm font-medium text-primary">{t.action}: {t.positive}</span>
                         </motion.div>
                     </div>
                 </motion.div>
