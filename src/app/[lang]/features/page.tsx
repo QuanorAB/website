@@ -89,7 +89,7 @@ const content = {
             },
             {
                 iconName: "Mail",
-                title: "Daglig marknadssammanfattning",
+                title: "Daglig marknadsöversikt",
                 subtitle: "Kvällsmail efter börsens stängning",
                 description: "Få ett kvällsmail efter att börsen stängt med dagens viktigaste makronyheter från Sverige och globalt, hur de kan påverka bolagen i din bevakningslista, plus index-, råvaru-, valuta- och kryptoförändringar samt dagens viktigaste pressmeddelanden.",
                 capabilities: [
@@ -123,7 +123,6 @@ const content = {
         additionalFeatures: {
             title: "Och mycket mer...",
             items: [
-                { iconName: "Shield", title: "Bankgrad säkerhet", desc: "Dina data skyddas med samma säkerhetsnivå som banker använder." },
                 { iconName: "Network", title: "Relationsuniversum", desc: "Se hur bolag hänger ihop: konkurrenter, kunder och leverantörer." },
                 { iconName: "Target", title: "Bolagstriggers", desc: "Proprietära signaler för VD-byten, insiderhandel, M&A och mer." },
                 { iconName: "TrendingUp", title: "Sentimentanalys", desc: "Proprietär modell för att mäta marknadskänsla i realtid." },
@@ -242,7 +241,6 @@ const content = {
         additionalFeatures: {
             title: "And much more...",
             items: [
-                { iconName: "Shield", title: "Bank-grade security", desc: "Your data is protected with the same security level banks use." },
                 { iconName: "Network", title: "Relationship universe", desc: "See how companies are connected: peers, customers, and suppliers." },
                 { iconName: "Target", title: "Company triggers", desc: "Proprietary signals for CEO changes, insider trading, M&A and more." },
                 { iconName: "TrendingUp", title: "Sentiment analysis", desc: "Proprietary model for measuring market sentiment in real-time." },

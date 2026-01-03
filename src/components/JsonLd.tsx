@@ -91,7 +91,7 @@ export function JsonLd({ lang }: JsonLdProps) {
             ? "Omedelbar aktieanalys med realtidsbevakning av pressmeddelanden, kvartalsrapporter och pre-earnings."
             : "Instant stock analysis with real-time monitoring of press releases, quarterly reports and pre-earnings.",
         "featureList": lang === "sv"
-            ? ["Kvartalsrapport-analys", "Pressmeddelande-analys", "Pre-earnings analys", "Kurstrigger-analys", "Dagligt marknadsrecap"]
+            ? ["Kvartalsrapport-analys", "Pressmeddelande-analys", "Pre-earnings analys", "Kurstrigger-analys", "Daglig marknadsöversikt"]
             : ["Quarterly report analysis", "Press release analysis", "Pre-earnings analysis", "Price trigger analysis", "Daily market recap"]
     };
 

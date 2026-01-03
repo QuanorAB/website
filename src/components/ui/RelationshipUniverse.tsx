@@ -11,30 +11,30 @@
  */
 
 import { motion } from "framer-motion";
-import { ArrowRight, Building2, TrendingDown, TrendingUp } from "lucide-react";
+import { Building2, TrendingDown, TrendingUp } from "lucide-react";
 
 interface CompanyNode {
     name: string;
     ticker?: string;
 }
 
-// Swedish listed companies only
+// Swedish listed companies only - verified relationships with Volvo Group
 const peers: CompanyNode[] = [
-    { name: "Traton", ticker: "TRAT" },
-    { name: "Epiroc", ticker: "EPI-A" },
     { name: "Atlas Copco", ticker: "ATCO-A" },
+    { name: "Sandvik", ticker: "SAND" },
+    { name: "Epiroc", ticker: "EPI-A" },
 ];
 
 const customers: CompanyNode[] = [
+    { name: "Skanska", ticker: "SKA-B" },
+    { name: "Peab", ticker: "PEAB-B" },
     { name: "Boliden", ticker: "BOL" },
-    { name: "LKAB", ticker: "" },
-    { name: "NCC", ticker: "NCC-B" },
 ];
 
 const suppliers: CompanyNode[] = [
-    { name: "SKF", ticker: "SKF-B" },
-    { name: "Autoliv", ticker: "ALV" },
     { name: "SSAB", ticker: "SSAB-A" },
+    { name: "AFRY", ticker: "AFRY" },
+    { name: "Alfa Laval", ticker: "ALFA" },
 ];
 
 // Both positive and negative triggers
@@ -97,7 +97,7 @@ function CompanyCard({
     );
 }
 
-// Horizontal animated flow with arrow
+// Horizontal animated flow with arrow - matching AiVisualization style
 function HorizontalFlow({
     direction = "right",
     color = "bg-primary",
@@ -107,39 +107,69 @@ function HorizontalFlow({
     color?: string;
     delay?: number;
 }) {
+    // Convert bg color to gradient colors
+    const getGradientClass = () => {
+        if (color.includes("primary")) return "from-primary/60 via-primary/40 to-primary/10";
+        if (color.includes("blue")) return "from-blue-500/60 via-blue-500/40 to-blue-500/10";
+        if (color.includes("emerald")) return "from-emerald-500/60 via-emerald-500/40 to-emerald-500/10";
+        return "from-primary/60 via-primary/40 to-primary/10";
+    };
+
+    const getDotColor = () => {
+        if (color.includes("primary")) return "bg-primary shadow-primary/50";
+        if (color.includes("blue")) return "bg-blue-500 shadow-blue-500/50";
+        if (color.includes("emerald")) return "bg-emerald-500 shadow-emerald-500/50";
+        return "bg-primary shadow-primary/50";
+    };
+
+    const getArrowColor = () => {
+        if (color.includes("primary")) return "text-primary/60";
+        if (color.includes("blue")) return "text-blue-500/60";
+        if (color.includes("emerald")) return "text-emerald-500/60";
+        return "text-primary/60";
+    };
+
     return (
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-0.5">
             {direction === "left" && (
-                <motion.div
+                <motion.svg
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay }}
+                    className={`w-3 h-3 ${getArrowColor()} rotate-90`}
+                    viewBox="0 0 12 12"
+                    fill="currentColor"
                 >
-                    <ArrowRight className={`w-4 h-4 ${color.replace("bg-", "text-")} rotate-180`} />
-                </motion.div>
+                    <path d="M6 9L2 5h8L6 9z" />
+                </motion.svg>
             )}
-            <div className="relative w-12 h-0.5">
-                <div className={`absolute inset-0 ${color} opacity-30`} />
+            <div className="relative h-0.5 w-12">
+                {/* Gradient line */}
+                <div className={`absolute inset-0 bg-gradient-to-${direction === "right" ? "r" : "l"} ${getGradientClass()} rounded-full`} />
+
+                {/* Animated traveling dot */}
                 <motion.div
                     animate={{
                         left: direction === "right" ? ["0%", "100%"] : ["100%", "0%"],
                         opacity: [0, 1, 1, 0]
                     }}
                     transition={{ duration: 1.5, repeat: Infinity, delay, ease: "linear" }}
-                    className={`absolute top-1/2 -translate-y-1/2 w-2 h-2 rounded-full ${color}`}
-                    style={{ boxShadow: `0 0 8px currentColor` }}
+                    className={`absolute top-1/2 -translate-y-1/2 w-2 h-2 rounded-full shadow-lg ${getDotColor()}`}
                 />
             </div>
             {direction === "right" && (
-                <motion.div
+                <motion.svg
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay }}
+                    className={`w-3 h-3 ${getArrowColor()} -rotate-90`}
+                    viewBox="0 0 12 12"
+                    fill="currentColor"
                 >
-                    <ArrowRight className={`w-4 h-4 ${color.replace("bg-", "text-")}`} />
-                </motion.div>
+                    <path d="M6 9L2 5h8L6 9z" />
+                </motion.svg>
             )}
         </div>
     );
