@@ -27,7 +27,8 @@ export function middleware(request: NextRequest) {
 
 export const config = {
     matcher: [
-        // Skip all internal paths (_next, assets, api) and static files
-        '/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js|site.webmanifest|images|logo.png|team).*)',
+        // Skip all internal paths (_next, assets, api), static files, and SEO files
+        // Note: Using \\\\ for escaped dot in the regex pattern
+        '/((?!api|_next/static|_next/image|assets|favicon\\.ico|sw\\.js|site\\.webmanifest|images|logo\\.png|team|sitemap\\.xml|robots\\.txt).*)',
     ],
 };
