@@ -13,7 +13,6 @@
 
 import { motion } from "framer-motion";
 import {
-    ArrowRight,
     BarChart3,
     Cpu,
     DollarSign,
@@ -54,20 +53,22 @@ export function AiVisualization({ lang = "en" }: { lang?: string }) {
         sv: {
             processing: "Bearbetar...",
             output: "AI-analys",
+            relevance: "Relevans",
             sentiment: "Sentiment",
-            impact: "Marknadsimpakt",
+            analysis: "Analys & insikter",
             action: "Signal",
             positive: "Positiv",
-            medium: "Medium"
+            high: "Hög"
         },
         en: {
             processing: "Processing...",
             output: "AI Analysis",
+            relevance: "Relevance",
             sentiment: "Sentiment",
-            impact: "Market Impact",
+            analysis: "Analysis & insights",
             action: "Signal",
             positive: "Positive",
-            medium: "Medium"
+            high: "High"
         }
     };
 
@@ -203,6 +204,22 @@ export function AiVisualization({ lang = "en" }: { lang?: string }) {
                     </div>
 
                     <div className="space-y-3">
+                        {/* Relevance bar */}
+                        <div>
+                            <div className="flex justify-between text-xs mb-1">
+                                <span className="text-muted-foreground">{t.relevance}</span>
+                                <span className="text-emerald-400 font-medium">{t.high}</span>
+                            </div>
+                            <div className="h-1.5 w-full bg-muted rounded-full overflow-hidden">
+                                <motion.div
+                                    initial={{ width: 0 }}
+                                    animate={{ width: "92%" }}
+                                    transition={{ duration: 1.5, delay: 0.6 }}
+                                    className="h-full bg-gradient-to-r from-emerald-500 to-emerald-400 rounded-full"
+                                />
+                            </div>
+                        </div>
+
                         {/* Sentiment bar */}
                         <div>
                             <div className="flex justify-between text-xs mb-1">
@@ -219,31 +236,22 @@ export function AiVisualization({ lang = "en" }: { lang?: string }) {
                             </div>
                         </div>
 
-                        {/* Impact bar */}
-                        <div>
-                            <div className="flex justify-between text-xs mb-1">
-                                <span className="text-muted-foreground">{t.impact}</span>
-                                <span className="text-blue-400 font-medium">{t.medium}</span>
-                            </div>
-                            <div className="h-1.5 w-full bg-muted rounded-full overflow-hidden">
-                                <motion.div
-                                    initial={{ width: 0 }}
-                                    animate={{ width: "55%" }}
-                                    transition={{ duration: 1.5, delay: 1 }}
-                                    className="h-full bg-gradient-to-r from-blue-500 to-blue-400 rounded-full"
-                                />
-                            </div>
-                        </div>
-
-                        {/* Recommendation - teal/primary instead of neon green */}
+                        {/* Summary (text-based analysis) */}
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ delay: 1.5 }}
-                            className="flex items-center gap-2 mt-3 p-2 bg-primary/10 rounded-lg border border-primary/15"
+                            transition={{ delay: 1.2 }}
+                            className="p-2 bg-blue-500/10 rounded-lg border border-blue-500/15"
                         >
-                            <ArrowRight className="w-4 h-4 text-primary" />
-                            <span className="text-sm font-medium text-primary">{t.action}: {t.positive}</span>
+                            <div className="flex items-center gap-2 mb-1">
+                                <FileText className="w-3.5 h-3.5 text-blue-400" />
+                                <span className="text-xs text-blue-400 font-medium">{t.analysis}</span>
+                            </div>
+                            <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">
+                                {lang === "sv"
+                                    ? "Stark order bekräftar marknadsposition..."
+                                    : "Strong order confirms market position..."}
+                            </p>
                         </motion.div>
                     </div>
                 </motion.div>

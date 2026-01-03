@@ -60,7 +60,7 @@ const content = {
                 { name: "Pressmeddelande-analys", starter: false, essential: true, enterprise: true },
                 { name: "Pre-earnings analys", starter: false, essential: true, enterprise: true },
                 { name: "Dynamisk kurstrigger-analys", starter: false, essential: true, enterprise: true },
-                { name: "Daglig marknadssammanfattning", starter: false, essential: true, enterprise: true },
+                { name: "Daglig marknadsöversikt", starter: false, essential: true, enterprise: true },
                 { name: "API-tillgång", starter: false, essential: false, enterprise: true },
                 { name: "Dedikerad support", starter: false, essential: false, enterprise: true },
             ]

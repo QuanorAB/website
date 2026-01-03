@@ -13,8 +13,8 @@ export default function Teaser({ lang }: { lang: string }) {
             features: [
                 "Snabb och träffsäker analys som tar hänsyn till relationer och tidigare kommunikation",
                 "Automatiska triggers för VD-byten och insiderhandel",
-                "Se M&A-aktivitet och bolagshändelser i realtid",
-                "Förstå marknadsstrukturen på ett ögonblick"
+                "Få notiser om M&A-aktivitet och viktiga bolagshändelser",
+                "Snabb överblick av bolaget med nyckeltal och senaste händelser"
             ]
         },
         en: {
@@ -24,8 +24,8 @@ export default function Teaser({ lang }: { lang: string }) {
             features: [
                 "Fast and accurate analysis considering relationships and past communications",
                 "Automatic triggers for CEO changes and insider trading",
-                "See M&A activity and corporate events in real-time",
-                "Understand market structure at a glance"
+                "Get notified about M&A activity and important corporate events",
+                "Quick company overview with key metrics and recent events"
             ]
         }
     };
