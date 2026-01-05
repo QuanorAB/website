@@ -9,10 +9,10 @@ export default function Teaser({ lang }: { lang: string }) {
         sv: {
             title: "Varför välja Quanor?",
             subtitle: "Förstå bolagsrelationer och få djupare marknadsinsikter.",
-            description: "Vi har ett proprietärt relationsuniversum och bolagsspecifika triggers som vi använder i våra analyser. Förstå hur varje bolag är kopplat till sina konkurrenter, kunder och leverantörer, och få automatiska varningar för viktiga händelser.",
+            description: "Vi har ett egenutvecklat relationsuniversum och bolagsspecifika triggers som vi använder i våra analyser. Förstå hur varje bolag är kopplat till sina konkurrenter, kunder och leverantörer, och få automatiska varningar för viktiga händelser.",
             features: [
                 "Snabb och träffsäker analys som tar hänsyn till relationer och tidigare kommunikation",
-                "Automatiska triggers för VD-byten och insiderhandel",
+                "Smarta triggers för nyckeltal, insiderhandel, VD-byten och andra viktiga händelser",
                 "Få notiser om M&A-aktivitet och viktiga bolagshändelser",
                 "Snabb överblick av bolaget med nyckeltal och senaste händelser"
             ]
@@ -23,7 +23,7 @@ export default function Teaser({ lang }: { lang: string }) {
             description: "We have a proprietary relationship universe and company-specific triggers that we use in our analysis. Understand how each company is connected to its competitors, customers, and suppliers, and get automatic alerts for important events.",
             features: [
                 "Fast and accurate analysis considering relationships and past communications",
-                "Automatic triggers for CEO changes and insider trading",
+                "Smart triggers for KPIs, insider trading, CEO changes and other key events",
                 "Get notified about M&A activity and important corporate events",
                 "Quick company overview with key metrics and recent events"
             ]

@@ -259,7 +259,7 @@ export default function FeaturesPageClient({ content: t }: FeaturesPageClientPro
                         whileTap={{ scale: 0.95 }}
                     >
                         <Button size="lg" asChild>
-                            <a href="https://app.quanor.com/register/essential">{t.cta.button}</a>
+                            <a href="https://app.quanor.com/register/free">{t.cta.button}</a>
                         </Button>
                     </motion.div>
                 </div>

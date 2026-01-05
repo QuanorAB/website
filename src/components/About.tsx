@@ -46,8 +46,8 @@ export default function About({ lang }: { lang: string }) {
                 },
                 {
                     id: 'excellence',
-                    title: "Excellens",
-                    description: "Vi nöjer oss inte med 'bra nog'. Vi strävar alltid efter högsta möjliga kvalitet."
+                    title: "Kvalitet",
+                    description: "Varje analys ska vara korrekt, relevant och användbar. Vi accepterar inga genvägar."
                 }
             ]
         },
