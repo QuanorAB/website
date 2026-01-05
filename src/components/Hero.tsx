@@ -77,7 +77,7 @@ export default function Hero({ lang }: { lang: string }) {
                             </a>
                         </Button>
                         <Button size="lg" variant="outline" className="text-lg h-14 px-8 rounded-full bg-background/50 backdrop-blur-sm border-muted-foreground/20 hover:bg-background/80" asChild>
-                            <a href="#features">
+                            <a href={`/${lang}/features`}>
                                 {t.learnMore}
                             </a>
                         </Button>
