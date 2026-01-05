@@ -36,7 +36,7 @@ const content = {
                 ],
                 useCase: {
                     title: "Användningsfall",
-                    description: "När en kvartalsrapport släpps får du inom 30 sekunder en första analys. Under de följande timmarna fördjupas analysen automatiskt med branschjämförelser och trendanalys."
+                    description: "När en kvartalsrapport släpps får du inom 30 sekunder en första analys. Några minuter senare följer en fördjupad analys med branschjämförelser och trendanalys."
                 }
             },
             {
@@ -105,7 +105,7 @@ const content = {
             },
             {
                 iconName: "Smartphone",
-                title: "PWA-app för alla enheter",
+                title: "PWA för alla enheter",
                 subtitle: "Installera utan App Store",
                 description: "Quanor finns som en Progressive Web App (PWA) som du kan installera direkt på din iPhone eller Android - ingen nedladdning från butik behövs.",
                 capabilities: [
@@ -154,7 +154,7 @@ const content = {
                 ],
                 useCase: {
                     title: "Use Case",
-                    description: "When a quarterly report is released, you get an initial analysis within 30 seconds. Over the following hours, the analysis is automatically deepened with industry comparisons and trend analysis."
+                    description: "When a quarterly report is released, you get an initial analysis within 30 seconds. A few minutes later, a deeper analysis follows with industry comparisons and trend analysis."
                 }
             },
             {

@@ -86,7 +86,7 @@ const content = {
                 },
                 {
                     q: "Fungerar push-notiser på mobilen?",
-                    a: "Ja! När du installerat PWA-appen och godkänt notifieringar får du push-notiser precis som en vanlig app. Du får omedelbara alerts vid pressmeddelanden, kursrörelser och andra händelser för dina bevakade bolag."
+                    a: "Ja! När du installerat vår PWA och godkänt notifieringar får du push-notiser precis som en vanlig app. Du får omedelbara alerts vid pressmeddelanden, kursrörelser och andra händelser för dina bevakade bolag."
                 }
             ]
         },

@@ -301,7 +301,7 @@ export default function PricingPageClient({ lang, content: t }: PricingPageClien
                         transition={{ delay: 0.4, type: "spring" }}
                     >
                         <Button size="lg" asChild>
-                            <a href="mailto:enterprise@quanor.com">{t.enterprise.cta}</a>
+                            <a href="mailto:sales@quanor.com">{t.enterprise.cta}</a>
                         </Button>
                     </motion.div>
                 </div>
