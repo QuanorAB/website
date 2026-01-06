@@ -27,9 +27,9 @@ const content = {
                 iconName: "Brain",
                 title: "Tvåstegsanalys i realtid",
                 subtitle: "För pressmeddelanden och kvartalsrapporter",
-                description: "Vår AI levererar först en snabb analys inom sekunder när ett pressmeddelande eller en kvartalsrapport släpps, och fortsätter sedan att analysera för att ge dig djupare analys allt eftersom mer data blir tillgänglig.",
+                description: "Vår AI levererar först en snabb analys inom några sekunder när ett pressmeddelande eller en kvartalsrapport släpps, och fortsätter sedan att analysera för att ge dig djupare analys allt eftersom mer data blir tillgänglig.",
                 capabilities: [
-                    "Omedelbar första analys inom sekunder",
+                    "Omedelbar första analys inom några sekunder",
                     "Fördjupad uppföljningsanalys inom minuter",
                     "Automatisk uppdatering av analysen",
                     "Notifiering vid viktiga förändringar"
@@ -52,7 +52,7 @@ const content = {
                 ],
                 useCase: {
                     title: "Användningsfall",
-                    description: "En aktie i din bevakningslista faller 8%. Inom sekunder får du en notis som förklarar att fallet beror på en ny konkurrents lansering som nämnts i ett pressmeddelande."
+                    description: "En aktie i din bevakningslista faller 8%. Inom några sekunder får du en notis som förklarar att fallet beror på en ny konkurrents lansering som nämnts i ett pressmeddelande."
                 }
             },
             {
@@ -125,7 +125,7 @@ const content = {
             items: [
                 { iconName: "Network", title: "Relationsuniversum", desc: "Se hur bolag hänger ihop: konkurrenter, kunder och leverantörer." },
                 { iconName: "Target", title: "Bolagstriggers", desc: "Proprietära signaler för VD-byten, insiderhandel, M&A och mer." },
-                { iconName: "TrendingUp", title: "Sentimentanalys", desc: "Proprietär modell för att mäta marknadskänsla i realtid." },
+                { iconName: "TrendingUp", title: "Sentimentanalys", desc: "Proprietär modell för att mäta marknadssentiment i realtid." },
                 { iconName: "Globe", title: "Svenska och engelska", desc: "Appen och alla analyser finns tillgängliga på både svenska och engelska." }
             ]
         },

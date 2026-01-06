@@ -20,7 +20,7 @@ const content = {
     sv: {
         hero: {
             title: "Enkel, transparent prissättning",
-            subtitle: "Börja gratis och uppgradera när du växer. Inga dolda avgifter, inga överraskningar."
+            subtitle: "Gratis att komma igång, enkelt att uppgradera. Inga dolda avgifter."
         },
         monthly: "/månad",
         annually: "faktureras årligen",
@@ -56,8 +56,9 @@ const content = {
             title: "Jämför planer",
             features: [
                 { name: "Bevakningar", starter: "5", essential: "Obegränsade", enterprise: "Obegränsade" },
-                { name: "Rapportanalys", starter: false, essential: true, enterprise: true },
-                { name: "Pressmeddelandeanalys", starter: false, essential: true, enterprise: true },
+                { name: "Rapportanalys", starter: true, essential: true, enterprise: true },
+                { name: "Pressmeddelandeanalys", starter: true, essential: true, enterprise: true },
+                { name: "Flashanalyser", starter: false, essential: true, enterprise: true },
                 { name: "Analys inför rapport", starter: false, essential: true, enterprise: true },
                 { name: "Dynamisk kurstrigger-analys", starter: false, essential: true, enterprise: true },
                 { name: "Daglig marknadsöversikt", starter: false, essential: true, enterprise: true },
@@ -99,7 +100,7 @@ const content = {
     en: {
         hero: {
             title: "Simple, transparent pricing",
-            subtitle: "Start free and upgrade as you grow. No hidden fees, no surprises."
+            subtitle: "Free to get started, easy to upgrade. No hidden fees."
         },
         monthly: "/month",
         annually: "billed annually",
@@ -135,8 +136,9 @@ const content = {
             title: "Compare Plans",
             features: [
                 { name: "Watchlist items", starter: "5", essential: "Unlimited", enterprise: "Unlimited" },
-                { name: "Report analysis", starter: false, essential: true, enterprise: true },
-                { name: "Press release analysis", starter: false, essential: true, enterprise: true },
+                { name: "Report analysis", starter: true, essential: true, enterprise: true },
+                { name: "Press release analysis", starter: true, essential: true, enterprise: true },
+                { name: "Flash analysis", starter: false, essential: true, enterprise: true },
                 { name: "Pre-earnings analysis", starter: false, essential: true, enterprise: true },
                 { name: "Dynamic price trigger analysis", starter: false, essential: true, enterprise: true },
                 { name: "Daily market recap", starter: false, essential: true, enterprise: true },

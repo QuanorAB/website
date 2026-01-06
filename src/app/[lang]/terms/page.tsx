@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     return {
         title: `${t('legal.terms.title')} - Quanor AB`,
         description: lang === 'sv'
-            ? 'Quanor AB användarvillkor för vår AI-drivna plattform för finansanalys.'
+            ? 'Quanor AB användarvillkor för vår AI-drivna plattform för aktieanalys.'
             : 'Quanor AB terms of service for AI-driven financial analysis platform.',
     };
 }
