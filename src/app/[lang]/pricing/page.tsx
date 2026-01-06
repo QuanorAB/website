@@ -26,7 +26,7 @@ const content = {
         annually: "faktureras årligen",
         tiers: [
             {
-                name: "Starter",
+                name: "Free",
                 price: "0 kr",
                 desc: "Perfekt för att komma igång",
                 features: ["5 bevakningar", "Begränsad AI-analys", "Mail inför börsöppning", "E-postsupport"],
@@ -106,7 +106,7 @@ const content = {
         annually: "billed annually",
         tiers: [
             {
-                name: "Starter",
+                name: "Free",
                 price: "0 kr",
                 desc: "Perfect to get started",
                 features: ["5 watchlist items", "Limited AI analysis", "Pre-market email", "Email support"],
