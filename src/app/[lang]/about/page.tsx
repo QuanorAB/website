@@ -28,7 +28,7 @@ const teamMembers = {
             }
         },
         {
-            name: "Vilhelm Niklasson",
+            name: "Vilhelm Niklasson, PhD",
             role: { sv: "COO", en: "COO" },
             image: "/team/vilhelm-niklasson.jpg",
             bio: {
@@ -57,7 +57,7 @@ const teamMembers = {
     ],
     advisors: [
         {
-            name: "Fredrik Olsson",
+            name: "Fredrik Olsson, PhD",
             role: { sv: "Rådgivare", en: "Advisor" },
             image: "/team/fredrik-olsson.jpg",
             bio: {
@@ -66,7 +66,7 @@ const teamMembers = {
             }
         },
         {
-            name: "Kristoffer Lindensjö",
+            name: "Kristoffer Lindensjö, PhD",
             role: { sv: "Rådgivare", en: "Advisor" },
             image: "/team/kristoffer-lindensjo.jpg",
             bio: {

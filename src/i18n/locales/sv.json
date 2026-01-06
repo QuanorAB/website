@@ -30,7 +30,7 @@
         "free": {
             "name": "Free",
             "price": "0 kr/månad",
-            "description": "Grundläggande AI-driven finansanalys för att komma igång",
+            "description": "Grundläggande AI-driven aktieanalys för att komma igång",
             "features": [
                 "Full PR-, rapport- och analys inför rapport",
                 "Följ upp till 5 företag",
@@ -136,7 +136,7 @@
         }
     },
     "about": {
-        "title": "Leder framtiden för finansanalys",
+        "title": "Leder framtiden för aktieanalys",
         "subtitle": "Grundat i Stockholm, Sverige, representerar Quanor spetsteknologin inom AI-driven finansiell teknik.",
         "description1": "Vi tror att sofistikerad investeringsanalys inte ska begränsas till stora institutioner. Vår plattform demokratiserar avancerad marknadsintelligens genom ny AI-teknik och algoritmer.",
         "description2": "Varje algoritm, varje analys drivs av våra anpassade AI-modeller som behandlar stora mängder marknadsdata i realtid och levererar värdefull analys som hjälper dig fatta bättre investeringsbeslut.",
@@ -154,7 +154,7 @@
         "values": {
             "innovation": {
                 "title": "Fokus på innovation",
-                "description": "Utvecklar nästa generation av AI-driven finansanalys genom egen forskning och utveckling."
+                "description": "Utvecklar nästa generation av AI-driven aktieanalys genom egen forskning och utveckling."
             },
             "transparency": {
                 "title": "Full transparens",
@@ -519,7 +519,7 @@
         "message": "Oops! Sidan kunde inte hittas"
     },
     "footer": {
-        "description": "Omedelbar finansanalys. Effektiviserar aktieanalys och kapitalförvaltning med ny teknik.",
+        "description": "Omedelbar aktieanalys. Effektiviserar aktieanalys och kapitalförvaltning med ny teknik.",
         "builtIn": "Utvecklat i Stockholm, Sverige",
         "sections": {
             "products": "Produkter",

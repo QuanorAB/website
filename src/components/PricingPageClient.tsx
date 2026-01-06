@@ -173,7 +173,7 @@ export default function PricingPageClient({ lang, content: t }: PricingPageClien
                         <table className="w-full min-w-[500px] table-fixed">
                             <thead>
                                 <tr className="border-b border-white/10">
-                                    <th className="text-left py-4 px-4 font-semibold">Feature</th>
+                                    <th className="text-left py-4 px-4 font-semibold">{lang === 'sv' ? 'Funktion' : 'Feature'}</th>
                                     <th className="text-center py-4 px-4 font-semibold">Starter</th>
                                     <th className="text-center py-4 px-4 font-semibold text-primary">Essential</th>
                                     <th className="text-center py-4 px-4 font-semibold">Enterprise</th>
@@ -189,7 +189,7 @@ export default function PricingPageClient({ lang, content: t }: PricingPageClien
                                         transition={{ delay: i * 0.05 }}
                                         className="border-b border-white/5"
                                     >
-                                        <td className="py-4 px-4 text-sm break-words">{feature.name}</td>
+                                        <td className="py-4 px-4 text-sm whitespace-nowrap">{feature.name}</td>
                                         <td className="text-center py-4 px-4">
                                             {typeof feature.starter === 'boolean' ? (
                                                 feature.starter ? (

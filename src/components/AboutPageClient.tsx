@@ -168,26 +168,26 @@ export default function AboutPageClient({ lang, teamMembers, content: t }: About
                         whileInView="visible"
                         viewport={{ once: true }}
                         variants={staggerContainer}
-                        className="flex flex-col md:flex-row justify-center gap-8 md:gap-16 max-w-3xl mx-auto items-center"
+                        className="flex flex-col md:flex-row justify-center gap-8 md:gap-16 max-w-4xl mx-auto items-start"
                     >
                         {teamMembers.advisors.map((advisor, i) => (
                             <motion.div
                                 key={i}
                                 variants={fadeInUp}
                                 transition={{ duration: 0.5 }}
-                                className="text-center w-48"
+                                className="text-center w-48 flex flex-col items-center"
                             >
                                 <motion.div
                                     whileHover={{ scale: 1.1 }}
                                     transition={{ type: "spring", stiffness: 300 }}
-                                    className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-2 border-white/10"
+                                    className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-2 border-white/10 flex-shrink-0"
                                 >
                                     {advisor.image ? (
                                         <Image
                                             src={advisor.image}
                                             alt={advisor.name}
                                             fill
-                                            className="object-cover"
+                                            className="object-cover object-top"
                                         />
                                     ) : (
                                         <div className="w-full h-full bg-primary/20 flex items-center justify-center text-3xl font-bold text-primary">
