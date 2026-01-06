@@ -141,7 +141,7 @@ export default function PricingPageClient({ lang, content: t }: PricingPageClien
                                     variant={tier.popular ? "default" : "outline"}
                                     asChild
                                 >
-                                    <a href={`https://app.quanor.com/register/${tier.name === 'Starter' ? 'free' : tier.name === 'Enterprise' ? 'enterprise' : 'essential'}`}>
+                                    <a href={`https://app.quanor.com/register/${tier.name === 'Free' ? 'free' : tier.name === 'Enterprise' ? 'enterprise' : 'essential'}`}>
                                         {tier.cta}
                                     </a>
                                 </Button>
@@ -174,7 +174,7 @@ export default function PricingPageClient({ lang, content: t }: PricingPageClien
                             <thead>
                                 <tr className="border-b border-white/10">
                                     <th className="text-left py-4 px-4 font-semibold">{lang === 'sv' ? 'Funktion' : 'Feature'}</th>
-                                    <th className="text-center py-4 px-4 font-semibold">Starter</th>
+                                    <th className="text-center py-4 px-4 font-semibold">Free</th>
                                     <th className="text-center py-4 px-4 font-semibold text-primary">Essential</th>
                                     <th className="text-center py-4 px-4 font-semibold">Enterprise</th>
                                 </tr>
@@ -189,7 +189,7 @@ export default function PricingPageClient({ lang, content: t }: PricingPageClien
                                         transition={{ delay: i * 0.05 }}
                                         className="border-b border-white/5"
                                     >
-                                        <td className="py-4 px-4 text-sm whitespace-nowrap">{feature.name}</td>
+                                        <td className="py-4 px-4 text-sm hyphens-auto" style={{ wordBreak: 'break-word' }}>{feature.name}</td>
                                         <td className="text-center py-4 px-4">
                                             {typeof feature.starter === 'boolean' ? (
                                                 feature.starter ? (
