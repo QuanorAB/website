@@ -19,12 +19,12 @@ export default function Footer({ lang }: { lang: string }) {
         sv: {
             description: "Omedelbar aktieanalys för svenska aktier. Realtidsbevakning av pressmeddelanden, rapporter och marknadshändelser.",
             sections: {
-                products: "Produkter",
+                products: "Erbjudande",
                 company: "Företag",
                 resources: "Resurser"
             },
             links: {
-                analysis: "AI-analys",
+                analysis: "Funktioner",
                 pricing: "Priser",
                 about: "Om oss",
                 contact: "Kontakt",
@@ -42,12 +42,12 @@ export default function Footer({ lang }: { lang: string }) {
         en: {
             description: "Instant financial analysis for Swedish stocks. Real-time monitoring of press releases, reports, and market events.",
             sections: {
-                products: "Products",
+                products: "Offering",
                 company: "Company",
                 resources: "Resources"
             },
             links: {
-                analysis: "AI Analysis",
+                analysis: "Features",
                 pricing: "Pricing",
                 about: "About",
                 contact: "Contact",
