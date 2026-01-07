@@ -9,7 +9,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
     const { lang } = await params;
     return {
-        title: lang === 'sv' ? 'Om Oss | Quanor' : 'About Us | Quanor',
+        title: lang === 'sv'
+            ? 'Om Oss - Svenskt AI-team för Aktieanalys | Quanor'
+            : 'About Us - Swedish AI Team for Stock Analysis | Quanor',
         description: lang === 'sv'
             ? 'Träffa teamet bakom Quanor. Vi är ett passionerat team som demokratiserar finansiell analys med AI.'
             : 'Meet the team behind Quanor. We are a passionate team democratizing financial analysis with AI.',
