@@ -26,7 +26,7 @@ const content = {
             {
                 iconName: "Brain",
                 title: "Tvåstegsanalys i realtid",
-                subtitle: "För pressmeddelanden och kvartalsrapporter",
+                subtitle: "Analys direkt när nyheten släpps",
                 description: "Vår AI levererar först en snabb analys inom några sekunder när ett pressmeddelande eller en kvartalsrapport släpps, och fortsätter sedan att analysera för att ge dig djupare analys allt eftersom mer data blir tillgänglig.",
                 capabilities: [
                     "Omedelbar första analys inom några sekunder",
@@ -90,7 +90,7 @@ const content = {
             {
                 iconName: "Mail",
                 title: "Daglig marknadsöversikt",
-                subtitle: "Kvällsmail efter börsens stängning",
+                subtitle: "Håll koll på marknaden utan att spendera tid",
                 description: "Få ett kvällsmail efter att börsen stängt med dagens viktigaste makronyheter från Sverige och globalt, hur de kan påverka bolagen i din bevakningslista, plus index-, råvaru-, valuta- och kryptoförändringar samt dagens viktigaste pressmeddelanden.",
                 capabilities: [
                     "Svenska och globala makronyheter",
@@ -106,7 +106,7 @@ const content = {
             {
                 iconName: "Smartphone",
                 title: "PWA för alla enheter",
-                subtitle: "Installera utan App Store",
+                subtitle: "Ha Quanor alltid till hands",
                 description: "Quanor finns som en Progressive Web App (PWA) som du kan installera direkt på din iPhone eller Android - ingen nedladdning från butik behövs.",
                 capabilities: [
                     "Fungerar offline med cachade analyser",
@@ -144,7 +144,7 @@ const content = {
             {
                 iconName: "Brain",
                 title: "Two-phase real-time analysis",
-                subtitle: "For press releases and quarterly reports",
+                subtitle: "Analysis right when the news drops",
                 description: "Our AI first delivers a quick analysis within seconds when a press release or quarterly report is published, then continues to analyze to give you deeper analysis as more data becomes available.",
                 capabilities: [
                     "Immediate first analysis within seconds",
@@ -208,7 +208,7 @@ const content = {
             {
                 iconName: "Mail",
                 title: "Daily market recap",
-                subtitle: "Evening email after market close",
+                subtitle: "Stay informed without spending time",
                 description: "Get an evening email after the exchange closes with the day's most important macro news from Sweden and globally, how they could impact companies in your watchlist, plus index, commodity, FX, and crypto changes, and the day's key press releases.",
                 capabilities: [
                     "Swedish and global macro news",
@@ -224,7 +224,7 @@ const content = {
             {
                 iconName: "Smartphone",
                 title: "PWA app for all devices",
-                subtitle: "Install without App Store",
+                subtitle: "Have Quanor always at hand",
                 description: "Quanor is available as a Progressive Web App (PWA) that you can install directly on your iPhone or Android - no app store download required.",
                 capabilities: [
                     "Works offline with cached analyses",

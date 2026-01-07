@@ -21,7 +21,7 @@ export default function Hero({ lang }: { lang: string }) {
     const content = {
         sv: {
             title: ["Omedelbar", "Aktieanalys"],
-            subtitle: "Få professionell analys av pressmeddelanden, kvartalsrapporter och analyser inför rapport för svenska aktier – sekunder efter publicering.",
+            subtitle: "Få professionell analys av pressmeddelanden, kvartalsrapporter och andra marknadshändelser – sekunder efter publicering.",
             getStarted: "Kom igång gratis",
             learnMore: "Läs mer",
             stats: {
@@ -32,7 +32,7 @@ export default function Hero({ lang }: { lang: string }) {
         },
         en: {
             title: ["Instant", "Stock Analysis"],
-            subtitle: "Get professional analysis of press releases, quarterly reports, and pre-earnings for Swedish stocks – seconds after release.",
+            subtitle: "Get professional analysis of press releases, quarterly reports, and other market events – seconds after release.",
             getStarted: "Get started free",
             learnMore: "Learn more",
             stats: {
