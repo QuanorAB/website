@@ -9,10 +9,75 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
     const { lang } = await params;
     return {
-        title: lang === 'sv' ? 'Priser | Quanor' : 'Pricing | Quanor',
+        title: lang === 'sv'
+            ? 'Priser - AI Aktieanalys från 0 kr | Quanor'
+            : 'Pricing - AI Stock Analysis from 0 kr | Quanor',
         description: lang === 'sv'
             ? 'Välj rätt prisplan för dina investeringsbehov. Börja gratis, uppgradera när du växer. Transparent prissättning utan dolda avgifter.'
             : 'Choose the right pricing plan for your investment needs. Start free, upgrade as you grow. Transparent pricing with no hidden fees.',
+    };
+}
+
+/**
+ * FAQPage JSON-LD schema for Google rich snippets.
+ * This enables FAQ rich results in Google search.
+ */
+function getFaqJsonLd(lang: string) {
+    const faqItems = lang === 'sv' ? [
+        {
+            question: "Kan jag byta plan när som helst?",
+            answer: "Ja, du kan uppgradera eller nedgradera din plan när som helst. Vid uppgradering får du direkt tillgång till nya funktioner. Vid nedgradering träder ändringen i kraft vid nästa faktureringsperiod."
+        },
+        {
+            question: "Finns det någon bindningstid?",
+            answer: "Nej, vi har inga bindningstider. Du kan avsluta din prenumeration när som helst, och du behåller tillgång till tjänsten tills faktureringsperioden löper ut."
+        },
+        {
+            question: "Vilka betalningsmetoder accepterar ni?",
+            answer: "Vi accepterar alla större kreditkort (Visa, Mastercard, American Express). Enterprise-kunder kan även betala via faktura."
+        },
+        {
+            question: "Hur installerar jag Quanor-appen på min mobil?",
+            answer: "Quanor är en PWA (Progressive Web App) som du enkelt installerar utan App Store. På iPhone: Öppna app.quanor.com i Safari → Tryck på dela-ikonen → Välj 'Lägg till på hemskärmen'. På Android: Öppna i Chrome → Tryck på menyn (tre prickar) → Välj 'Installera app' eller 'Lägg till på startskärmen'."
+        },
+        {
+            question: "Fungerar push-notiser på mobilen?",
+            answer: "Ja! När du installerat vår PWA och godkänt notifieringar får du push-notiser precis som en vanlig app. Du får omedelbara alerts vid pressmeddelanden, kursrörelser och andra händelser för dina bevakade bolag."
+        }
+    ] : [
+        {
+            question: "Can I change plans at any time?",
+            answer: "Yes, you can upgrade or downgrade your plan at any time. When upgrading, you get immediate access to new features. When downgrading, the change takes effect at the next billing period."
+        },
+        {
+            question: "Is there a commitment period?",
+            answer: "No, we have no commitment periods. You can cancel your subscription at any time, and you retain access to the service until the billing period expires."
+        },
+        {
+            question: "What payment methods do you accept?",
+            answer: "We accept all major credit cards (Visa, Mastercard, American Express). Enterprise customers can also pay via invoice."
+        },
+        {
+            question: "How do I install the Quanor app on my phone?",
+            answer: "Quanor is a PWA (Progressive Web App) that you can easily install without the App Store. On iPhone: Open app.quanor.com in Safari → Tap the share icon → Select 'Add to Home Screen'. On Android: Open in Chrome → Tap the menu (three dots) → Select 'Install app' or 'Add to Home Screen'."
+        },
+        {
+            question: "Do push notifications work on mobile?",
+            answer: "Yes! Once you've installed the PWA app and allowed notifications, you'll receive push notifications just like a native app. You get immediate alerts for press releases, price movements, and other events for your watched companies."
+        }
+    ];
+
+    return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqItems.map(item => ({
+            "@type": "Question",
+            "name": item.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+            }
+        }))
     };
 }
 
@@ -183,5 +248,14 @@ export default async function Pricing({ params }: { params: Promise<{ lang: stri
     const { lang } = await params;
     const t = lang === "sv" ? content.sv : content.en;
 
-    return <PricingPageClient lang={lang} content={t} />;
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(getFaqJsonLd(lang)) }}
+            />
+            <PricingPageClient lang={lang} content={t} />
+        </>
+    );
 }
+
