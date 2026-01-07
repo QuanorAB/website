@@ -1,5 +1,16 @@
 "use client";
 
+/**
+ * PricingPageClient Component
+ * 
+ * Client-side pricing page with animated tier cards, comparison table,
+ * FAQ section, and enterprise CTA. Receives localized content as props.
+ * 
+ * @param {Object} props
+ * @param {string} props.lang - Language code ('sv' or 'en')
+ * @param {Object} props.content - Localized content for all pricing sections
+ */
+
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Check, HelpCircle, X } from "lucide-react";

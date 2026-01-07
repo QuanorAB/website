@@ -1,5 +1,15 @@
 "use client";
 
+/**
+ * Testimonials Component
+ * 
+ * Displays customer testimonials in an animated card layout.
+ * Features quotes from real users with bilingual content support.
+ * 
+ * @param {Object} props
+ * @param {string} props.lang - Language code ('sv' or 'en')
+ */
+
 import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
 

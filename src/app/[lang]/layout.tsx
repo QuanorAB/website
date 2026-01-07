@@ -42,8 +42,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     title,
     description,
     keywords: lang === 'sv'
-      ? ['aktieanalys', 'AI', 'kvartalsrapporter', 'pressmeddelanden', 'inför rapport', 'svenska aktier', 'finansiell analys', 'nordiska aktier']
-      : ['stock analysis', 'AI', 'quarterly reports', 'press releases', 'pre-earnings', 'Nordic stocks', 'financial analysis', 'Swedish stocks'],
+      ? ['aktieanalys', 'AI', 'kvartalsrapporter', 'pressmeddelanden', 'inför rapport', 'svenska aktier', 'finansiell analys', 'nordiska aktier', 'flashanalys']
+      : ['stock analysis', 'AI', 'quarterly reports', 'press releases', 'pre-earnings', 'Nordic stocks', 'financial analysis', 'Swedish stocks', 'flash analysis'],
     authors: [{ name: 'Quanor AB' }],
     creator: 'Quanor AB',
     publisher: 'Quanor AB',

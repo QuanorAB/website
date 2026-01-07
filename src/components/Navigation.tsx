@@ -1,5 +1,15 @@
 "use client";
 
+/**
+ * Navigation Component
+ * 
+ * Fixed top navigation with responsive mobile menu and language switcher.
+ * Includes scroll-aware styling that adds backdrop blur when scrolled.
+ * 
+ * @param {Object} props
+ * @param {string} props.lang - Language code ('sv' or 'en')
+ */
+
 import { Button } from "@/components/ui/button";
 import { Globe, Menu, X } from 'lucide-react';
 import Image from "next/image";

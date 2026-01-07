@@ -11,7 +11,7 @@ const runsOnServerSide = typeof window === "undefined";
 // on client side the normal singleton is ok
 i18next
     .use(initReactI18next)
-    .use(resourcesToBackend((language: string, namespace: string) => import(`./locales/${language}.json`)))
+    .use(resourcesToBackend((language: string) => import(`./locales/${language}.json`)))
     .init({
         ...getOptions(),
         lng: undefined, // let detect the language on client side
@@ -21,7 +21,7 @@ i18next
         preload: runsOnServerSide ? languages : [],
     });
 
-export function useTranslation(lng: string, ns?: string, options: any = {}) {
+export function useTranslation(lng: string, ns?: string, options: { keyPrefix?: string } = {}) {
     const ret = useTranslationOrg(ns, options);
     const { i18n } = ret;
     if (runsOnServerSide && lng && i18n.resolvedLanguage !== lng) {

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { useTranslation } from "@/i18n/server";
+import { getTranslation } from "@/i18n/server";
 import { languages } from "@/i18n/settings";
 import { ArrowLeft } from "lucide-react";
 import { Metadata } from "next";
@@ -12,7 +12,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
     const { lang } = await params;
-    const { t } = await useTranslation(lang, "translation");
+    const { t } = await getTranslation(lang, "translation");
     return {
         title: `${t('legal.terms.title')} - Quanor AB`,
         description: lang === 'sv'
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 
 export default async function Terms({ params }: { params: Promise<{ lang: string }> }) {
     const { lang } = await params;
-    const { t } = await useTranslation(lang, "translation");
+    const { t } = await getTranslation(lang, "translation");
 
     return (
         <div className="min-h-screen bg-background pt-24 pb-12">

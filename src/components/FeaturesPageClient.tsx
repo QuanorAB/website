@@ -1,5 +1,16 @@
 "use client";
 
+/**
+ * FeaturesPageClient Component
+ * 
+ * Client-side features page with animated feature cards, use cases,
+ * additional features grid, and CTA section. Uses icon mapping for
+ * dynamic Lucide icon rendering.
+ * 
+ * @param {Object} props
+ * @param {Object} props.content - Localized content for all feature sections
+ */
+
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Bell, Brain, Clock, FileText, Globe, LineChart, LucideIcon, Network, Newspaper, Shield, Smartphone, Target, TrendingUp, Zap } from "lucide-react";
@@ -170,7 +181,7 @@ export default function FeaturesPageClient({ content: t }: FeaturesPageClientPro
                                             </motion.span>
                                             {feature.useCase.title}
                                         </h4>
-                                        <p className="text-muted-foreground italic leading-relaxed">"{feature.useCase.description}"</p>
+                                        <p className="text-muted-foreground italic leading-relaxed">&ldquo;{feature.useCase.description}&rdquo;</p>
                                     </motion.div>
                                 </motion.div>
                             );

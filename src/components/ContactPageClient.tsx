@@ -1,5 +1,16 @@
 "use client";
 
+/**
+ * ContactPageClient Component
+ * 
+ * Client-side contact page with contact methods, contact form with
+ * Supabase Edge Function integration, office info, map, and FAQ.
+ * 
+ * @param {Object} props
+ * @param {string} props.lang - Language code ('sv' or 'en')
+ * @param {Object} props.content - Localized content for all sections
+ */
+
 import { Button } from "@/components/ui/button";
 import { supabase } from "@/lib/supabase";
 import { motion } from "framer-motion";

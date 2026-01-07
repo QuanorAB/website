@@ -1,5 +1,17 @@
 "use client";
 
+/**
+ * AboutPageClient Component
+ * 
+ * Client-side about page with company story, team members, advisors,
+ * values section, and CTA. Displays bilingual content based on language.
+ * 
+ * @param {Object} props
+ * @param {string} props.lang - Language code ('sv' or 'en')
+ * @param {Object} props.teamMembers - Core team and advisors data
+ * @param {Object} props.content - Localized content for all sections
+ */
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 
