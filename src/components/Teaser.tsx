@@ -1,5 +1,16 @@
 "use client";
 
+/**
+ * Teaser Component
+ * 
+ * "Why choose Quanor?" section showcasing the relationship universe
+ * visualization and key differentiators. Features animated content
+ * and feature list.
+ * 
+ * @param {Object} props
+ * @param {string} props.lang - Language code ('sv' or 'en')
+ */
+
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { RelationshipUniverse } from "./ui/RelationshipUniverse";

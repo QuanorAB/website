@@ -5,7 +5,7 @@ import ProcessSection from "@/components/ProcessSection";
 import Products from "@/components/Products";
 import Teaser from "@/components/Teaser";
 import Testimonials from "@/components/Testimonials";
-import { useTranslation } from "@/i18n/server";
+import { getTranslation } from "@/i18n/server";
 import { languages } from "@/i18n/settings";
 import { Metadata } from "next";
 
@@ -15,7 +15,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
-  const { t } = await useTranslation(lang, "translation");
+  const { t } = await getTranslation(lang, "translation");
   return {
     title: `Quanor - ${t('hero.title')} `,
     description: t('hero.subtitle'),
