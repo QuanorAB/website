@@ -72,20 +72,13 @@ export function JsonLd({ lang }: JsonLdProps) {
         "@type": "SoftwareApplication",
         "name": "Quanor",
         "applicationCategory": "FinanceApplication",
-        "operatingSystem": "Web, iOS, Android",
+        "operatingSystem": "Web",
         "offers": {
             "@type": "AggregateOffer",
             "priceCurrency": "SEK",
             "lowPrice": "0",
             "highPrice": "99",
             "offerCount": "2"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "150",
-            "bestRating": "5",
-            "worstRating": "1"
         },
         "description": lang === "sv"
             ? "Omedelbar aktieanalys med realtidsbevakning av pressmeddelanden, kvartalsrapporter och analyser inför rapport."
