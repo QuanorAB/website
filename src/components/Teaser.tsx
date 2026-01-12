@@ -47,13 +47,13 @@ export default function Teaser({ lang }: { lang: string }) {
         <section className="py-24 bg-gradient-to-b from-background to-primary/5 overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
-                    {/* Left - Coded Visualization */}
+                    {/* Left - Coded Visualization (order-2 on mobile, order-1 on lg) */}
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
-                        className="relative"
+                        className="relative order-2 lg:order-1"
                     >
                         <div className="relative rounded-2xl overflow-hidden border border-border/50 bg-card/30 backdrop-blur-sm p-6">
                             <RelationshipUniverse lang={lang} />
@@ -62,13 +62,13 @@ export default function Teaser({ lang }: { lang: string }) {
                         <div className="absolute -inset-4 bg-primary/5 blur-3xl rounded-full -z-10" />
                     </motion.div>
 
-                    {/* Right - Content */}
+                    {/* Right - Content (order-1 on mobile, order-2 on lg) */}
                     <motion.div
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="space-y-6"
+                        className="space-y-6 order-1 lg:order-2"
                     >
                         <div>
                             <motion.h2
