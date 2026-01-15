@@ -10,6 +10,9 @@ export async function generateStaticParams() {
     return languages.map((lang) => ({ lang }));
 }
 
+// Revalidate blog list every 60 seconds for new posts
+export const revalidate = 60;
+
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
     const { lang } = await params;
     const baseUrl = "https://www.quanor.com";
