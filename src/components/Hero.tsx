@@ -71,7 +71,7 @@ export default function Hero({ lang }: { lang: string }) {
 
                     <div className="flex flex-col sm:flex-row gap-4 mt-4">
                         <Button size="lg" className="group text-lg h-14 px-8 rounded-full shadow-lg shadow-primary/20" asChild>
-                            <a href="https://app.quanor.com/register/free">
+                            <a href="https://app.quanor.com/register">
                                 {t.getStarted}
                                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                             </a>
