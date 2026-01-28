@@ -92,7 +92,7 @@
             "preReport": {
                 "title": "Analys inför rapport",
                 "label": "Inför rapport",
-                "description": "Förväntningar, sentiment, riskindikatorer och Quanors egna finansiella estimat inför nästa rapporttillfälle."
+                "description": "Omfattande analys inför rapport med sammanfattning, nyckeltal, ledningskommentarer, potentiella triggers, peer-signaler och Quanors egna finansiella estimat."
             },
             "marketRecap": {
                 "title": "Daglig marknadsöversikt",

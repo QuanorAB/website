@@ -61,7 +61,7 @@ const content = {
                 iconName: "FileText",
                 title: "Analys inför kvartalsrapport",
                 subtitle: "Förbered dig inför rapportsäsongen",
-                description: "Förväntningar, sentiment, riskindikatorer och Quanors egna finansiella estimat inför nästa rapporttillfälle.",
+                description: "Omfattande analys inför rapport med sammanfattning, nyckeltal, ledningskommentarer, potentiella triggers, peer-signaler och Quanors egna finansiella estimat.",
                 capabilities: [
                     "Trendanalys av ledningens kommentarer över tid",
                     "Anpassade bevakningspunkter och triggers",
@@ -179,7 +179,7 @@ const content = {
                 iconName: "FileText",
                 title: "Pre-earnings reports",
                 subtitle: "Prepare for earnings season",
-                description: "Expectations, sentiment, risk indicators and Quanor's own financial estimates ahead of the next reporting date.",
+                description: "Comprehensive pre-earnings briefing with executive summary, key metrics, management commentary trends, potential triggers, peer signals and Quanor's own financial estimates.",
                 capabilities: [
                     "Management commentary trend analysis over time",
                     "Custom watch points and triggers",
