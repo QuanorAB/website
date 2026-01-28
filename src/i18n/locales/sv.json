@@ -92,7 +92,7 @@
             "preReport": {
                 "title": "Analys inför rapport",
                 "label": "Inför rapport",
-                "description": "Förväntningar, sentiment, riskindikatorer och analytikerestimat inför nästa rapporttillfälle."
+                "description": "Quanors egna estimat baserade på bolagskommunikation, trender, makro och peers. Efter rapport jämförs utfallet mot våra estimat. Inkluderar även sentiment och riskindikatorer."
             },
             "marketRecap": {
                 "title": "Daglig marknadsöversikt",
@@ -107,7 +107,7 @@
         },
         "services": {
             "title": "Omfattande analyspaket",
-            "description": "Vi erbjuder PR-analys, rapportanalys, analys inför rapport, omfattande peer-bevakning, automatiska triggers som vi kontinuerligt övervakar, global och svensk makro kopplad till bevakningslista, morgonbriefings och mycket mer. Full flexibilitet att välja bort eller till notiser beroende på dina specifika behov."
+            "description": "Vi erbjuder PR-analys, rapportanalys, analys inför rapport, omfattande peer-bevakning, automatiska triggers som vi kontinuerligt övervakar, global och nordisk makro kopplad till bevakningslista, morgonbriefings och mycket mer. Full flexibilitet att välja bort eller till notiser beroende på dina specifika behov."
         },
         "disclaimer": "Innehållet genereras av Quanors AI-motorer och är avsett som beslutsstöd, inte personlig finansiell rådgivning."
     },
@@ -127,7 +127,7 @@
             "prAnalysis": "PR-analys",
             "sentiment": "Avancerad sentimentanalys",
             "frameworkAnalysis": "Eget analysramverk",
-            "swedishFocus": "Fokus på Sverige"
+            "swedishFocus": "Fokus på Norden"
         },
         "legend": {
             "full": "Fullt stöd",
@@ -142,8 +142,8 @@
         "description2": "Varje algoritm, varje analys drivs av våra anpassade AI-modeller som behandlar stora mängder marknadsdata i realtid och levererar värdefull analys som hjälper dig fatta bättre investeringsbeslut.",
         "team": "Vårt lilla men dedikerade team består av doktorer inom matematisk statistik, AI/LLM-experter, datavetare och entreprenörer som brinner för att förvandla finansbranschen genom ny teknik.",
         "stats": {
-            "companies": "900+",
-            "companiesLabel": "Svenska företag",
+            "companies": "1 500+",
+            "companiesLabel": "Nordiska företag",
             "prSpeed": "<3s",
             "prSpeedLabel": "PR-analystid",
             "reportSpeed": "≈1,5\u202Fmin",
@@ -316,9 +316,9 @@
                         "PR-analys och rapportanalys",
                         "Analys inför rapport och marknadsinsikter",
                         "Peer-täckning och marknadsflashes",
-                        "Global och svensk makroanalys",
+                        "Global och nordisk makroanalys",
                         "Morgonbriefings och anpassningsbara notiser",
-                        "Täckning av 900+ svenska företag"
+                        "Täckning av 1 500+ nordiska företag"
                     ]
                 },
                 "userObligations": {

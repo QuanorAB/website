@@ -22,12 +22,12 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const currentUrl = `${baseUrl}/${lang}`;
 
   const title = lang === 'sv'
-    ? "Quanor - Omedelbar aktieanalys för svenska marknader"
-    : "Quanor - Instant stock analysis for Swedish markets";
+    ? "Quanor - Omedelbar aktieanalys för nordiska marknader"
+    : "Quanor - Instant stock analysis for Nordic markets";
 
   const description = lang === 'sv'
-    ? "Få professionell finansiell analys med AI. Realtidsbevakning av pressmeddelanden, kvartalsrapporter och analyser inför rapport för svenska aktier."
-    : "Get professional financial analysis with AI. Real-time monitoring of press releases, quarterly reports and pre-earnings for Swedish stocks.";
+    ? "Få professionell finansiell analys med AI. Realtidsbevakning av pressmeddelanden, kvartalsrapporter och analyser inför rapport för nordiska aktier."
+    : "Get professional financial analysis with AI. Real-time monitoring of press releases, quarterly reports and pre-earnings for Nordic stocks.";
 
   // Generate alternates for all languages
   const alternateLanguages: Record<string, string> = {};

@@ -24,8 +24,8 @@ export default function About({ lang }: { lang: string }) {
             description2: "Vår plattform bearbetar automatiskt stora mängder information i realtid för att leverera analyser som tidigare krävde hela analysteam.",
             team: "Vårt lilla men dedikerade team består av doktorer inom matematisk statistik, AI/LLM-experter, datavetare och entreprenörer som brinner för att förvandla finansbranschen genom ny teknik.",
             stats: {
-                companies: "900+",
-                companiesLabel: "Bolag analyserade",
+                companies: "1 500+",
+                companiesLabel: "Nordiska bolag",
                 prSpeed: "<3s",
                 prSpeedLabel: "Analystid PR",
                 reportSpeed: "<30s",
@@ -58,8 +58,8 @@ export default function About({ lang }: { lang: string }) {
             description2: "Our platform automatically processes large amounts of information in real-time to deliver analysis that previously required entire analyst teams.",
             team: "Our small but dedicated team consists of PhDs in mathematical statistics, AI/LLM experts, data scientists, and entrepreneurs passionate about transforming the financial industry with new technology.",
             stats: {
-                companies: "900+",
-                companiesLabel: "Companies Analyzed",
+                companies: "1,500+",
+                companiesLabel: "Nordic Companies",
                 prSpeed: "<3s",
                 prSpeedLabel: "PR Analysis Time",
                 reportSpeed: "<30s",
