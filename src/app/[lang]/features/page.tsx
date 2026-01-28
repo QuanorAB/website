@@ -93,9 +93,9 @@ const content = {
                 iconName: "Mail",
                 title: "Daglig marknadsöversikt",
                 subtitle: "Håll koll på marknaden utan att spendera tid",
-                description: "Få ett kvällsmail efter att börsen stängt med dagens viktigaste makronyheter från Sverige och globalt, hur de kan påverka bolagen i din bevakningslista, plus index-, råvaru-, valuta- och kryptoförändringar samt dagens viktigaste pressmeddelanden.",
+                description: "Få ett kvällsmail efter att börsen stängt med dagens viktigaste makronyheter från Norden och globalt, hur de kan påverka bolagen i din bevakningslista, plus index-, råvaru-, valuta- och kryptoförändringar samt dagens viktigaste pressmeddelanden.",
                 capabilities: [
-                    "Svenska och globala makronyheter",
+                    "Nordiska och globala makronyheter",
                     "Koppling till dina bevakade bolag",
                     "Index, råvaror, FX och krypto-översikt",
                     "Dagens viktigaste pressmeddelanden"
@@ -211,9 +211,9 @@ const content = {
                 iconName: "Mail",
                 title: "Daily market recap",
                 subtitle: "Stay informed without spending time",
-                description: "Get an evening email after the exchange closes with the day's most important macro news from Sweden and globally, how they could impact companies in your watchlist, plus index, commodity, FX, and crypto changes, and the day's key press releases.",
+                description: "Get an evening email after the exchange closes with the day's most important macro news from the Nordics and globally, how they could impact companies in your watchlist, plus index, commodity, FX, and crypto changes, and the day's key press releases.",
                 capabilities: [
-                    "Swedish and global macro news",
+                    "Nordic and global macro news",
                     "Impact analysis for your watchlist",
                     "Index, commodities, FX and crypto overview",
                     "Day's most important press releases"
