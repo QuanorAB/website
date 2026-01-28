@@ -61,7 +61,7 @@ const content = {
                 iconName: "FileText",
                 title: "Analys inför kvartalsrapport",
                 subtitle: "Förbered dig inför rapportsäsongen",
-                description: "Inför varje kvartalsrapport genererar vi detaljerade analyser som hjälper dig förbereda och identifiera vad du ska fokusera på.",
+                description: "Quanors egna estimat baserade på bolagskommunikation, trender, makro och peers. Efter rapport jämförs utfallet mot våra estimat för att identifiera vad du ska fokusera på.",
                 capabilities: [
                     "Trendanalys av ledningens kommentarer över tid",
                     "Anpassade bevakningspunkter och triggers",
@@ -179,7 +179,7 @@ const content = {
                 iconName: "FileText",
                 title: "Pre-earnings reports",
                 subtitle: "Prepare for earnings season",
-                description: "Before each quarterly report, we generate detailed pre-earnings reports that help you prepare and identify what to focus on.",
+                description: "Quanor's own estimates based on company communications, trends, macro and peers. After earnings release, we compare outcome against our estimates to help identify what to focus on.",
                 capabilities: [
                     "Management commentary trend analysis over time",
                     "Custom watch points and triggers",
