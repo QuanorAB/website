@@ -107,7 +107,7 @@
         },
         "services": {
             "title": "Omfattande analyspaket",
-            "description": "Vi erbjuder PR-analys, rapportanalys, analys inför rapport, omfattande peer-bevakning, automatiska triggers som vi kontinuerligt övervakar, global och nordisk makro kopplad till bevakningslista, morgonbriefings och mycket mer. Full flexibilitet att välja bort eller till notiser beroende på dina specifika behov."
+            "description": "Vi erbjuder PR-analys, rapportanalys, analys inför rapport, omfattande peer-bevakning, automatiska triggers som vi kontinuerligt övervakar, global och svensk makro kopplad till bevakningslista, morgonbriefings och mycket mer. Full flexibilitet att välja bort eller till notiser beroende på dina specifika behov."
         },
         "disclaimer": "Innehållet genereras av Quanors AI-motorer och är avsett som beslutsstöd, inte personlig finansiell rådgivning."
     },
@@ -316,7 +316,7 @@
                         "PR-analys och rapportanalys",
                         "Analys inför rapport och marknadsinsikter",
                         "Peer-täckning och marknadsflashes",
-                        "Global och nordisk makroanalys",
+                        "Global och svensk makroanalys",
                         "Morgonbriefings och anpassningsbara notiser",
                         "Täckning av 1 500+ nordiska företag"
                     ]
