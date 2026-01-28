@@ -82,7 +82,7 @@
             "reportAnalysis": {
                 "title": "Report Analysis",
                 "label": "Automated Review",
-                "description": "In-depth analysis of companies' quarterly and annual reports with summarized key metrics, risks, opportunities and analyst estimates."
+                "description": "In-depth analysis of companies' quarterly and annual reports with summarized key metrics, risks, opportunities and Quanor's own estimates."
             },
             "prAnalysis": {
                 "title": "PR Analysis",
@@ -92,7 +92,7 @@
             "preReport": {
                 "title": "Pre-earnings Analysis",
                 "label": "Before Report",
-                "description": "Expectations, sentiment, risk indicators and analyst estimates ahead of the next reporting date."
+                "description": "Comprehensive pre-earnings briefing with executive summary, key metrics, management commentary trends, potential triggers, peer signals and Quanor's own financial estimates."
             },
             "marketRecap": {
                 "title": "Daily Market Recap",
@@ -127,7 +127,7 @@
             "prAnalysis": "PR analysis",
             "sentiment": "Advanced sentiment analysis",
             "frameworkAnalysis": "In-house analysis framework",
-            "swedishFocus": "Swedish focus"
+            "swedishFocus": "Nordic focus"
         },
         "legend": {
             "full": "Full support",
@@ -142,8 +142,8 @@
         "description2": "Every algorithm, every analysis is powered by our custom AI models that process large amounts of market data in real time, delivering valuable analysis that helps you make better investment decisions.",
         "team": "Our small but dedicated team consists of PhDs in mathematical statistics, AI/LLM experts, data scientists, and entrepreneurs passionate about transforming the financial industry with new technology.",
         "stats": {
-            "companies": "900+",
-            "companiesLabel": "Swedish companies",
+            "companies": "1,500+",
+            "companiesLabel": "Nordic companies",
             "prSpeed": "<3s",
             "prSpeedLabel": "PR analysis time",
             "reportSpeed": "≈1.5\u202Fmin",
@@ -318,7 +318,7 @@
                         "Peer coverage and market flashes",
                         "Global and Swedish macro analysis",
                         "Morning briefings and customizable notifications",
-                        "Coverage of 900+ Swedish companies"
+                        "Coverage of 1,500+ Nordic companies"
                     ]
                 },
                 "userObligations": {

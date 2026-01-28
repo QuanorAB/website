@@ -82,7 +82,7 @@
             "reportAnalysis": {
                 "title": "Rapportanalys",
                 "label": "Automatiserad genomgång",
-                "description": "Djupgående analys av bolagens kvartals- och årsrapporter med sammanfattade nyckeltal, risker, möjligheter och analytikerestimat."
+                "description": "Djupgående analys av bolagens kvartals- och årsrapporter med sammanfattade nyckeltal, risker, möjligheter och Quanors egna estimat."
             },
             "prAnalysis": {
                 "title": "PR-analys",
@@ -92,7 +92,7 @@
             "preReport": {
                 "title": "Analys inför rapport",
                 "label": "Inför rapport",
-                "description": "Förväntningar, sentiment, riskindikatorer och analytikerestimat inför nästa rapporttillfälle."
+                "description": "Omfattande analys inför rapport med sammanfattning, nyckeltal, ledningskommentarer, potentiella triggers, peer-signaler och Quanors egna finansiella estimat."
             },
             "marketRecap": {
                 "title": "Daglig marknadsöversikt",
@@ -127,7 +127,7 @@
             "prAnalysis": "PR-analys",
             "sentiment": "Avancerad sentimentanalys",
             "frameworkAnalysis": "Eget analysramverk",
-            "swedishFocus": "Fokus på Sverige"
+            "swedishFocus": "Fokus på Norden"
         },
         "legend": {
             "full": "Fullt stöd",
@@ -142,8 +142,8 @@
         "description2": "Varje algoritm, varje analys drivs av våra anpassade AI-modeller som behandlar stora mängder marknadsdata i realtid och levererar värdefull analys som hjälper dig fatta bättre investeringsbeslut.",
         "team": "Vårt lilla men dedikerade team består av doktorer inom matematisk statistik, AI/LLM-experter, datavetare och entreprenörer som brinner för att förvandla finansbranschen genom ny teknik.",
         "stats": {
-            "companies": "900+",
-            "companiesLabel": "Svenska företag",
+            "companies": "1 500+",
+            "companiesLabel": "Nordiska företag",
             "prSpeed": "<3s",
             "prSpeedLabel": "PR-analystid",
             "reportSpeed": "≈1,5\u202Fmin",
@@ -318,7 +318,7 @@
                         "Peer-täckning och marknadsflashes",
                         "Global och svensk makroanalys",
                         "Morgonbriefings och anpassningsbara notiser",
-                        "Täckning av 900+ svenska företag"
+                        "Täckning av 1 500+ nordiska företag"
                     ]
                 },
                 "userObligations": {

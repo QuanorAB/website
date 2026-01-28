@@ -123,7 +123,7 @@ export default function Navigation({ lang }: { lang: string }) {
                             </Button>
 
                             <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/20" asChild>
-                                <a href="https://app.quanor.com/register/essential">{t.signUp}</a>
+                                <a href="https://app.quanor.com/register">{t.signUp}</a>
                             </Button>
                         </div>
 
@@ -175,7 +175,7 @@ export default function Navigation({ lang }: { lang: string }) {
                                 <a href="https://app.quanor.com/login">{t.login}</a>
                             </Button>
                             <Button className="w-full justify-center bg-primary hover:bg-primary/90" asChild>
-                                <a href="https://app.quanor.com/register/essential">{t.signUp}</a>
+                                <a href="https://app.quanor.com/register">{t.signUp}</a>
                             </Button>
                         </div>
                     </div>

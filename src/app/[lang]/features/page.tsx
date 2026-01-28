@@ -22,7 +22,7 @@ const content = {
     sv: {
         hero: {
             title: "AI-driven analys för smartare investeringar",
-            subtitle: "Allt du behöver för att analysera svenska aktier och fatta bättre investeringsbeslut."
+            subtitle: "Allt du behöver för att analysera nordiska aktier och fatta bättre investeringsbeslut."
         },
         features: [
             {
@@ -61,7 +61,7 @@ const content = {
                 iconName: "FileText",
                 title: "Analys inför kvartalsrapport",
                 subtitle: "Förbered dig inför rapportsäsongen",
-                description: "Inför varje kvartalsrapport genererar vi detaljerade analyser som hjälper dig förbereda och identifiera vad du ska fokusera på.",
+                description: "Omfattande analys inför rapport med sammanfattning, nyckeltal, ledningskommentarer, potentiella triggers, peer-signaler och Quanors egna finansiella estimat.",
                 capabilities: [
                     "Trendanalys av ledningens kommentarer över tid",
                     "Anpassade bevakningspunkter och triggers",
@@ -140,7 +140,7 @@ const content = {
     en: {
         hero: {
             title: "AI-driven analysis for smarter investments",
-            subtitle: "Everything you need to analyze Swedish stocks and make better investment decisions."
+            subtitle: "Everything you need to analyze Nordic stocks and make better investment decisions."
         },
         features: [
             {
@@ -179,7 +179,7 @@ const content = {
                 iconName: "FileText",
                 title: "Pre-earnings reports",
                 subtitle: "Prepare for earnings season",
-                description: "Before each quarterly report, we generate detailed pre-earnings reports that help you prepare and identify what to focus on.",
+                description: "Comprehensive pre-earnings briefing with executive summary, key metrics, management commentary trends, potential triggers, peer signals and Quanor's own financial estimates.",
                 capabilities: [
                     "Management commentary trend analysis over time",
                     "Custom watch points and triggers",

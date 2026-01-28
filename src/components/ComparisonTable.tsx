@@ -30,7 +30,7 @@ export default function ComparisonTable({ lang }: ComparisonTableProps) {
         quanor: "Quanor"
       },
       features: [
-        { key: 'swedishFocus', name: "Svenskt marknadsfokus", traditional: 'partial', aiTools: false, quanor: true },
+        { key: 'swedishFocus', name: "Nordiskt marknadsfokus", traditional: 'partial', aiTools: false, quanor: true },
         { key: 'onReport', name: "Rapportanalys i realtid", traditional: 'basic', aiTools: 'basic', quanor: true },
         { key: 'preReport', name: "Analys inför rapport", traditional: false, aiTools: false, quanor: true },
         { key: 'metricsExtraction', name: "Automatisk nyckeltalsextraktion", traditional: false, aiTools: false, quanor: true },
@@ -54,7 +54,7 @@ export default function ComparisonTable({ lang }: ComparisonTableProps) {
         quanor: "Quanor"
       },
       features: [
-        { key: 'swedishFocus', name: "Swedish market focus", traditional: 'partial', aiTools: false, quanor: true },
+        { key: 'swedishFocus', name: "Nordic market focus", traditional: 'partial', aiTools: false, quanor: true },
         { key: 'onReport', name: "Real-time report analysis", traditional: 'basic', aiTools: 'basic', quanor: true },
         { key: 'preReport', name: "Pre-earnings analysis", traditional: false, aiTools: false, quanor: true },
         { key: 'metricsExtraction', name: "Automatic KPI extraction", traditional: false, aiTools: false, quanor: true },

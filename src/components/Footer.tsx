@@ -17,7 +17,7 @@ import Link from "next/link";
 export default function Footer({ lang }: { lang: string }) {
     const content = {
         sv: {
-            description: "Omedelbar aktieanalys för svenska aktier. Realtidsbevakning av pressmeddelanden, rapporter och marknadshändelser.",
+            description: "Omedelbar aktieanalys för nordiska aktier. Realtidsbevakning av pressmeddelanden, rapporter och marknadshändelser.",
             sections: {
                 products: "Erbjudande",
                 company: "Företag",
@@ -40,7 +40,7 @@ export default function Footer({ lang }: { lang: string }) {
             builtIn: "Byggt i Sverige 🇸🇪"
         },
         en: {
-            description: "Instant financial analysis for Swedish stocks. Real-time monitoring of press releases, reports, and market events.",
+            description: "Instant financial analysis for Nordic stocks. Real-time monitoring of press releases, reports, and market events.",
             sections: {
                 products: "Offering",
                 company: "Company",
