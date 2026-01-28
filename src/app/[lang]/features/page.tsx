@@ -22,7 +22,7 @@ const content = {
     sv: {
         hero: {
             title: "AI-driven analys för smartare investeringar",
-            subtitle: "Allt du behöver för att analysera svenska aktier och fatta bättre investeringsbeslut."
+            subtitle: "Allt du behöver för att analysera nordiska aktier och fatta bättre investeringsbeslut."
         },
         features: [
             {
@@ -140,7 +140,7 @@ const content = {
     en: {
         hero: {
             title: "AI-driven analysis for smarter investments",
-            subtitle: "Everything you need to analyze Swedish stocks and make better investment decisions."
+            subtitle: "Everything you need to analyze Nordic stocks and make better investment decisions."
         },
         features: [
             {

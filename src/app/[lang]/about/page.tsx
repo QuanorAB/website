@@ -99,7 +99,7 @@ const content = {
             paragraphs: [
                 "Quanor grundades 2024 i Stockholm med en enkel men ambitiös vision: att ge alla tillgång till samma kraftfulla analyser som tidigare bara var tillgängliga för stora institutioner.",
                 "Vi såg hur småsparare och privata investerare var tvungna att fatta beslut baserat på begränsad information, medan hedgefonder och banker hade tillgång till avancerad AI-analys. Det ville vi ändra på.",
-                "Idag använder hundratals investerare Quanor för att analysera svenska aktier, bevaka nyheter och fatta bättre investeringsbeslut. Men vi är bara i början av vår resa."
+                "Idag använder hundratals investerare Quanor för att analysera nordiska aktier, bevaka nyheter och fatta bättre investeringsbeslut. Men vi är bara i början av vår resa."
             ]
         },
         team: {
@@ -134,7 +134,7 @@ const content = {
             paragraphs: [
                 "Quanor was founded in 2024 in Stockholm with a simple but ambitious vision: to give everyone access to the same powerful analysis that was previously only available to large institutions.",
                 "We saw how retail investors and private traders had to make decisions based on limited information, while hedge funds and banks had access to advanced AI analysis. We wanted to change that.",
-                "Today, hundreds of investors use Quanor to analyze Swedish stocks, monitor news, and make better investment decisions. But we're just at the beginning of our journey."
+                "Today, hundreds of investors use Quanor to analyze Nordic stocks, monitor news, and make better investment decisions. But we're just at the beginning of our journey."
             ]
         },
         team: {

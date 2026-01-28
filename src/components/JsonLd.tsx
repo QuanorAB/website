@@ -21,8 +21,8 @@ export function JsonLd({ lang }: JsonLdProps) {
             "height": 512
         },
         "description": lang === "sv"
-            ? "Omedelbar aktieanalys för svenska marknader. Realtidsanalys av kvartalsrapporter, pressmeddelanden och analyser inför rapport."
-            : "Instant stock analysis for Swedish markets. Real-time analysis of quarterly reports, press releases and pre-earnings.",
+            ? "Omedelbar aktieanalys för nordiska marknader. Realtidsanalys av kvartalsrapporter, pressmeddelanden och analyser inför rapport."
+            : "Instant stock analysis for Nordic markets. Real-time analysis of quarterly reports, press releases and pre-earnings.",
         "foundingDate": "2024",
         "founders": [
             {
@@ -50,8 +50,8 @@ export function JsonLd({ lang }: JsonLdProps) {
         "url": baseUrl,
         "name": "Quanor",
         "description": lang === "sv"
-            ? "Omedelbar finansiell analys för svenska aktier"
-            : "Instant financial analysis for Swedish stocks",
+            ? "Omedelbar finansiell analys för nordiska aktier"
+            : "Instant financial analysis for Nordic stocks",
         "publisher": {
             "@id": `${baseUrl}/#organization`
         },
