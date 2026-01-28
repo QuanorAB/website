@@ -82,7 +82,7 @@
             "reportAnalysis": {
                 "title": "Report Analysis",
                 "label": "Automated Review",
-                "description": "In-depth analysis of companies' quarterly and annual reports with summarized key metrics, risks, opportunities and analyst estimates."
+                "description": "In-depth analysis of companies' quarterly and annual reports with summarized key metrics, risks, opportunities and Quanor's own estimates."
             },
             "prAnalysis": {
                 "title": "PR Analysis",
@@ -92,7 +92,7 @@
             "preReport": {
                 "title": "Pre-earnings Analysis",
                 "label": "Before Report",
-                "description": "Quanor's own estimates based on company communications, trends, macro and peers. After earnings release, we compare outcome against our estimates. Also includes sentiment and risk indicators."
+                "description": "Expectations, sentiment, risk indicators and Quanor's own financial estimates ahead of the next reporting date."
             },
             "marketRecap": {
                 "title": "Daily Market Recap",

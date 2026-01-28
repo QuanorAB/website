@@ -82,7 +82,7 @@
             "reportAnalysis": {
                 "title": "Rapportanalys",
                 "label": "Automatiserad genomgång",
-                "description": "Djupgående analys av bolagens kvartals- och årsrapporter med sammanfattade nyckeltal, risker, möjligheter och analytikerestimat."
+                "description": "Djupgående analys av bolagens kvartals- och årsrapporter med sammanfattade nyckeltal, risker, möjligheter och Quanors egna estimat."
             },
             "prAnalysis": {
                 "title": "PR-analys",
@@ -92,7 +92,7 @@
             "preReport": {
                 "title": "Analys inför rapport",
                 "label": "Inför rapport",
-                "description": "Quanors egna estimat baserade på bolagskommunikation, trender, makro och peers. Efter rapport jämförs utfallet mot våra estimat. Inkluderar även sentiment och riskindikatorer."
+                "description": "Förväntningar, sentiment, riskindikatorer och Quanors egna finansiella estimat inför nästa rapporttillfälle."
             },
             "marketRecap": {
                 "title": "Daglig marknadsöversikt",
